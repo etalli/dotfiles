@@ -1,4 +1,5 @@
 # prompt
+# test1
 autoload -U compinit
 autoload colors
 colors
