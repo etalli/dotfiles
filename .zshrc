@@ -7,6 +7,15 @@ compinit
 #PROMPT='[%W %T %d] % '
 PROMPT="${fg[white]}${bg[black]}%W %T %d] % %{${reset_color}%}"
 
+
+# gfortran
+# add  the stdlib to your $LIBRARY_PAT to avoid this error: "ld: library not found for -lSystem"
+export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
+
+# dotfiles - how to link. example
+# ln -nfs /Users/k/foo/dotfiles/.zshrc /Users/k/.zshrc
+# ln -nfs /Users/k/foo/dotfiles/.vimrc /Users/k/.vimrc
+
 ##autoload -Uz vcs_info
 #setopt prompt_subst
 #zstyle ':vcs_info:*' formats '%F{blue}%b%f' '%S'
@@ -15,20 +24,22 @@ PROMPT="${fg[white]}${bg[black]}%W %T %d] % %{${reset_color}%}"
 #zstyle ':vcs_info:*' enable git svn hg bzr cvs
 #RPROMPT=$RPROMPT’${vcs_info_msg_0_}’
 
-alias ls='ls -F'
+alias ls='ls -aF'
+alias ll='ls -l'
 alias ll='ls -l'
 
-alias cdd='cd desktop'    // デスクトップに移動
+alias cdd='cd desktop'
 #alias pf='qmk flash -kb pangaea -km defaulta'
 # Pangaea
 alias cdk="cd /Users/k/src/1004/qmk_firmware"
 alias pCD='cd $HOME/src/1004/qmk_firmware'
 alias pe="vi +146 /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
+alias ped="vi +10 /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/MyDefines.h"
 alias pc='pCD;pwd;make pangaea:default'
 alias pf='pCD;pwd;qmk flash -kb pangaea -km default'
 # zshrc
 alias rz='source ~/.zshrc'
-alias ez='vi ~/.zshrc'
+alias ez='vi ~/.zshrc;source ~/.zshrc'
 
 # pass phase: hogehoge
 alias gitclone='git clone ssh://github.com/etalli/keyboard.git'
