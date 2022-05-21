@@ -96,7 +96,7 @@ alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
 
 ## dotfiles backup
-alias bdot='git add .;git commit -m "anything" .zshrc;git push'
+alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push'
 function mkcd(){mkdir -p $1 && cd $1}
 #
 source /Users/k/zsh_plugin/zaw/zaw.zsh
