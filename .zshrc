@@ -1,5 +1,5 @@
-# rev.3
-# zsh history, ctrl-c for search historyy
+# rev.3.1
+# zsh history, ctrl-r for search historyy
 export HISTFILE=~/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
