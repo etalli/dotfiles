@@ -117,5 +117,5 @@ mygcre () {
     git push -u origin develop;
 }
 ## dotfiles backup
-alias backupdot='git add.;git commit -m "anything" .zshrc;git push'
+alias bdot='git add.;git commit -m "anything" .zshrc;git push'
 
