@@ -61,14 +61,7 @@ alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
 alias 2f='pCD;qmk flash -kb 2x2 -km default'
 
-# a_dux //March 2022, obsolete.
-alias axhome='cd /Users/k/src/0325/qmk_firmware'
-alias axcd='cd /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default'
-alias axe='vi /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default/keymap.c'
-alias axf='aduxcd;make a_dux:default:avrdude-split-left'
-alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
-
-# zshrc
+# edit zshrc
 alias ez='vim ~/.zshrc;source ~/.zshrc'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
@@ -91,31 +84,13 @@ alias grm="git rm --cached"
 alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
 
-gmpd () {
-    git pull origin develop
-    echo "Type branche name to merge : " && read branch;
-    git merge ${branch};
-    git status;
-    echo "Is it okay to continue?" && read;
-    git push origin develop
-}
-
-# Push all changes to current branch
-gcom () {
-    git add . && git status
-    echo "Type commit comment" && read comment;
-    git commit -m ${comment} && git push origin HEAD
-}
-
-mygcre () {
-	git init && git add . && git status && git commit -m "First commit"
-    echo "Type repository name: " && read name;
-    echo "Type repository description: " && read description;
-    curl -u YOURID:YOURPASSWORD https://api.github.com/user/repos -d '{"name":"'"${name}"'","description":"'"${description}"'","private":true}'
-    git remote add origin https://github.com/deatiger/${name}.git
-    git checkout -b develop;
-    git push -u origin develop;
-}
 ## dotfiles backup
 alias bdot='git add.;git commit -m "anything" .zshrc;git push'
 
+#====================================================================================
+# a_dux //March 2022, obsolete.
+alias axhome='cd /Users/k/src/0325/qmk_firmware'
+alias axcd='cd /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default'
+alias axe='vi /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default/keymap.c'
+alias axf='aduxcd;make a_dux:default:avrdude-split-left'
+alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
