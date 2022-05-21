@@ -1,4 +1,9 @@
-# rev.0.32
+# rev.0.01.
+# file: /Users/k/etc/dotfiles/.zshrc
+#
+# dotfiles - how to link. example
+# ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
+#
 #
 # zsh history, ctrl-r for search historyy
 export HISTFILE=${HOME}/etc/.zsh_history
@@ -6,9 +11,10 @@ export HISTSIZE=1000
 export SAVEHIST=10000
 setopt EXTENDED_HISTORY
 setopt hist_ignore_dups
+setopt hist_ignore_all_dups
 setopt hist_no_store
 function h-all { history -E 1}
-
+#
 # prompt
 autoload -U compinit
 autoload colors
@@ -16,14 +22,10 @@ colors
 compinit
 PROMPT='[%W %T %d] % '
 #PROMPT="${fg[white]}${bg[black]}%W %T %d] % %{${reset_color}%}"
-
+#
 # gfortran
 # add  the stdlib to your $LIBRARY_PAT to avoid this error: "ld: library not found for -lSystem"
 export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
-
-# dotfiles - how to link. example
-# ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
-# ln -nfs /Users/k/etc/dotfiles/.vimrc /Users/k/.vimrc
 
 alias ls='ls -aF'
 alias ll='ls -l'
@@ -85,7 +87,8 @@ alias cd128='cd ~/Dropbox/MyProjects/128_myKBD'
 alias finder='open'
 alias here='open .'
 
-# Show all git alias commands
+# git alias commands
+alias gp="git push"
 alias gitls="alias | grep git"
 alias gc="git checkout"
 alias gcd="git checkout develop"
@@ -97,6 +100,7 @@ alias grh="git reset --hard HEAD^"
 
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push'
+##
 function mkcd(){mkdir -p $1 && cd $1}
 #
 source /Users/k/zsh_plugin/zaw/zaw.zsh
