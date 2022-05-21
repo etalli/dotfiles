@@ -1,0 +1,9 @@
+#!/bin/sh
+ln -sf ~/etc/dotfiles/.zshrc ~/.zshrc
+#$ ln -sf ~/etc/dotfiles/.vimrc ~/.vimrc
+#$ ln -sf ~/etc/dotfiles/colors ~/.vim
+#$ ln -sf ~/etc/dotfiles/ftdetect ~/.vim
+#$ ln -sf ~/etc/dotfiles/indent ~/.vim
+#$ ln -sf ~/etc/dotfiles/.bash_profile ~/.bash_profile
+#$ ln -sf ~/etc/dotfiles/.wgetrc ~/.wgetrc
+#$ ln -sf ~/etc/dotfiles/Brewfile ~/Brewfile
