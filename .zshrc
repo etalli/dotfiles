@@ -1,9 +1,13 @@
-# rev.3.1
+# rev.0.32
+#
 # zsh history, ctrl-r for search historyy
-export HISTFILE=~/etc/.zsh_history
+export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
 setopt EXTENDED_HISTORY
+setopt hist_ignore_dups
+setopt hist_no_store
+function h-all { history -E 1}
 
 # prompt
 autoload -U compinit
@@ -18,8 +22,8 @@ PROMPT='[%W %T %d] % '
 export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
 
 # dotfiles - how to link. example
-# ln -nfs /Users/k/src/dotfiles/.zshrc /Users/k/.zshrc
-# ln -nfs /Users/k/src/dotfiles/.vimrc /Users/k/.vimrc
+# ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
+# ln -nfs /Users/k/etc/dotfiles/.vimrc /Users/k/.vimrc
 
 alias ls='ls -aF'
 alias ll='ls -l'
@@ -61,16 +65,23 @@ alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
 alias 2f='pCD;qmk flash -kb 2x2 -km default'
 
+# a_dux //March 2022, obsolete.
+alias axhome='cd /Users/k/src/0325/qmk_firmware'
+alias axcd='cd /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default'
+alias axe='vi /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default/keymap.c'
+alias axf='aduxcd;make a_dux:default:avrdude-split-left'
+alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
+
 # edit zshrc
 alias ez='vim ~/.zshrc;source ~/.zshrc'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
 
-# hogehoge
+# misc
 alias gitclonep='git clone ssh://github.com/etalli/keyboard.git'
 alias glqmk='git clone https://github.com/qmk/qmk_firmware.git'
-alias 128='cd ~/Dropbox/MyProjects/128_myKBD'
+alias cd128='cd ~/Dropbox/MyProjects/128_myKBD'
 alias finder='open'
 alias here='open .'
 
@@ -85,12 +96,7 @@ alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
 
 ## dotfiles backup
-alias bdot='git add.;git commit -m "anything" .zshrc;git push'
-
-#====================================================================================
-# a_dux //March 2022, obsolete.
-alias axhome='cd /Users/k/src/0325/qmk_firmware'
-alias axcd='cd /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default'
-alias axe='vi /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default/keymap.c'
-alias axf='aduxcd;make a_dux:default:avrdude-split-left'
-alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
+alias bdot='git add .;git commit -m "anything" .zshrc;git push'
+function mkcd(){mkdir -p $1 && cd $1}
+#
+source /Users/k/zsh_plugin/zaw/zaw.zsh
