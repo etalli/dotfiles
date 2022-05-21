@@ -1,4 +1,4 @@
-# rev.0.01.
+# rev.0.02.
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link. example
@@ -6,6 +6,12 @@
 #
 #
 # zsh history, ctrl-r for search historyy
+
+# ctrl+a: begeinning of line
+# ctrl+e: end of line
+# ctrl+u: deleteline
+# ctrl+k: delete to the end of line 
+
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
@@ -101,6 +107,11 @@ alias grh="git reset --hard HEAD^"
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push'
 alias bdot2='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
+## web sites
+alias web   ='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
+alias gmail ='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
+alias gnews ='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://news.google.com/'
 ##
 function mkcd(){mkdir -p $1 && cd $1}
 #
