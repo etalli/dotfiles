@@ -100,8 +100,9 @@ alias grh="git reset --hard HEAD^"
 
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push'
-alias bdot2='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push;w3m https://github.com/etalli/dotfiles'
+alias bdot2='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
 ##
 function mkcd(){mkdir -p $1 && cd $1}
 #
 source /Users/k/zsh_plugin/zaw/zaw.zsh
+
