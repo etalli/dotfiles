@@ -1,3 +1,4 @@
+# rev.1
 # prompt
 autoload -U compinit
 autoload colors
