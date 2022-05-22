@@ -1,4 +1,4 @@
-# rev.0.02.
+# rev.0.04
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link. example
@@ -7,10 +7,11 @@
 #
 # zsh history, ctrl-r for search historyy
 
-# ctrl+a: begeinning of line
-# ctrl+e: end of line
-# ctrl+u: deleteline
-# ctrl+k: delete to the end of line 
+# ctrl+a: go to the begeinning of line
+# ctrl+e: go to the end of line
+#
+# ctrl+u: delete the whole line
+# ctrl+k: delete text to the end of line
 
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
@@ -27,17 +28,15 @@ autoload colors
 colors
 compinit
 PROMPT='[%W %T %d] % '
-#PROMPT="${fg[white]}${bg[black]}%W %T %d] % %{${reset_color}%}"
 #
 # gfortran
 # add  the stdlib to your $LIBRARY_PAT to avoid this error: "ld: library not found for -lSystem"
 export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
-
+#
 alias ls='ls -aF'
 alias ll='ls -l'
-alias ll='ls -l'
 alias cdd='cd desktop'
-
+#
 # Pangaea rev.2, and rev.3(now)
 alias pCD='cd $HOME/src/1004/qmk_firmware'
 alias pe="vi +46 /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
@@ -64,16 +63,16 @@ alias pep11="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default
 alias pc11='pC11;qmk compile -kb pangaea -km default'
 alias pf11='alias pf11;echo "   ";pC11;qmk flash -kb pangaea -km default'
 #
-## kasumigasane
+## kasumigasane by e3w2q
 alias kasumicd='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
 alias kasumie='vi /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
 alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 #
-# 2 x 2 by k2.
+# 2x2 by k2.
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
 alias 2f='pCD;qmk flash -kb 2x2 -km default'
 
-# a_dux //March 2022, obsolete.
+# a_dux // March 2022, obsolete.
 alias axhome='cd /Users/k/src/0325/qmk_firmware'
 alias axcd='cd /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default'
 alias axe='vi /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default/keymap.c'
@@ -106,7 +105,7 @@ alias grh="git reset --hard HEAD^"
 
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push'
-alias bdot2='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
+alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
 ## web sites
 alias web   ='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
