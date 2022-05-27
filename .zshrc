@@ -1,15 +1,12 @@
-# rev.0.04
+# rev.0.05
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link. example
 # ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
 #
-#
 # zsh history, ctrl-r for search historyy
-
 # ctrl+a: go to the begeinning of line
 # ctrl+e: go to the end of line
-#
 # ctrl+u: delete the whole line
 # ctrl+k: delete text to the end of line
 
