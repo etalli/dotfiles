@@ -19,11 +19,13 @@ setopt hist_ignore_all_dups
 setopt hist_no_store
 function h-all { history -E 1}
 #
-# prompt
+# Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
+compinit
+#
+# prompt
 autoload colors
 colors
-compinit
 PROMPT='[%W %T %d] % '
 #
 # gfortran
