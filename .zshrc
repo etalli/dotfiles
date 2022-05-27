@@ -81,7 +81,7 @@ alias axf='aduxcd;make a_dux:default:avrdude-split-left'
 alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
 
 # edit zshrc
-alias ez='vim ~/.zshrc;source ~/.zshrc'
+alias ez='vim ~/.zshrc;source ~/.zshrc;bdot'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
@@ -119,4 +119,3 @@ alias gnews='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome http
 function mkcd(){mkdir -p $1 && cd $1}
 #
 source /Users/k/zsh_plugin/zaw/zaw.zsh
-
