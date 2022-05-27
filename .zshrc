@@ -19,7 +19,7 @@ setopt hist_ignore_all_dups
 setopt hist_no_store
 function h-all { history -E 1}
 #
-# Tab, Ctrl-i, Ctrl-d
+# Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
 compinit
 #
