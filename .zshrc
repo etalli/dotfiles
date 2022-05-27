@@ -80,7 +80,7 @@ alias axf='aduxcd;make a_dux:default:avrdude-split-left'
 alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
 
 # edit zshrc
-alias ez='vim ~/.zshrc;source ~/.zshrc;bdot2'
+alias ez='vim ~/.zshrc;source ~/.zshrc;bdot3'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
@@ -109,6 +109,7 @@ alias grh="git reset --hard HEAD^"
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push'
 alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
+alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
 ## web sites
 alias web='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
