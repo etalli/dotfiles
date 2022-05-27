@@ -1,8 +1,8 @@
-# rev.0.05
+# Rev.0.06
 # file: /Users/k/etc/dotfiles/.zshrc
 #
-# dotfiles - how to link. example
-# ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
+# dotfiles - how to link .dotfiles to home directory.
+# example,  ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc #
 #
 # zsh history, ctrl-r for search historyy
 # ctrl+a: go to the begeinning of line
