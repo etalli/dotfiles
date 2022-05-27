@@ -38,12 +38,11 @@ alias ll='ls -l'
 alias cdd='cd desktop'
 #
 # Pangaea rev.2, and rev.3(now)
-alias pCD='cd $HOME/src/1004/qmk_firmware'
-alias pe="vi +46 /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
-alias pc='pCD;make pangaea:default'
-alias pcr3='pCD;make pangaea:rev3'
-alias pf='pCD;qmk flash -kb pangaea -km default'
-alias kmap='cat /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 190 | tail -n 30'
+#alias pCD='cd $HOME/src/1004/qmk_firmware'
+#alias pe="vi +46 /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
+#alias pc='pCD;make pangaea:default'
+#alias pcr3='pCD;make pangaea:rev3'
+#alias pf='pCD;qmk flash -kb pangaea -km default'
 #
 # Pangaea v1.1(rev.0417, May 2,2022)
 #alias pC11='cd $HOME/src/0502/qmk_firmware;pwd'
@@ -55,13 +54,15 @@ alias kmap='cat /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default
 #alias pf11='alias pf11;echo "   ";pC11;qmk flash -kb pangaea -km default'
 #
 # Pangaea v1.1. with QMK latest 0.16.9
-alias pC11= 'cd $HOME/src/0518/qmk_firmware;pwd'
-alias pe11="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
-alias per11="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
-alias pCD11="cd /Users/k/src/0518/qmk_firmware/keyboards/pangaea"
-alias pep11="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
-alias pc11='pC11;qmk compile -kb pangaea -km default'
-alias pf11='alias pf11;echo "   ";pC11;qmk flash -kb pangaea -km default'
+alias pC= 'cd $HOME/src/0518/qmk_firmware;pwd'
+alias pe="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
+alias per="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/rules.mk"
+alias perr="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
+alias pCD="cd /Users/k/src/0518/qmk_firmware/keyboards/pangaea"
+alias pep="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
+alias pc='pC11;qmk compile -kb pangaea -km default'
+alias pf='alias pf11;echo "   ";pC11;qmk flash -kb pangaea -km default'
+alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
 #
 ## kasumigasane by e3w2q
 alias kasumicd='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
@@ -93,7 +94,10 @@ alias finder='open'
 alias here='open .'
 
 # git alias commands
-alias gp="git push"
+alias gp='git push'
+alias gcm='git commit -m'
+alias ga='git add .'
+#
 alias gitls="alias | grep git"
 alias gc="git checkout"
 alias gcd="git checkout develop"
@@ -107,10 +111,10 @@ alias grh="git reset --hard HEAD^"
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "anything" .zshrc;git push'
 alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
 ## web sites
-alias web   ='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias web='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
-alias gmail ='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
-alias gnews ='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://news.google.com/'
+alias gmail='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
+alias gnews='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://news.google.com/'
 ##
 function mkcd(){mkdir -p $1 && cd $1}
 #
