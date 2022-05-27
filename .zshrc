@@ -81,7 +81,7 @@ alias axf='aduxcd;make a_dux:default:avrdude-split-left'
 alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
 
 # edit zshrc
-alias ez='vim ~/.zshrc;source ~/.zshrc;bdot'
+alias ez='vim ~/.zshrc;source ~/.zshrc;bdot2'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
