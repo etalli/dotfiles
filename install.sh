@@ -8,3 +8,5 @@ head ~/.zshrc
 
 #ln -s .vimrc ~/.vimrc
 
+# keep git password for a day.
+git config --global credential.helper cache 'cache --timeout=86400'
