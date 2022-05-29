@@ -9,3 +9,6 @@ head ~/.zshrc
 ## config
 # keep git password for a day.
 git config --global credential.helper cache 'cache --timeout=86400'
+#
+#gh auth login
+
