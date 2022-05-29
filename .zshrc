@@ -95,6 +95,7 @@ alias here='open .'
 # git alias commands
 alias gp='git push'
 alias gcm='git commit -m'
+alias gcmnow='git commit -m "now"'
 alias ga='git add .'
 #
 alias gitls="alias | grep git"
