@@ -1,5 +1,15 @@
-" backup
+" enable backup
 set backup
+
+" backup before edit
+set writebackup
+
+" backup dir
+set backupdir=$HOME/.vimbackup
+
+" backup file name
+au BufWritePre * let &bex = '.'.strftime("%Y%m%d_%H%M%S")
+
 set undofile
 
 " vim の矩形選択で文字が無くても右へ進める
@@ -7,7 +17,6 @@ set virtualedit=block
 
 " 挿入モードでバックスペースで削除できるようにする
 set backspace=indent,eol,start
-
 " 全角文字専用の設定
 set ambiwidth=double
 
