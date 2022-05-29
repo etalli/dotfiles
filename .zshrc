@@ -1,4 +1,4 @@
-# Rev.0.06
+# Rev.0.07
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
@@ -80,7 +80,7 @@ alias axf='aduxcd;make a_dux:default:avrdude-split-left'
 alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
 
 # edit zshrc
-alias ez='vim ~/.zshrc;source ~/.zshrc;bdot3'
+alias ez='vim ~/.zshrc;source ~/.zshrc;bdot'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
@@ -95,7 +95,7 @@ alias here='open .'
 # git alias commands
 alias gp='git push'
 alias gcm='git commit -m'
-alias gcmnow='git commit -m "now"'
+alias gcmn='git commit -m "now"'
 alias ga='git add .'
 #
 alias gitls="alias | grep git"
@@ -108,7 +108,7 @@ alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
 
 ## dotfiles backup
-alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "ok" *;git push'
+alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -a -m "ok" *;git push'
 alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
 alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
 alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/install.sh'
