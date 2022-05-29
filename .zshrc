@@ -1,4 +1,5 @@
 # Rev.0.07
+#
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.

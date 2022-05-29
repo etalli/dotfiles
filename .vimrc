@@ -10,7 +10,7 @@ set backupdir=$HOME/.vimbackup
 " backup file name
 au BufWritePre * let &bex = '.'.strftime("%Y%m%d_%H%M%S")
 
-set undofile
+"set undofile
 
 " vim の矩形選択で文字が無くても右へ進める
 set virtualedit=block
