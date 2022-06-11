@@ -97,6 +97,7 @@ alias here='open .'
 # git alias commands
 alias grv='git remote -v'
 alias gr='git remote'
+alias grso='git remote show origin'
 alias gp='git push'
 alias gcm='git commit -m'
 alias gcmn='git commit -m "now"'
