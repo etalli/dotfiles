@@ -102,7 +102,7 @@ alias gp='git push'
 alias gcm='git commit -m'
 alias gcmn='git commit -m "now"'
 alias ga='git add .'
-alias bbb='(){git add $1}'
+alias bbb='(){git add $1};(){git commit -m $1}'
 #
 alias gitls="alias | grep git"
 alias gc="git checkout"
