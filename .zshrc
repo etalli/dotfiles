@@ -102,7 +102,7 @@ alias gp='git push'
 alias gcm='git commit -m'
 alias gcmn='git commit -m "now"'
 alias ga='git add .'
-alias bbb='(){git add $1};(){git commit -m "default"};git push -u origin main;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/SmallKey/blob/main/README.md'
+alias bbb='(){git add $1};(){git commit -m "default"};git push -u origin main;web https://github.com/etalli/SmallKey/blob/main/README.md'
 #
 alias gitls="alias | grep git"
 alias gc="git checkout"
@@ -119,7 +119,7 @@ alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
 alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/install.sh'
 ## web sites
-alias web='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias web='(){/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1}'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
 alias gmail='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
 alias gnews='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://news.google.com/'
