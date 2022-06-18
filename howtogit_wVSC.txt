@@ -1,0 +1,17 @@
+for MacOS
+
+install brew
+  brew
+
+brew install git
+$ git config --global user.name Kazumoto Kondo
+$ git config --global user.email kazumoto.kondo@gmail.com
+
+
+Finder
+  To show hidden files, Command Shift .
+
+
+Visual Source code
+  open folder
+
