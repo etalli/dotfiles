@@ -1,5 +1,5 @@
 # Rev.0.07
-#
+#GL516_Template-main
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
@@ -61,8 +61,8 @@ alias per="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/rules.mk"
 alias perr="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
 alias pcd="cd /Users/k/src/0518/qmk_firmware/keyboards/pangaea"
 alias pep="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
-alias pc='pC11;qmk compile -kb pangaea -km default'
-alias pf='alias pf11;echo "   ";pC11;qmk flash -kb pangaea -km default'
+alias pc='pC;qmk compile -kb pangaea -km default'
+alias pf='pC;qmk flash -kb pangaea -km default'
 alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
 #
 ## kasumigasane by e3w2q
