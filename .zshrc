@@ -104,7 +104,7 @@ alias gcmn='git commit -m "now"'
 alias ga='git add .'
 alias bbb='(){git add $1}'
 alias bbb1='(){git commit -m "default" $1}'
-alias bbb2=;(){git push;web https://github.com/etalli/SmallKey/blob/main/README.md}'
+alias bbb2='(){git push;web https://github.com/etalli/SmallKey/blob/main/README.md}'
 #
 alias gitls="alias | grep git"
 alias gc="git checkout"
