@@ -54,15 +54,15 @@ alias cdd='cd desktop'
 #alias pf11='alias pf11;echo "   ";pC11;qmk flash -kb pangaea -km default'
 #
 # Pangaea v1.1. with QMK latest 0.16.9
-alias pC= 'cd $HOME/src/0518/qmk_firmware;pwd'
+alias pC1= 'cd $HOME/src/0518/qmk_firmware;pwd'
 alias pe="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 alias pw="wc -l /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 alias per="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/rules.mk"
 alias perr="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
 alias pcd="cd /Users/k/src/0518/qmk_firmware/keyboards/pangaea"
 alias pep="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
-alias pc='pC;qmk compile -kb pangaea -km default'
-alias pf='pC;qmk flash -kb pangaea -km default'
+alias pc='pC1;qmk compile -kb pangaea -km default'
+alias pf='pC1;qmk flash -kb pangaea -km default'
 alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
 #
 ## kasumigasane by e3w2q
