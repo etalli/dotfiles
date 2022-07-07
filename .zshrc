@@ -72,7 +72,8 @@ alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 #
 # 2x2 by k2.
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
-alias 2f='pCD;qmk flash -kb 2x2 -km default'
+alias 2cd='cd /Users/k/src/1004/qmk_firmware/'
+alias 2f='2cd;qmk flash -kb 2x2 -km default'
 
 # a_dux // March 2022, obsolete.
 alias axhome='cd /Users/k/src/0325/qmk_firmware'
