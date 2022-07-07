@@ -1,5 +1,4 @@
 # Rev.0.07
-#GL516_Template-main
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
@@ -37,7 +36,8 @@ alias ls='ls -aF'
 alias ll='ls -l'
 alias cdd='cd desktop'
 #
-# Pangaea rev.2, and rev.3(now)
+# OBSOLETE
+# Pangaea rev.2, and rev.3
 #alias pCD='cd $HOME/src/1004/qmk_firmware'
 #alias pe="vi +46 /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 #alias pc='pCD;make pangaea:default'
