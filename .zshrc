@@ -71,6 +71,7 @@ alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default
 #alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 alias kasumic='cd /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default '
 alias kasumie='vi /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
+alias kasumib='kasumicd;qmk compile -kb kasumigasane -km default'
 alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 #
 # 2x2 by k2.
