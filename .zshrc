@@ -77,8 +77,8 @@ alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 ### my4pad my4pad with RP2040, it works fine [Aug 13,2022]
 alias my4padc='cd /Users/k/src/0812/qmk_firmware/keyboards/my4pad/'
 alias my4pade='vi /Users/k/src/0812/qmk_firmware/keyboards/my4pad/keymaps/default/keymap.c'
-alias my4padb='my4padc;qmk compile -kb my4pad -km default'
-alias my4padp='my4padc;qmk flash -kb my4pad -km default'
+alias my4padb='my4padc;qmk compile -kb my4pad -km default;cd ../../'
+alias my4padp='my4padc;qmk flash -kb my4pad -km default;cd ../../'
 #
 # 2x2 by k2.
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
