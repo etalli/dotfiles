@@ -75,9 +75,13 @@ alias kasumib='kasumicd;qmk compile -kb kasumigasane -km default'
 alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 ###
 ### my4pad my4pad with RP2040, it works fine [Aug 13,2022]
+### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
+# qmk develop branch
+alias qmkd='git clone -b develop https://github.com/qmk/qmk_firmware.git'
 alias my4padc='cd /Users/k/src/0812/qmk_firmware/keyboards/my4pad/'
 alias my4pade='vi /Users/k/src/0812/qmk_firmware/keyboards/my4pad/keymaps/default/keymap.c'
 alias my4padb='my4padc;qmk compile -kb my4pad -km default;cd ../../'
+alias my4padbl='qmk compile -kb my4pad -km default'
 alias my4padp='my4padc;qmk flash -kb my4pad -km default;cd ../../'
 #
 # 2x2 by k2.
@@ -147,6 +151,4 @@ alias upd='git add images/*;git commit -m logic 00README.md images/* ;gp;sk'
 
 #git remote add origon git@githubm.com:etalli/git-app.git
 #
-# qmk develop branch
-alias qmkd='git clone -b develop https://github.com/qmk/qmk_firmware.git'
 
