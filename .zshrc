@@ -146,3 +146,7 @@ alias upd='git add images/*;git commit -m logic 00README.md images/* ;gp;sk'
 
 
 #git remote add origon git@githubm.com:etalli/git-app.git
+#
+# qmk develop branch
+alias qmkd='git clone -b develop https://github.com/qmk/qmk_firmware.git'
+
