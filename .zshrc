@@ -44,7 +44,10 @@ PROMPT='[%W %T %d] % '
 export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
 #
 alias ls='ls -aF'
-alias ll='ls -l'
+alias l='ls -ltr --color=auto'
+alias ll='ls -l --color=auto'
+alias la='ls -la --color=auto'
+alias lst='ls -ltr --color=auto'
 alias cdd='cd desktop'
 alias h='fc -lt '%F %T' 1'
 alias cp='cp -i'
@@ -59,11 +62,6 @@ alias -g H='| head'
 alias -g G='| grep'
 alias -g GI='| grep -ri'
 
-# エイリアス
-alias lst='ls -ltr --color=auto'
-alias l='ls -ltr --color=auto'
-alias la='ls -la --color=auto'
-alias ll='ls -l --color=auto'
 #
 # OBSOLETE
 # Pangaea rev.2, and rev.3
