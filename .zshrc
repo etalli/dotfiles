@@ -46,6 +46,13 @@ export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacO
 alias ls='ls -aF'
 alias ll='ls -l'
 alias cdd='cd desktop'
+alias h='fc -lt '%F %T' 1'
+alias cp='cp -i'
+alias rm='rm -i'
+alias mkdir='mkdir -p'
+alias ..='c ../'
+alias back='pushd'
+alias diff='diff -U1'
 #
 # OBSOLETE
 # Pangaea rev.2, and rev.3
