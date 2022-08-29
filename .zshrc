@@ -77,7 +77,7 @@ alias cdd='cd desktop'
 #alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
 # Pangaea c1.1 with QMK latest Aug 29. 0.18.1
 QMK='0829'
-QMK_HOME='$HOME/src/0829'
+QMK_HOME='Users/k/src/0829'
 alias pC1='cd   $QMK_HOME/qmk_firmware;pwd'
 alias pcd="cd   $QMK_HOME/qmk_firmware/keyboards/pangaea"
 alias pe="vi    $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
