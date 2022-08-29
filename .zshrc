@@ -10,6 +10,17 @@
 # ctrl+u: delete the whole line
 # ctrl+k: delete text to the end of line
 
+# To avoid logot with Ctrl+D
+#setopt IGNOREEOF
+# Use Japanese
+#export LANG=ja_JP.UTF-8
+# To add local path
+export PATH="$HOME/bin:$PATH"
+# Share history with other terminal
+setopt share_history
+# do not display history overlaps
+setopt histignorealldups
+#
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
