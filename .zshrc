@@ -76,7 +76,6 @@ alias cdd='cd desktop'
 #alias pf='pC1;qmk flash -kb pangaea -km default'
 #alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
 # Pangaea c1.1 with QMK latest Aug 29. 0.18.1
-QMK='0829'
 QMK_HOME='/Users/k/src/0829'
 alias pC1='cd   $QMK_HOME/qmk_firmware;pwd'
 alias pcd="cd   $QMK_HOME/qmk_firmware/keyboards/pangaea"
@@ -87,7 +86,6 @@ alias perr="vi  $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/rules.m
 alias pep="vi   $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
 alias pc='pC1;qmk compile -kb pangaea -km default'
 alias pf='pC1;qmk flash -kb pangaea -km default'
-alias kmap='cat $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
 #
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 #alias kasumic='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
