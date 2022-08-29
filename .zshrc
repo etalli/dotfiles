@@ -20,9 +20,7 @@ export PATH="$HOME/bin:$PATH"
 setopt share_history
 # do not display history overlaps
 setopt histignorealldups
-
 alias h='fc -lt '%F %T' 1'
-
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
@@ -79,7 +77,7 @@ alias cdd='cd desktop'
 #alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
 # Pangaea c1.1 with QMK latest Aug 29. 0.18.1
 QMK='0829'
-alias pC1='cd $HOME/src/0829/qmk_firmware;pwd'
+alias pC1='cd $HOME/src/$QMK/qmk_firmware;pwd'
 alias pe="vi /Users/k/src/0829/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 alias pw="wc -l /Users/k/src/0829/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 alias per="vi /Users/k/src/0829/qmk_firmware/keyboards/pangaea/rules.mk"
