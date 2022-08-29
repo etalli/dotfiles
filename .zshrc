@@ -50,7 +50,7 @@ alias h='fc -lt '%F %T' 1'
 alias cp='cp -i'
 alias rm='rm -i'
 alias mkdir='mkdir -p'
-alias ..='c ../'
+alias ..='cd ../'
 alias back='pushd'
 alias diff='diff -U1'
 #
