@@ -78,7 +78,7 @@ alias cdd='cd desktop'
 # Pangaea c1.1 with QMK latest Aug 29. 0.18.1
 QMK='0829'
 alias pC1='cd $HOME/src/$QMK/qmk_firmware;pwd'
-alias pe="vi /Users/k/src/0829/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
+alias pe="vi $HOME/src/0829/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 alias pw="wc -l /Users/k/src/0829/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 alias per="vi /Users/k/src/0829/qmk_firmware/keyboards/pangaea/rules.mk"
 alias perr="vi /Users/k/src/0829/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
