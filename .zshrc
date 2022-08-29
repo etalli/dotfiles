@@ -53,6 +53,17 @@ alias mkdir='mkdir -p'
 alias ..='cd ../'
 alias back='pushd'
 alias diff='diff -U1'
+
+alias -g L='| less'
+alias -g H='| head'
+alias -g G='| grep'
+alias -g GI='| grep -ri'
+
+# エイリアス
+alias lst='ls -ltr --color=auto'
+alias l='ls -ltr --color=auto'
+alias la='ls -la --color=auto'
+alias ll='ls -l --color=auto'
 #
 # OBSOLETE
 # Pangaea rev.2, and rev.3
