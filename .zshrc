@@ -75,16 +75,19 @@ alias cdd='cd desktop'
 #alias pc='pC1;qmk compile -kb pangaea -km default'
 #alias pf='pC1;qmk flash -kb pangaea -km default'
 #alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
-# Pangaea c1.1 with QMK latest Aug 29. 0.18.1
-QMK_HOME='/Users/k/src/0829'
+#
+#
+# Pangaea 1.1 with QMK latest Aug 29. 0.18.1
+QMK_HOME='/Users/k/src/0829/qmk_firmware'
 alias cdq='cd $QMK_HOME'
-alias pcd="cd   $QMK_HOME/qmk_firmware/keyboards/pangaea"
-alias pe="vi    $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
-alias per="vi   $QMK_HOME/qmk_firmware/keyboards/pangaea/rules.mk"
-alias perr="vi  $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
-alias pep="vi   $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
-alias pc='cd $QMK_HOME/qmk_firmware;qmk compile -kb pangaea -km default'
-alias pf='cd $QMK_HOME/qmk_firmware;qmk flash -kb pangaea -km default'
+alias pcd="cd  $QMK_HOME/keyboards/pangaea"
+alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
+alias pe="vi   $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
+alias perr="vi $QMK_HOME/keyboards/pangaea/keymaps/default/rules.mk"
+alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/p.h"
+alias pc='cd $QMK_HOME;qmk compile -kb pangaea -km default'
+alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km default'
+#
 #
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 #alias kasumic='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
