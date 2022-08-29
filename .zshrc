@@ -20,7 +20,9 @@ export PATH="$HOME/bin:$PATH"
 setopt share_history
 # do not display history overlaps
 setopt histignorealldups
-#
+
+alias h='fc -lt '%F %T' 1'
+
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
