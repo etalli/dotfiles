@@ -84,7 +84,8 @@ alias pw="wc -l $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.
 alias per="vi   $QMK_HOME/qmk_firmware/keyboards/pangaea/rules.mk"
 alias perr="vi  $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
 alias pep="vi   $QMK_HOME/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
-alias pc='pC1;qmk compile -kb pangaea -km default'
+#alias pc='pC1;qmk compile -kb pangaea -km default'
+alias pc='cd $QMK_HOME/qmk_firmware;qmk compile -kb pangaea -km default'
 alias pf='pC1;qmk flash -kb pangaea -km default'
 #
 ## kasumigasane 4x4 Macropad without diode by e3w2q
