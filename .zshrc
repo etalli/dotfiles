@@ -56,12 +56,11 @@ alias mkdir='mkdir -p'
 alias ..='cd ../'
 alias back='pushd'
 alias diff='diff -U1'
-
+# Global Alias
 alias -g L='| less'
 alias -g H='| head'
 alias -g G='| grep'
 alias -g GI='| grep -ri'
-
 #
 # OBSOLETE
 # Pangaea rev.2, and rev.3
