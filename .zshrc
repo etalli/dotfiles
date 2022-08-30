@@ -108,7 +108,7 @@ alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
 alias pe="vi   $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
 alias perr="vi $QMK_HOME/keyboards/pangaea/keymaps/default/rules.mk"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/p.h"
-alias pc='cd $QMK_HOME;qmk compile -kb pangaea -km default'
+alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 #
 #
