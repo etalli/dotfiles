@@ -1,4 +1,4 @@
-# Rev.0.07
+# Rev.0.08
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
@@ -10,17 +10,17 @@
 # ctrl+u: delete the whole line
 # ctrl+k: delete text to the end of line
 
-# To avoid logot with Ctrl+D
+# avoid logot with Ctrl+D
 #setopt IGNOREEOF
 # Use Japanese
 #export LANG=ja_JP.UTF-8
-# To add local path
+# aadd local path
 export PATH="$HOME/bin:$PATH"
 # Share history with other terminal
 setopt share_history
 # do not display history overlaps
 setopt histignorealldups
-alias h='fc -lt '%F %T' 1'
+#
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
@@ -51,8 +51,9 @@ PROMPT='[%W %T %d] % '
 # add  the stdlib to your $LIBRARY_PAT to avoid this error: "ld: library not found for -lSystem"
 export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
 #
-alias ls='ls -aF'
+alias h='fc -lt '%F %T' 1'
 alias l='ls -ltr --color=auto'
+alias ls='ls -aF'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias lst='ls -ltr --color=auto'
@@ -104,8 +105,8 @@ alias -g GI='| grep -ri'
 QMK_HOME='/Users/k/src/0829/qmk_firmware'
 alias cdq='cd $QMK_HOME'
 alias pcd="cd  $QMK_HOME/keyboards/pangaea"
-alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
 alias pe="vi   $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
+alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
 alias perr="vi $QMK_HOME/keyboards/pangaea/keymaps/default/rules.mk"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/p.h"
 alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
