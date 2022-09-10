@@ -165,7 +165,6 @@ alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 alias www='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
 alias gmail='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
-alias sk='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/smallkeyboard/blob/main/00README.md'
 ##
 function mkcd(){mkdir -p $1 && cd $1}
 #
