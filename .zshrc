@@ -220,3 +220,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+#
+alias d='du -h -d=1'
