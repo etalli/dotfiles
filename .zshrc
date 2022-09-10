@@ -165,7 +165,6 @@ alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 alias www='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
 alias gmail='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
-alias gnews='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://news.google.com/'
 alias sk='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/smallkeyboard/blob/main/00README.md'
 ##
 function mkcd(){mkdir -p $1 && cd $1}
@@ -173,7 +172,6 @@ function mkcd(){mkdir -p $1 && cd $1}
 source /Users/k/zsh_plugin/zaw/zaw.zsh
 #
 alias upd='git add images/*;git commit -m logic 00README.md images/* ;gp;sk'
-
 
 #git remote add origon git@githubm.com:etalli/git-app.git
 #
