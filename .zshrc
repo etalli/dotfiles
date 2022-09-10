@@ -94,6 +94,7 @@ alias -g GI='| grep -ri'
 #alias pw="wc -l /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
 #alias per="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/rules.mk"
 #alias perr="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
+#alias pec="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/config.h"
 #alias pcd="cd /Users/k/src/0518/qmk_firmware/keyboards/pangaea"
 #alias pep="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
 #alias pc='pC1;qmk compile -kb pangaea -km default'
