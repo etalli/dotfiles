@@ -73,37 +73,11 @@ alias -g H='| head'
 alias -g G='| grep'
 alias -g GI='| grep -ri'
 #
-# OBSOLETE
-# Pangaea rev.2, and rev.3
-#alias pCD='cd $HOME/src/1004/qmk_firmware'
-#alias pe="vi +46 /Users/k/src/1004/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
-#alias pc='pCD;make pangaea:default'
-#alias pcr3='pCD;make pangaea:rev3'
-#alias pf='pCD;qmk flash -kb pangaea -km default'
-#
-# Pangaea v1.1(rev.0417, May 2,2022)
-#alias pC11='cd $HOME/src/0502/qmk_firmware;pwd'
-#alias pe11="vi /Users/k/src/0502/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
-#alias per11="vi /Users/k/src/0502/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
-#alias pCD11="cd /Users/k/src/0502/qmk_firmware/keyboards/pangaea"
-#alias pep11="vi /Users/k/src/0502/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
-#alias pc11='pC11;qmk compile -kb pangaea -km default'
-#alias pf11='alias pf11;echo "   ";pC11;qmk flash -kb pangaea -km default'
-#
-# Pangaea v1.1. with QMK latest 0.16.9
-#alias pC1='cd $HOME/src/0518/qmk_firmware;pwd'
-#alias pe="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
-#alias pw="wc -l /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c"
-#alias per="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/rules.mk"
-#alias perr="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/rules.mk"
-#alias pcd="cd /Users/k/src/0518/qmk_firmware/keyboards/pangaea"
-#alias pep="vi /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/p.h"
-#alias pc='pC1;qmk compile -kb pangaea -km default'
-#alias pf='pC1;qmk flash -kb pangaea -km default'
-#alias kmap='cat /Users/k/src/0518/qmk_firmware/keyboards/pangaea/keymaps/default/keymap.c | head -n 180 | tail -n 30'
-#
 #
 # Pangaea 1.1 with QMK latest Aug 29. 0.18.1
+#alias pCD='cd $HOME/src/1004/qmk_firmware'## rev.2 and rev.3
+#QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev0417, May2, 2022
+#QMK_HOME='/Users/k/src/0518/qmk_firmware' ## v1.1 wit QMK 0.16.9
 QMK_HOME='/Users/k/src/0829/qmk_firmware'
 alias cdq='cd $QMK_HOME'
 alias pcd="cd  $QMK_HOME/keyboards/pangaea"
@@ -118,7 +92,6 @@ alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/p.h"
 alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 #
-#
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 #alias kasumic='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
 #alias kasumie='vi /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
@@ -128,7 +101,6 @@ alias kasumie='vi /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/
 alias kasumib='kasumicd;qmk compile -kb kasumigasane -km default'
 alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 ###
-### my4pad my4pad with RP2040, it works fine [Aug 13,2022]
 ### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
 # qmk develop branch
 alias qmkd='git clone -b develop https://github.com/qmk/qmk_firmware.git'
