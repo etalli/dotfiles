@@ -95,7 +95,7 @@ alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
 alias pzip='pcd;cd ../;zip -r pangaea.zip $QMK_HOME/keyboards/pangaea -x \*/.git/\*;mv pangaea.zip $HOME/src/'
-#
+####
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 #alias kasumic='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
 #alias kasumie='vi /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
@@ -105,47 +105,37 @@ alias kasumie='vi /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/
 alias kasumib='kasumicd;qmk compile -kb kasumigasane -km default'
 alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
 ###
-### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
-# qmk develop branch
-#alias qmkdevelop='git clone -b develop https://github.com/qmk/qmk_firmware.git'
-#alias my4padc='cd /Users/k/src/0812/qmk_firmware/keyboards/my4pad/'
-#alias my4pade='vi /Users/k/src/0812/qmk_firmware/keyboards/my4pad/keymaps/default/keymap.c'
-#alias my4padb='my4padc;qmk compile -kb my4pad -km default;cd ../../'
-#alias my4padbl='qmk compile -kb my4pad -km default'
-#alias my4padp='my4padc;qmk flash -kb my4pad -km default;cd ../../'
-#
 #### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
+#MY4PAD_HOME='/Users/k/src/0812/qmk_firmware/keyboards/my4pad/' # Aug, 2022, 0812 version.
 MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
 alias my4padcd='cd $MY4PAD_HOME/'
 alias my4pade='vi $MY4PAD_HOME/keymaps/default/keymap.c'
 alias my4padc='my4padcd;qmk compile -kb my4pad -km default;cd ../../'
 alias my4padp='my4padcd;qmk flash -kb my4pad -km default;cd ../../'
-#
+####
 # 2x2 by k2.
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
 alias 2cd='cd /Users/k/src/1004/qmk_firmware/'
 alias 2f='2cd;qmk flash -kb 2x2 -km default'
-
+###
 # a_dux // March 2022, obsolete.
 alias axhome='cd /Users/k/src/0325/qmk_firmware'
 alias axcd='cd /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default'
 alias axe='vi /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default/keymap.c'
 alias axf='aduxcd;make a_dux:default:avrdude-split-left'
 alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
-
+###
 # edit zshrc
 alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
-
 # misc
 alias gitclonep='git clone ssh://github.com/etalli/keyboard.git'
 alias glqmk='git clone https://github.com/qmk/qmk_firmware.git'
 alias cd128='cd ~/Dropbox/MyProjects/128_myKBD'
 alias finder='open'
 alias here='open .'
-
 # git alias commands
 alias grv='git remote -v'
 alias gr='git remote'
@@ -157,7 +147,6 @@ alias ga='git add .'
 alias bbb='git add $1'
 alias bbb1='git commit -m "default" $1'
 alias bbb2='git push;web https://github.com/etalli/SmallKey/blob/main/README.md'
-#
 alias gitls="alias | grep git"
 alias gc="git checkout"
 alias gcd="git checkout develop"
@@ -166,7 +155,6 @@ alias gpm="git push origin master"
 alias grm="git rm --cached"
 alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
-
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "ok" .zshrc;git push'
 alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
@@ -176,7 +164,8 @@ alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 alias www='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
 alias gmail='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
-##
+alias d='du -h -d=1'
+#
 function mkcd(){mkdir -p $1 && cd $1}
 #
 source /Users/k/zsh_plugin/zaw/zaw.zsh
@@ -202,5 +191,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-#
-alias d='du -h -d=1'
