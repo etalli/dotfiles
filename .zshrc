@@ -94,7 +94,7 @@ alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/p.h"
 alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
-alias pzip='pcd;cd ../;zip -r pangaea.zip $QMK_HOME/keyboards/pangaea -x \*/.git/\*;mv pangaea.zip $HOME/src/;echo "check src"'
+alias pzip='pcd;cd ../;zip -r pangaea.zip pangaea -x \*/.git/\*;mv pangaea.zip $HOME/src/;echo "check src"'
 ####
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 #alias kasumic='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
