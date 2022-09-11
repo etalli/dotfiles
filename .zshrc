@@ -79,6 +79,7 @@ alias -g GI='| grep -ri'
 #QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev0417, May2, 2022
 #QMK_HOME='/Users/k/src/0518/qmk_firmware' ## v1.1 wit QMK 0.16.9
 QMK_HOME='/Users/k/src/0829/qmk_firmware'
+PANGAEA_HOME='$QMK_HOME/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pcd="cd  $QMK_HOME/keyboards/pangaea"
 alias pcdd="cd $QMK_HOME/keyboards/pangaea/keymaps/default/"
@@ -92,6 +93,7 @@ alias pecc="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/p.h"
 alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km default'
+# Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
 alias pzip='pcd;cd ../;zip -r pangaea.zip $QMK_HOME/keyboards/pangaea -x \*/.git/\*;mv pangaea.zip $HOME/src/'
 #
 ## kasumigasane 4x4 Macropad without diode by e3w2q
