@@ -45,7 +45,7 @@ compinit
 # prompt
 autoload colors
 colors
-PROMPT='[%c] % '
+PROMPT='[%T %c] % '
 #PROMPT='[%W %T %d] % '
 #
 # gfortran
