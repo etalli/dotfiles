@@ -45,8 +45,8 @@ compinit
 # prompt
 autoload colors
 colors
-PROMPT='[%T %~] % '
-#PROMPT='[%W %T %~] % '
+#PROMPT='[%T %~] % '
+PROMPT="%{${fg[blue]}%}%n:%{${reset_color}%} %c/ %# "
 #
 # gfortran
 # add  the stdlib to your $LIBRARY_PAT to avoid this error: "ld: library not found for -lSystem"
