@@ -101,7 +101,7 @@ alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
 alias pzip='pcd;cd ../;zip -r pangaea.zip pangaea -x \*/.git/\* pangaea/keymaps/default/p.h;mv pangaea.zip $HOME/src/;echo "check src"'
-alias ptar='pcd;cd ../;tar --exclude pangaea/.git -zxvf `date +%Y%m%d-%H%M-pangaea`.tar.gz $PANGAEA_HOME; ls *.tar.gz'
+alias ptar='pcd;cd ../;tar --exclude pangaea/.git -zcvf `date +%Y%m%d-%H%M-pangaea`.tar.gz $PANGAEA_HOME; ls *.tar.gz'
 #alias ptar='pcd;cd ../;tar --exclude pangaea/.git -zxvf `date +%Y%m%d-%H%M-pangaea`.tar.gz $PANGAEA_HOME;mv *.tar.gz ~/src/backup'
 alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
 ####
