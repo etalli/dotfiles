@@ -36,7 +36,7 @@ setopt auto_pushd
 # pushdから重複を削除
 setopt pushd_ignore_dups
 # コマンドミスを修正
-setopt correct
+#setopt correct
 #
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
@@ -75,14 +75,16 @@ alias -g G='| grep'
 alias -g GI='| grep -ri'
 #
 #
+export EDITOR=code
+#export EDITOR=vim
+#
 # Pangaea 1.1 with QMK latest Aug 29. 0.18.1
 #alias pCD='cd $HOME/src/1004/qmk_firmware'## rev.2 and rev.3
-#QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev0417, May2, 2022
-#QMK_HOME='/Users/k/src/0518/qmk_firmware' ## v1.1 wit QMK 0.16.9
+#QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev 0417, May2, 2022
+#QMK_HOME='/Users/k/src/0518/qmk_firmware' ## rev 1.1 wit QMK 0.16.9
 QMK_HOME='/Users/k/src/0829/qmk_firmware'
 #QMK_HOME='/Users/k/src/0915/qmk_firmware'
 PANGAEA_HOME='/Users/k/src/0829/qmk_firmware/keyboards/pangaea/'
-EDITOR='code'
 alias cdq='cd $QMK_HOME'
 alias pcd="cd  $QMK_HOME/keyboards/pangaea"
 alias pcdd="cd $QMK_HOME/keyboards/pangaea/keymaps/default/"
