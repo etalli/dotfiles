@@ -80,10 +80,10 @@ export EDITOR=code
 #
 # Pangaea 1.1 with QMK latest Aug 29. 0.18.1
 #alias pCD='cd $HOME/src/1004/qmk_firmware'## rev.2 and rev.3
-#QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev 0417, May2, 2022
+QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev 0417, May2, 2022
 #QMK_HOME='/Users/k/src/0518/qmk_firmware' ## rev 1.1 wit QMK 0.16.9
 #QMK_HOME='/Users/k/src/0829/qmk_firmware'
-QMK_HOME='/Users/k/src/0918/qmk_firmware'
+#QMK_HOME='/Users/k/src/0918/qmk_firmware' # LATEST
 PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pcd="cd  $QMK_HOME/keyboards/pangaea"
