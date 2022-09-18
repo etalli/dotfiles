@@ -140,10 +140,11 @@ alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
 # misc
 alias gitclonep='git clone ssh://github.com/etalli/keyboard.git'
-alias glqmk='git clone https://github.com/qmk/qmk_firmware.git'
+alias glqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias cd128='cd ~/Dropbox/MyProjects/128_myKBD'
 alias finder='open'
-alias here='open .'
+alias nfw='open .'
+#
 # git alias commands
 alias grv='git remote -v'
 alias gr='git remote'
