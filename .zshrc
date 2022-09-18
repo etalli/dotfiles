@@ -85,6 +85,7 @@ export EDITOR=code
 #QMK_HOME='/Users/k/src/0829/qmk_firmware'
 QMK_HOME='/Users/k/src/0918/qmk_firmware'
 PANGAEA_HOME='/Users/k/src/0918/qmk_firmware/keyboards/pangaea/'
+PP_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pcd="cd  $QMK_HOME/keyboards/pangaea"
 alias pcdd="cd $QMK_HOME/keyboards/pangaea/keymaps/default/"
