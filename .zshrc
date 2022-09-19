@@ -113,7 +113,7 @@ alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
 #alias kasumib='kasumic;qmk compile -kb kasumigasane -km default'
 #alias kasumip='kasumic;qmk flash -kb kasumigasane -km default'
 ###
-KASUMI_HOME'/keyboards/kasumigasane/'
+KASUMI_HOME=$QMK_HOME'/keyboards/kasumigasane/'
 alias kcd='cd $KASUMI_HOME/keymaps/default'
 alias ke='vi $KASUMI_HOME/keymaps/default/keymap.c'
 alias kc='kcd;qmk compile -kb kasumigasane -km default'
