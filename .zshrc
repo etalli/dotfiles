@@ -108,11 +108,17 @@ alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
 #alias kasumic='cd /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default '
 #alias kasumie='vi /Users/k/src/1004/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
 #alias kasumip='kasumicd;qmk flash -kb kasumigasane -km default'
-alias kasumic='cd /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default '
-alias kasumie='vi /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
-alias kasumib='kasumic;qmk compile -kb kasumigasane -km default'
-alias kasumip='kasumic;qmk flash -kb kasumigasane -km default'
+#alias kasumic='cd /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default '
+#alias kasumie='vi /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
+#alias kasumib='kasumic;qmk compile -kb kasumigasane -km default'
+#alias kasumip='kasumic;qmk flash -kb kasumigasane -km default'
 ###
+KASUMI_HOME'/keyboards/kasumigasane/'
+alias kcd='cd $KASUMI_HOME/keymaps/default'
+alias ke='vi $KASUMI_HOME/keymaps/default/keymap.c'
+alias kc='kcd;qmk compile -kb kasumigasane -km default'
+alias kp='kcd;qmk flash -kb kasumigasane -km default'
+
 #### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
 #MY4PAD_HOME='/Users/k/src/0812/qmk_firmware/keyboards/my4pad/' # Aug, 2022, 0812 version.
 MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
