@@ -208,6 +208,6 @@ unset __conda_setup
 # conda config --set auto_activate_base False
 
 ### rust
-alias rcf='cargo fmt --check --verbose'
-alias rcb='cargo build'
-alias rcc='cargo clippy'
+alias cf='cargo fmt --check --verbose'
+alias cb='cargo build'
+alias cc='cargo clippy'
