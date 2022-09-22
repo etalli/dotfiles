@@ -206,3 +206,8 @@ unset __conda_setup
 # how to remove (base) on prompt
 # conda deactivate
 # conda config --set auto_activate_base False
+
+### rust
+alias rcf='cargo fmt --check --verbose'
+alias rcb='cargo build'
+alias rcc='cargo clippy'
