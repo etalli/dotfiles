@@ -83,9 +83,10 @@ export EDITOR=code
 #QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev 0417, May2, 2022
 #QMK_HOME='/Users/k/src/0518/qmk_firmware' ## rev 1.1 wit QMK 0.16.9
 #QMK_HOME='/Users/k/src/0829/qmk_firmware'
-#QMK_HOME='/Users/k/src/0918/qmk_firmware' # LATEST, 9/18
-export QMK_HOME='/Users/k/src/0923/qmk_firmware' # LATEST, 9/23
+export QMK_HOME='/Users/k/src/0918/qmk_firmware' # LATEST, 9/18
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
+#export QMK_HOME='/Users/k/src/0923/qmk_firmware' # LATEST, 9/23
+
 alias cdq='cd $QMK_HOME'
 alias pcd="cd  $QMK_HOME/keyboards/pangaea"
 alias pcdd="cd $QMK_HOME/keyboards/pangaea/keymaps/default/"
