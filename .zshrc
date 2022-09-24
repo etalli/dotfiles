@@ -181,7 +181,7 @@ alias d='du -h -d=1'
 #
 function mkcd(){mkdir -p $1 && cd $1}
 #
-source /Users/k/zsh_plugin/zaw/zaw.zsh
+#source /Users/k/zsh_plugin/zaw/zaw.zsh
 #
 alias upd='git add images/*;git commit -m logic 00README.md images/* ;gp;sk'
 
