@@ -54,7 +54,7 @@ export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacO
 #
 alias h='fc -lt '%F %T' 1'
 alias l='ls -ltr --color=auto'
-alias ls='ls -aF'
+alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias lst='ls -ltr --color=auto'
