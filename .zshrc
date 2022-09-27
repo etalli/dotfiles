@@ -119,8 +119,8 @@ alias kp='kcd;qmk flash -kb kasumigasane -km default'
 
 #### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
 #MY4PAD_HOME='/Users/k/src/0812/qmk_firmware/keyboards/my4pad/' # Aug, 2022, 0812 version.
-#MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
-export MY4PAD_HOME=$QMK_HOME'/keyboards/my4pad/'
+MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
+#export MY4PAD_HOME=$QMK_HOME'/keyboards/my4pad/'
 alias my4padcd='cd $MY4PAD_HOME/'
 alias my4pade='vi $MY4PAD_HOME/keymaps/default/keymap.c'
 alias my4padec='vi $MY4PAD_HOME/config.h'
