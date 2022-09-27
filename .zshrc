@@ -127,7 +127,7 @@ alias my4padec='vi $MY4PAD_HOME/config.h'
 alias my4padecc='vi $MY4PAD_HOME/keymaps/default/config.h'
 alias my4padc='my4padcd;qmk compile -kb my4pad -km default;cd ../../'
 alias my4padp='my4padcd;qmk flash -kb my4pad -km default;cd ../../'
-alias my4padzip='my4padcd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/default/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
+alias my4padzip='my4padcd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
 ####
 # 2x2 by k2.
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
