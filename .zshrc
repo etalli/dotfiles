@@ -1,4 +1,4 @@
-# Rev.0.08
+# Rev.0.09
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
@@ -29,13 +29,9 @@ setopt hist_ignore_dups
 setopt hist_ignore_all_dups
 setopt hist_no_store
 function h-all { history -E 1}
-# cdコマンドを省略して、ディレクトリ名のみの入力で移動
-setopt auto_cd
-# 自動でpushdを実行
+#setopt auto_cd
 setopt auto_pushd
-# pushdから重複を削除
 setopt pushd_ignore_dups
-# コマンドミスを修正
 #setopt correct
 #
 # Complement: Tab, Ctrl-i, Ctrl-d
