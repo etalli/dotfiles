@@ -213,3 +213,6 @@ unset __conda_setup
 alias cf='cargo fmt --check --verbose'
 alias cb='cargo build'
 alias cc='cargo clippy'
+# restart shell without restating the terminal
+alias relogin='exec $SHELL -l'
+alias rss='exec $SHELL -l'
