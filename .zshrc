@@ -217,3 +217,4 @@ alias cc='cargo clippy'
 # restart shell without restating the terminal
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
+eval "$(pyenv init -)"
