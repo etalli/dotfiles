@@ -209,6 +209,7 @@ unset __conda_setup
 # conda config --set auto_activate_base False
 
 ### rust
+export PATH="HOME/.cargo/bin/:$PATH"
 alias cf='cargo fmt --check --verbose'
 alias cb='cargo build'
 alias cc='cargo clippy'
@@ -216,4 +217,3 @@ alias cc='cargo clippy'
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
-export PATH="HOME/.cargo/bin/:$PATH"
