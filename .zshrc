@@ -216,3 +216,4 @@ alias cc='cargo clippy'
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
+export PATH="HOME/.cargo/bin/:$PATH"
