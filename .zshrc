@@ -83,6 +83,7 @@ export QMK_HOME='/Users/k/src/1115/qmk_firmware' # LATEST, 11/15
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pe="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
+alias peD="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c" # 4 default
 alias pev="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
 alias pcd='cd  $QMK_HOME/keyboards/pangaea;echo QMK_HOME is $QMK_HOME'
 alias pcdd="cd $QMK_HOME/keyboards/pangaea/keymaps/k2/;pwd"
@@ -94,7 +95,7 @@ alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
 alias pecc="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
 alias pc='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2'
-alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
+alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default' # 4 default
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
 alias pzip='pcd;cd ../;zip -r pangaea.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv pangaea.zip $HOME/src/;echo "check src"'
