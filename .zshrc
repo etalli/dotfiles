@@ -101,6 +101,7 @@ alias pc='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2'
 #
 alias gw='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window http://www.asahi.com/'
 alias chrome='open -na "Google Chrome" --args'
+alias test1='chrome https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video'
 #
 alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default' # 4 default
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
