@@ -100,7 +100,7 @@ alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
 alias pc='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2'
 #
 alias gw='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/'
-alias gw2='/Applications/Safari https://github.com/etalli/'
+alias gw2='open -a Safari https://github.com/etalli/'
 #
 alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default' # 4 default
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
