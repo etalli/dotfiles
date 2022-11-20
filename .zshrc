@@ -99,7 +99,7 @@ alias peccD="vi $QMK_HOME/keyboards/pangaea/keymaps/default/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
 alias pc='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2'
 #
-alias gw='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/'
+alias gw='open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/'
 alias gw2='open -a Safari https://github.com/etalli/'
 #
 alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default' # 4 default
