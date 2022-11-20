@@ -99,10 +99,9 @@ alias peccD="vi $QMK_HOME/keyboards/pangaea/keymaps/default/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
 alias pc='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2'
 # Web Browser
-alias gw='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window http://www.asahi.com/'
 alias chrome='open -na "Google Chrome" --args'
 alias chromenw='open -na "Google Chrome" --args --new-window'
-alias amazonvideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
+alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
 #
 alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default' # 4 default
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
