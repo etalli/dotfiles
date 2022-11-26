@@ -83,6 +83,7 @@ export QMK_HOME='/Users/k/src/1115/qmk_firmware' # LATEST, 11/15
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pe="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
+alias peh="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/pangaea.h"
 alias pev="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
 alias pevD="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
 alias pcd='cd  $QMK_HOME/keyboards/pangaea;echo QMK_HOME is $QMK_HOME'
