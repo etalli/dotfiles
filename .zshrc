@@ -100,7 +100,7 @@ alias pc='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
 # Pangaea default keymap
 alias peD="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
-alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
+alias pcD='alias pcD;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pfD='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
 alias pzip='pcd;cd ../;zip -r pangaea.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv pangaea.zip $HOME/src/;echo "check src"'
