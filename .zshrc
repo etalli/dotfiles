@@ -166,6 +166,7 @@ alias f3p='find . -atime +3' # three days before
 alias f10='find . -atime -10' # within 10 days
 alias ft='find . -mtime 0' # today
 alias f0='find . -mtime 0' # today
+alias gg='chromenw https://github.com/etalli/p_tmp3'
 #
 # git alias commands
 alias grv='git remote -v'
