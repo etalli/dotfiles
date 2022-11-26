@@ -164,7 +164,7 @@ alias f2='find . -atime 2'
 alias f1='find . -atime 1'
 alias f3p='find . -atime +3' # three days before
 alias f10='find . -atime -10' # within 10 days
-alias ft='find -mtime 0' # today
+alias ft='find . -mtime 0' # today
 #
 # git alias commands
 alias grv='git remote -v'
