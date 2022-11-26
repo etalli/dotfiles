@@ -158,6 +158,7 @@ alias glqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias cd128='cd ~/Dropbox/MyProjects/128_myKBD'
 alias finder='open'
 alias nfw='open .'
+alias f='find . -name'
 #
 # git alias commands
 alias grv='git remote -v'
