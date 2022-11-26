@@ -83,7 +83,6 @@ export QMK_HOME='/Users/k/src/1115/qmk_firmware' # LATEST, 11/15
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pe="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
-alias peD="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c" # 4 default
 alias pev="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
 alias pevD="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
 alias pcd='cd  $QMK_HOME/keyboards/pangaea;echo QMK_HOME is $QMK_HOME'
@@ -98,13 +97,10 @@ alias pecc="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/config.h"
 alias peccD="vi $QMK_HOME/keyboards/pangaea/keymaps/default/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
 alias pc='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2'
-# Web Browser
-alias chrome='open -na "Google Chrome" --args'
-alias chromenw='open -na "Google Chrome" --args --new-window'
-alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
-#
-alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default' # 4 default
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
+# Pangaea default keymap
+alias peD="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
+alias pcD='alias pc;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
 alias pfD='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
 alias pzip='pcd;cd ../;zip -r pangaea.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv pangaea.zip $HOME/src/;echo "check src"'
@@ -121,6 +117,11 @@ alias kcd='cd $KASUMI_HOME/keymaps/default'
 alias ke='vi $KASUMI_HOME/keymaps/default/keymap.c'
 alias kc='kcd;qmk compile -kb kasumigasane -km default'
 alias kp='kcd;qmk flash -kb kasumigasane -km default'
+
+# Web Browser
+alias chrome='open -na "Google Chrome" --args'
+alias chromenw='open -na "Google Chrome" --args --new-window'
+alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
 
 #### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
 #MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
