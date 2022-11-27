@@ -170,15 +170,27 @@ alias f0='find . -mtime 0' # today
 alias gg='chromenw https://github.com/etalli/p_tmp3'
 #
 # git alias commands
+#
+#…or create a new repository on the command line
+#echo "# p_tmp5" >> README.md
+#git init
+#git add README.md
+#git commit -m "first commit"
+#git branch -M main
+#git remote add origin git@github.com:etalli/p_tmp5.git
+#git push -u origin main
+#…or push an existing repository from the command line
+#git remote add origin git@github.com:etalli/p_tmp5.git
+#git branch -M main
+#git push -u origin main
+#
 alias grv='git remote -v'
 alias gr='git remote'
 alias grso='git remote show origin'
-alias gp='git push origin main'
+alias gp='git push -u origin main'
 alias gcm='git commit -m "now"'
 alias ga='git add .'
-alias bbb='git add $1'
-alias bbb1='git commit -m "default" $1'
-alias bbb2='git push;web https://github.com/etalli/SmallKey/blob/main/README.md'
+#
 alias gitls="alias | grep git"
 alias gc="git checkout"
 alias gcd="git checkout develop"
