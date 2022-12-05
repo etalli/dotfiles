@@ -1,13 +1,13 @@
-# my set up for MacOS
+# my set up for macos
 
 ## useful tools
 
-* Google Chrome - Web Browser
-* Homebrew - command line tool
+* google chrome - web browser
+* homebrew - command line tool
 * rectangles - arrange windows
-* iTerm - terminal software
-* Visual Source Code - Microsoft text editor
-* xcode - Apple development environment
+* iterm - terminal software
+* visual source code - microsoft text editor
+* xcode - apple development environment
 
 ## keyboard
 
@@ -15,9 +15,9 @@
 
 ## applications
 
-* Twitter
+* GitHub Desktop
+* twitter
 * Slack
 * Fusion 360
 * KiCAD
 * Microsoft Teams
-
