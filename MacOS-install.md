@@ -1,20 +1,23 @@
 # my set up for MacOS
 
-## Useful tools
+## useful tools
 
 * Google Chrome - Web Browser
 * Homebrew - command line tool
 * rectangles - arrange windows
 * iTerm - terminal software
-* Microsoft Visual Source Code - text editor
-* Apple xcode - development environment
+* Visual Source Code - Microsoft text editor
+* xcode - Apple development environment
 
 ## keyboard
+
 * qmk firmware
 
-## Other applixations
+## applications
 
-* KiCAD
+* Twitter
+* Slack
 * Fusion 360
-* Twitter client
-* Slack client
+* KiCAD
+* Microsoft Teams
+
