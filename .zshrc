@@ -187,9 +187,10 @@ alias gg='chromenw https://github.com/etalli/p_tmp3'
 alias grv='git remote -v'
 alias gr='git remote'
 alias grso='git remote show origin'
-alias gp='git push -u origin main'
-alias gcm='git commit -m "now"'
+#
 alias ga='git add .'
+alias gcm='git commit -m "now"'
+alias gp='git push -u origin main'
 #
 alias gitls="alias | grep git"
 alias gc="git checkout"
