@@ -176,7 +176,6 @@ alias grm="git rm --cached"
 alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
 #
-=======
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "ok" .zshrc;git push'
 alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
