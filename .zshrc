@@ -99,7 +99,7 @@ alias pfD='cd $QMK_HOME;qmk flash -kb pangaea -km default'
 alias pzip='pcd;cd ../;zip -r pangaea.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv pangaea.zip $HOME/src/;echo "check src"'
 alias ptar='pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -zcvf `date +%Y%m%d-%H%M-pangaea`.tar.gz $PANGAEA_HOME;ls -l *.tar.gz;mv *.tar.gz ~/src/backup'
 alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
-####
+##
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 #alias kasumic='cd /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default '
 #alias kasumie='vi /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
@@ -116,7 +116,7 @@ alias chrome='open -na "Google Chrome" --args'
 alias chromenw='open -na "Google Chrome" --args --new-window'
 alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
 
-#### my4pad my4pad with RP2040, it works fine [Aug 3,2022]
+## my4pad my4pad with RP2040, it works fine [Aug 3,2022]
 #MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
 MY4PAD_HOME='/Users/k/src/0927/qmk_firmware/keyboards/my4pad/'
 alias my4padcd='cd $MY4PAD_HOME/'
@@ -126,24 +126,16 @@ alias my4padecc='vi $MY4PAD_HOME/keymaps/default/config.h'
 alias my4padc='my4padcd;qmk compile -kb my4pad -km default;cd ../../'
 alias my4padp='my4padcd;qmk flash -kb my4pad -km default;cd ../../'
 alias my4padzip='my4padcd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
-####
+##
 # 2x2 by k2.
 alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
 alias 2cd='cd /Users/k/src/1004/qmk_firmware/'
 alias 2f='2cd;qmk flash -kb 2x2 -km default'
 ###
-# a_dux // March 2022, obsolete.
-alias axhome='cd /Users/k/src/0325/qmk_firmware'
-alias axcd='cd /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default'
-alias axe='vi /Users/k/src/0325/qmk_firmware/keyboards/a_dux/keymaps/default/keymap.c'
-alias axf='aduxcd;make a_dux:default:avrdude-split-left'
-alias axfr='aduxcd;make a_dux:default:avrdude-split-right'
-###
 # edit zshrc
 alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
-alias rz='source ~/.zshrc'
 # misc
 alias glqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias finder='open .'
@@ -183,12 +175,6 @@ alias gpm="git push origin master"
 alias grm="git rm --cached"
 alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
-#
-## dotfiles backup
-alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "ok" .zshrc;git push'
-alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
-alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
-alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/install.sh'
 #
 ## web sites
 alias www='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
