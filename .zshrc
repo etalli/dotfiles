@@ -1,4 +1,3 @@
-# Rev.0.09
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
@@ -10,13 +9,13 @@
 # ctrl+u: delete the whole line
 # ctrl+k: delete text to the end of line
 
-# avoid logot with Ctrl+D
-#setopt IGNOREEOF
-# Use Japanese
-#export LANG=ja_JP.UTF-8
+# avoid logout with Ctrl+D
+setopt IGNOREEOF
+# use Japanese
+export LANG=ja_JP.UTF-8
 # aadd local path
 export PATH="$HOME/bin:$PATH"
-# Share history with other terminal
+# share history with other terminal
 setopt share_history
 # do not display history overlaps
 setopt histignorealldups
@@ -29,32 +28,24 @@ setopt hist_ignore_dups
 setopt hist_ignore_all_dups
 setopt hist_no_store
 function h-all { history -E 1}
-#setopt auto_cd
 setopt auto_pushd
 setopt pushd_ignore_dups
-#setopt correct
 #
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
 compinit
-#
 # prompt
 autoload colors
 colors
-#PROMPT='[%T %~] % '
 PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 #
-# gfortran
-# add  the stdlib to your $LIBRARY_PAT to avoid this error: "ld: library not found for -lSystem"
-export LIBRARY_PATH="$LIBRARY_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
-#
-alias h='fc -lt '%F %T' 1'
 alias l='ls -ltr --color=auto'
 alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias lst='ls -ltr --color=auto'
 alias cdd='cd desktop'
+alias h='fc -lt '%F %T' 1'
 alias h='fc -lt '%F %T' 1'
 alias cp='cp -i'
 alias rm='rm -i'
@@ -69,7 +60,6 @@ alias -g L='| less'
 alias -g H='| head'
 alias -g G='| grep'
 alias -g GI='| grep -ri'
-#
 #
 export EDITOR=code
 #export EDITOR=vim
