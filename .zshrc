@@ -133,7 +133,7 @@ alias 2cd='cd /Users/k/src/1004/qmk_firmware/'
 alias 2f='2cd;qmk flash -kb 2x2 -km default'
 ###
 # edit zshrc
-alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;cd /etc/dotfiles'
+alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;cd ~/etc/dotfiles'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 # misc
