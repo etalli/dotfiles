@@ -167,10 +167,10 @@ alias f3p='find . -atime +3' # three days before
 alias f10='find . -atime -10' # within 10 days
 alias ft='find . -mtime 0' # today
 alias f0='find . -mtime 0' # today
-alias gg='chromenw https://github.com/etalli/p_tmp3'
 #
 # git alias commands
 #
+# GitHub
 #…or create a new repository on the command line
 #echo "# p_tmp5" >> README.md
 #git init
@@ -179,18 +179,14 @@ alias gg='chromenw https://github.com/etalli/p_tmp3'
 #git branch -M main
 #git remote add origin git@github.com:etalli/p_tmp5.git
 #git push -u origin main
-#…or push an existing repository from the command line
-#git remote add origin git@github.com:etalli/p_tmp5.git
-#git branch -M main
-#git push -u origin main
-#
-alias grv='git remote -v'
-alias gr='git remote'
-alias grso='git remote show origin'
 #
 alias ga='git add .'
 alias gcm='git commit -m "now"'
 alias gp='git push -u origin main'
+#
+alias grv='git remote -v'
+alias gr='git remote'
+alias grso='git remote show origin'
 #
 alias gitls="alias | grep git"
 alias gc="git checkout"
