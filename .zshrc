@@ -156,9 +156,7 @@ alias sz="source ~/.zshrc"
 alias rz='source ~/.zshrc'
 # misc
 alias glqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
-alias cd128='cd ~/Dropbox/MyProjects/128_myKBD'
-alias finder='open'
-alias nfw='open .'
+alias finder='open .'
 alias f='find . -name'
 alias f3='find . -atime 3'
 alias f2='find . -atime 2'
@@ -166,7 +164,6 @@ alias f1='find . -atime 1'
 alias f3p='find . -atime +3' # three days before
 alias f10='find . -atime -10' # within 10 days
 alias ft='find . -mtime 0' # today
-alias f0='find . -mtime 0' # today
 #
 # git alias commands
 #
@@ -196,27 +193,19 @@ alias gpm="git push origin master"
 alias grm="git rm --cached"
 alias gdn="git diff --name-only"
 alias grh="git reset --hard HEAD^"
+#
 ## dotfiles backup
 alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "ok" .zshrc;git push'
 alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
 alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
 alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/install.sh'
+#
 ## web sites
 alias www='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
 alias gmail='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
 alias d='du -h -d=1'
 #
-function mkcd(){mkdir -p $1 && cd $1}
-#
-#source /Users/k/zsh_plugin/zaw/zaw.zsh
-#
-alias upd='git add images/*;git commit -m logic 00README.md images/* ;gp;sk'
-
-#git remote add origon git@githubm.com:etalli/git-app.git
-#
-eval "$(pyenv init -)"
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/k/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
