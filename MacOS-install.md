@@ -15,7 +15,7 @@
 
 ## applications
 
-* [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/tag/v14.1.8)
+* [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
 * GitHub Desktop
 * twitter
 * Slack
