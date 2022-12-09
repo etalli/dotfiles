@@ -13,7 +13,6 @@
 
 * [QMK Firmware] (https://docs.qmk.fm/)
 
-
 ## applications
 
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
