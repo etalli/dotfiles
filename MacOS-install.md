@@ -2,16 +2,17 @@
 
 ## useful tools
 
-* google chrome - web browser
+* Chrome - Google web browser
 * homebrew - command line tool
-* rectangles - arrange windows
-* iterm - terminal software
-* visual source code - microsoft text editor
-* xcode - apple development environment
+* rectangles - window arrange tool
+* iterm - terminal
+* Visual Source Code - Microsoft text editor
+* xcode - Apple development environment
 
 ## keyboard
 
-* qmk firmware
+* [QMK Firmware] (https://docs.qmk.fm/)
+
 
 ## applications
 
