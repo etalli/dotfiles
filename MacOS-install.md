@@ -7,6 +7,12 @@
 * rectangles - window arrange tool
 * iterm - terminal
 * Visual Source Code - Microsoft text editor
+ - Markdown All in One
+ - Paste Image
+ - Draw.io Integration
+ - Prettier
+ - Markdown Preview Github Styling
+ - Git Graph
 * xcode - Apple development environment
 
 ## keyboard
