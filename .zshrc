@@ -182,7 +182,6 @@ alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
 alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/install.sh'
 #
->>>>>>> a02e882c6f510496eedddcf3cf1c95e988b74b02
 ## web sites
 alias www='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
