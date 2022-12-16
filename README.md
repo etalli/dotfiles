@@ -2,8 +2,10 @@
 
 my dot files and MacOS configuration memo
 
-## /users/k/src/dotfiles/
+## dot files
 * .zshrc
+* .bashrc
+* .bash_profile
 * .vimrc
 
 ##
