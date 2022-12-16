@@ -219,3 +219,4 @@ alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
 ### 
 alias glp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
+alias tt='cd ~/src/1216/qmk_firmware/'
