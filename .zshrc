@@ -120,7 +120,7 @@ alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=
 
 ## my4pad my4pad with RP2040, it works fine [Aug 3,2022]
 #MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
-MY4PAD_HOME='/Users/k/src/0927/qmk_firmware/keyboards/my4pad/'
+MY4PAD_HOME='/Users/k/src/1216/qmk_firmware/keyboards/my4pad/'
 alias my4padcd='cd $MY4PAD_HOME/'
 alias my4pade='vi $MY4PAD_HOME/keymaps/default/keymap.c'
 alias my4padec='vi $MY4PAD_HOME/config.h'
@@ -135,7 +135,7 @@ alias 2cd='cd /Users/k/src/1004/qmk_firmware/'
 alias 2f='2cd;qmk flash -kb 2x2 -km default'
 ###
 # edit zshrc
-alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;cd ~/etc/dotfiles'
+alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 # misc
