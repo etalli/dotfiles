@@ -1,28 +1,18 @@
 #!/bin/sh
 
-## ZSHRC
+## zshrc
 # make symbolic link
 ln -sf /Users/k/etc/dotfiles/.zshrc ~/.zshrc
-
 # check link
 ls -al ~/.zshrc
-
 # check file
 head ~/.zshrc
 
-
-## VIMRC
+## vimrc
 # make symbolic link
 ln -sf /Users/k/etc/dotfiles/.vimrc ~/.vimrc
 # check link
 ls -al ~/.vimrc
-
+# check file
 head ~/.vimrc
-
-
-## config
-# keep git password for a day.
-git config --global credential.helper cache 'cache --timeout=86400'
-#
-#gh auth login
 
