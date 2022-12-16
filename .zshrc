@@ -137,7 +137,7 @@ alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;cd ~/etc/dotfiles'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 # misc
-alias glqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
+alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias finder='open .'
 alias f='find . -name'
 alias f3='find . -atime 3'
@@ -182,7 +182,6 @@ alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
 alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/install.sh'
 #
->>>>>>> a02e882c6f510496eedddcf3cf1c95e988b74b02
 ## web sites
 alias www='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
@@ -220,3 +219,4 @@ alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
 ### 
 alias glp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
+alias tt='cd ~/src/1216/qmk_firmware/'
