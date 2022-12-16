@@ -137,7 +137,7 @@ alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;cd ~/etc/dotfiles'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 # misc
-alias glqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
+alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias finder='open .'
 alias f='find . -name'
 alias f3='find . -atime 3'
