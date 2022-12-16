@@ -1,17 +1,19 @@
-# my set up for MacOS
+# my configuraton for MacOS
 
-## useful tools
+## useful applications an tools
 
 * Chrome - Google web browser
 * homebrew - command line tool
 * rectangles - window arrange tool
 * iterm - terminal
 * Visual Source Code - Microsoft text editor
- - Markdown All in One
-   - preview, command shitt v
+  - Markdown All in One
+  - preview by side: cmd+k, v
+    - Ctrl/Cmd + Shift + V	Toggle preview
+    - Ctrl/Cmd + K V	Toggle preview to side
  - Paste Image
-   - shift+alt+v
-   - output directory
+   - set target image directory
+   - shift, alt(option), v
  - Draw.io Integration
  - Prettier
  - Markdown Preview Github Styling
