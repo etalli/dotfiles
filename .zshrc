@@ -64,7 +64,8 @@ alias -g GI='| grep -ri'
 export EDITOR=code
 #export EDITOR=vim
 #
-# Pangaea 1.1 with QMK latest Aug 29. 0.18.1
+# Pangaea 1.2 with QMK latest Dec 17 0.18.1
+alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
 #alias pCD='cd $HOME/src/1004/qmk_firmware'## rev.2 and rev.3
 #QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev 0417, May2, 2022
 #QMK_HOME='/Users/k/src/0518/qmk_firmware' ## rev 1.1 wit QMK 0.16.9
@@ -217,6 +218,5 @@ alias cc='cargo clippy'
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
-### 
-alias glp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
+###  test
 alias tt='cd ~/src/1216/qmk_firmware/'
