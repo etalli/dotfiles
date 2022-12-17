@@ -119,21 +119,15 @@ alias chromenw='open -na "Google Chrome" --args --new-window'
 alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
 
 ## my4pad my4pad with RP2040, it works fine [Aug 3,2022]
-#MY4PAD_HOME='/Users/k/src/0829/qmk_firmware/keyboards/my4pad/'
 MY4PAD_HOME='/Users/k/src/1216/qmk_firmware/keyboards/my4pad/'
-alias my4padcd='cd $MY4PAD_HOME/'
-alias my4pade='vi $MY4PAD_HOME/keymaps/default/keymap.c'
-alias my4padec='vi $MY4PAD_HOME/config.h'
-alias my4padecc='vi $MY4PAD_HOME/keymaps/default/config.h'
-alias my4padc='my4padcd;qmk compile -kb my4pad -km default;cd ../../'
-alias my4padp='my4padcd;qmk flash -kb my4pad -km default;cd ../../'
-alias my4padzip='my4padcd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
-##
-# 2x2 by k2.
-alias 2e='vi /Users/k/src/1004/qmk_firmware/keyboards/2x2/keymaps/default/keymap.c'
-alias 2cd='cd /Users/k/src/1004/qmk_firmware/'
-alias 2f='2cd;qmk flash -kb 2x2 -km default'
-###
+alias 4cd='cd $MY4PAD_HOME/'
+alias 4e='vi $MY4PAD_HOME/keymaps/default/keymap.c'
+alias 4ec='vi $MY4PAD_HOME/config.h'
+alias 4ecc='vi $MY4PAD_HOME/keymaps/default/config.h'
+alias 4c='my4padcd;qmk compile -kb my4pad -km default;cd ../../'
+alias 4p='my4padcd;qmk flash -kb my4pad -km default;cd ../../'
+alias 4z='my4padcd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
+
 # edit zshrc
 alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;'
 alias vz="vim ~/.zshrc"
