@@ -30,7 +30,6 @@ setopt hist_no_store
 function h-all { history -E 1}
 setopt auto_pushd
 setopt pushd_ignore_dups
-#
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
 compinit
