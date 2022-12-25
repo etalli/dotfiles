@@ -4,14 +4,14 @@
 
 * Chrome - Google web browser
 * homebrew - command line tool
-* rectangles - window arrange tool
+* rectangles - window arrangement tool
 * iterm - terminal
 * Visual Source Code - Microsoft text editor
-  - make sure the exteions is *.md. if not, it doesn't work..
+  - make sure the exteions is *.md. if not, it doesn't work.
   - Markdown All in One
-  - preview by side: cmd+k, v
-    - Ctrl/Cmd + Shift + V, Toggle preview
-    - Ctrl/Cmd + K V, Toggle preview to side
+    - preview by side: cmd+k, v
+     - Ctrl/Cmd + Shift + V, Toggle preview
+     - Ctrl/Cmd + K V, Toggle preview to side
  - Paste Image
    - set target image directory
    - shift, alt(option), v
@@ -28,7 +28,7 @@
 ## applications
 
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
-* GitHub Desktop
+* [GitHub Desktop](https://desktop.github.com/)
 * twitter
 * Slack
 * Fusion 360
