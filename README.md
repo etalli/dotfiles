@@ -3,16 +3,14 @@
 [![](https://img.shields.io/github/last-commit/etalli/dotfiles)]()
 
 
-
 # dotfiles
 
 my dot files and MacOS configuration memo
 
-## dot files
-* .zshrc
-* .bashrc
-* .bash_profile
-* .vimrc
+* [.zshrc](.zshrc)
+* [.bash_profile](.bash_profile)
+* [.vimrc](.vimrc)
 
-##
-* Mac OS installation note
+# MacOS tools and configurations
+
+* [Mac OS installation note](MacOS-config.md)
