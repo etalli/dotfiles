@@ -1,5 +1,6 @@
 
 [![](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![](https://img.shields.io/badge/MacOS-tools-blue)]()
 [![](https://img.shields.io/github/last-commit/etalli/dotfiles)]()
 
 
