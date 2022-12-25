@@ -1,6 +1,6 @@
 # my configuraton for MacOS
 
-## useful applications an tools
+## Useful tools
 
 * Chrome - Google web browser
 * homebrew - command line tool
@@ -21,11 +21,7 @@
  - Git Graph
 * xcode - Apple development environment
 
-## keyboard
-
-* [QMK Firmware] (https://docs.qmk.fm/)
-
-## applications
+## Applications
 
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
 * [GitHub Desktop](https://desktop.github.com/)
@@ -34,3 +30,9 @@
 * Fusion 360
 * KiCAD
 * Microsoft Teams
+
+## Keyboard
+
+* [QMK Firmware] (https://docs.qmk.fm/)
+
+* [QMK Firmware] (https://docs.qmk.fm/)
