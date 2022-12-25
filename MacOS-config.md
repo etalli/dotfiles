@@ -4,6 +4,7 @@
 
 * Chrome - Google web browser
 * homebrew - command line tool
+  * [brew.sh](brew.sh) - installation script
 * rectangles - window arrangement tool
 * iterm - terminal
 * Visual Source Code - Microsoft text editor
