@@ -33,6 +33,4 @@
 
 ## Keyboard
 
-* [QMK Firmware] (https://docs.qmk.fm/)
-
-* [QMK Firmware] (https://docs.qmk.fm/)
+* [QMK Firmware](https://docs.qmk.fm/)
