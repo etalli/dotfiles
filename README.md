@@ -1,3 +1,8 @@
+
+[![](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
+
+
 # dotfiles
 
 my dot files and MacOS configuration memo
