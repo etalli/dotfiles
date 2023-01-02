@@ -16,7 +16,7 @@
  * Paste Image
    * set target image directory
    * shift, alt(option), v
- * Draw.io Integration
+ * [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
  * Prettier
  * Markdown Preview Github Styling
  * Git Graph
