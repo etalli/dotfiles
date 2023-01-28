@@ -215,3 +215,4 @@ alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
 ###  test
 alias tt='cd ~/src/1216/qmk_firmware/'
+alias 158='cd;cd Dropbox/MyProjects/158*'
