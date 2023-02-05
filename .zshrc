@@ -217,5 +217,5 @@ eval "$(pyenv init -)"
 alias tt='cd ~/src/1216/qmk_firmware/'
 alias 158='cd;cd Dropbox/MyProjects/158*'
 alias 154='cd;cd Dropbox/MyProjects/154*'
-alias 153='cd;cd Dropbox/MyProjects/153*'
-alias 152='cd ~;cd Dropbox/MyProjects/152*'
+alias 153='cd;cd Dropbox/MyProjects/153*;pwd'
+alias 152='cd ~;cd Dropbox/MyProjects/152*;pwd'
