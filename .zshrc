@@ -223,3 +223,5 @@ alias 152='cd ~;cd Dropbox/MyProjects/152*;pwd'
 alias 136='cd ~;cd Dropbox/MyProjects/136*;pwd'
 alias 160='cd ~;cd Dropbox/MyProjects/160*;pwd'
 alias 161='cd ~;cd Dropbox/MyProjects/161*;pwd'
+
+alias GITREMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch filetoremove.md -- --all'
