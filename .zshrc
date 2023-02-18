@@ -36,8 +36,10 @@ compinit
 # prompt
 autoload colors
 colors
-PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
-RPROMPT="[%W %d]"
+#PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
+#RPROMPT="[%W %d]"
+autoload -U promptinit; promptinit
+prompt pure
 #
 alias l='ls -ltr --color=auto'
 alias ls='ls --color=auto -F'
