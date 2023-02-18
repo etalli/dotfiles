@@ -145,7 +145,7 @@ alias ft='find . -mtime 0' # today
 #
 # git alias commands
 #
-# GitHub
+# GitHUBH
 #…or create a new repository on the command line
 #echo "# p_tmp5" >> README.md
 #git init
