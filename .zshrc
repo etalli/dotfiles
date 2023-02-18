@@ -38,6 +38,8 @@ autoload colors
 colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 #RPROMPT="[%W %d]"
+# pure
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 #
