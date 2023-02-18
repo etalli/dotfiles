@@ -128,7 +128,8 @@ alias 4p='my4padcd;qmk flash -kb my4pad -km default;cd ../../'
 alias 4z='my4padcd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
 
 # edit zshrc
-alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;'
+#alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd;'
+alias ez='vim ~/.zshrc;source ~/.zshrc;bdot;'
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 # misc
