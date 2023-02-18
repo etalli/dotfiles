@@ -38,6 +38,7 @@ autoload colors
 colors
 PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~
 %# "
+RPROMPT="[%d]"
 #
 alias l='ls -ltr --color=auto'
 alias ls='ls --color=auto -F'
