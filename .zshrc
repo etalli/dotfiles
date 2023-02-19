@@ -38,7 +38,7 @@ autoload colors
 colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 #RPROMPT="[%W %d]"
-# pure
+# pure, Feb 19, 2023-
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
@@ -219,14 +219,14 @@ alias cc='cargo clippy'
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
-###  test
+###  MyProjects short cut
 alias tt='cd ~/src/1216/qmk_firmware/'
-alias 158='cd;cd Dropbox/MyProjects/158*'
-alias 154='cd;cd Dropbox/MyProjects/154*'
-alias 153='cd;cd Dropbox/MyProjects/153*;pwd'
-alias 152='cd ~;cd Dropbox/MyProjects/152*;pwd'
-alias 136='cd ~;cd Dropbox/MyProjects/136*;pwd'
-alias 160='cd ~;cd Dropbox/MyProjects/160*;pwd'
-alias 161='cd ~;cd Dropbox/MyProjects/161*;pwd'
+alias 158='cd ~/Dropbox/MyProjects/158*;pwd'
+alias 154='cd ~/Dropbox/MyProjects/154*;pwd'
+alias 153='cd ~/Dropbox/MyProjects/153*;pwd'
+alias 152='cd ~/Dropbox/MyProjects/152*;pwd'
+alias 136='cd ~/Dropbox/MyProjects/136*;pwd'
+alias 160='cd ~/Dropbox/MyProjects/160*;pwd'
+alias 161='cd ~/Dropbox/MyProjects/161*;pwd'
 
 alias GITREMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch filetoremove.md -- --all'
