@@ -219,7 +219,7 @@ alias cc='cargo clippy'
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
-###  MyProjects short cut
+###  MyProjects short cuts
 alias tt='cd ~/src/1216/qmk_firmware/'
 alias 158='cd ~/Dropbox/MyProjects/158*;pwd'
 alias 154='cd ~/Dropbox/MyProjects/154*;pwd'
@@ -230,4 +230,4 @@ alias 160='cd ~/Dropbox/MyProjects/160*;pwd'
 alias 161='cd ~/Dropbox/MyProjects/161*;pwd'
 alias 162='cd ~/Dropbox/MyProjects/162*;pwd'
 
-alias GITREMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch filetoremove.md -- --all'
+alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
