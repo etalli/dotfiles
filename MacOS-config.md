@@ -3,8 +3,9 @@
 ## Useful tools
 
 * Chrome (Google web browser)
-* homebrew (command line tool)
+* Homebrew (command line tool)
   + [brew.sh](brew.sh) (installation script)
+  + pure (zsh prompt)
 * rectangles (window arrangement tool)
 * iterm (terminal)
 * Visual Source Code (Microsoft text editor)
@@ -26,10 +27,10 @@
 
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
 * [GitHub Desktop](https://desktop.github.com/)
+* KiCAD 7
+* Fusion 360
 * twitter
 * Slack
-* Fusion 360
-* KiCAD
 * Microsoft Teams
 
 ## Keyboard
