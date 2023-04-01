@@ -3,7 +3,7 @@
 ## Useful tools
 
 * Chrome (Google web browser)
-* Homebrew (command line tool)
+* [Homebrew](https://brew.sh/) (command line tool)
   + [brew.sh](brew.sh) (installation script)
   + pure (zsh prompt)
 * rectangles (window arrangement tool)
