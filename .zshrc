@@ -230,5 +230,6 @@ alias 160='cd ~/Dropbox/MyProjects/160*;pwd'
 alias 161='cd ~/Dropbox/MyProjects/161*;pwd'
 alias 162='cd ~/Dropbox/MyProjects/162*;pwd'
 alias 168='cd ~/Dropbox/MyProjects/168*;pwd'
+alias 169='cd ~/Dropbox/MyProjects/169*;pwd'# trackpoint
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
