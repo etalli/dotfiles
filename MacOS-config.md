@@ -27,11 +27,9 @@
 
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
 * [GitHub Desktop](https://desktop.github.com/)
-* KiCAD 7
-* Fusion 360
+* KiCAD 7.0.1
 * twitter
 * Slack
-* Microsoft Teams
 
 ## Keyboard
 
