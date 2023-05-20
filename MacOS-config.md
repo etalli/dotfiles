@@ -34,3 +34,16 @@
 ## Keyboard
 
 * [QMK Firmware](https://docs.qmk.fm/)
+
+
+## How to show the dot files in Finder
+
+$ defaults write com.apple.finder AppleShowAllFiles true
+
+and needs to restart Finder from Terminal by
+$ killall Finder
+
+To set the default setting,
+$ defaults write com.apple.finder AppleShowAllFiles false
+then,
+$ killall Finder
