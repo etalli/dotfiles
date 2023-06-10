@@ -66,6 +66,7 @@ alias -g G='| grep'
 alias -g GI='| grep -ri'
 #
 export EDITOR=code
+alias vscode='code'
 #export EDITOR=vim
 #
 # Pangaea 1.2 with QMK latest Dec 17
