@@ -70,13 +70,12 @@ export EDITOR=code
 #
 # Pangaea 1.2 with QMK latest Dec 17
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
-#alias pCD='cd $HOME/src/1004/qmk_firmware'## rev.2 and rev.3
-#QMK_HOME='/Users/k/src/0502/qmk_firmware' ## rev 0417, May2, 2022
-#QMK_HOME='/Users/k/src/0518/qmk_firmware' ## rev 1.1 wit QMK 0.16.9
 export TODAY=`date +%m%d`
-#export QMK_HOME='/Users/k/src/1115/qmk_firmware' # 11/15, V1.1
-#export QMK_HOME='/Users/k/src/1127/qmk_firmware' # LATEST, V1.2
-export QMK_HOME='/Users/k/src/1216/qmk_firmware'  # LATEST, V1.2
+#alias pCD='cd $HOME/src/1004/qmk_firmware'       # rev.2 and rev.3
+#QMK_HOME='/Users/k/src/0502/qmk_firmware'        # rev 0417, May2, 2022
+#QMK_HOME='/Users/k/src/0518/qmk_firmware'        # rev 1.1 wit QMK 0.16.9
+#export QMK_HOME='/Users/k/src/1216/qmk_firmware' # LATEST, V1.2
+export QMK_HOME='/Users/k/src/0610/qmk_firmware'  # LATEST, V1.2, QMK 0.21.1
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pe="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
