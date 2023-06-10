@@ -81,6 +81,7 @@ alias cdq='cd $QMK_HOME'
 alias pe="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
 alias peh="vi $QMK_HOME/keyboards/pangaea/pangaea.h"
 alias pev="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
+alias pec="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/combo.c"
 alias pevD="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
 alias pcd='cd  $QMK_HOME/keyboards/pangaea;echo QMK_HOME is $QMK_HOME;echo PANGAEA_HOME is $PANGAEA_HOME'
 alias pcdd="cd $QMK_HOME/keyboards/pangaea/keymaps/k2/;pwd"
