@@ -96,7 +96,7 @@ alias pecc="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/config.h"
 alias peccD="vi $QMK_HOME/keyboards/pangaea/keymaps/default/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
 alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2;cd $PANGAEA_HOME'
-alias pcd='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default;cd $PANGAEA_HOME'
+alias pcde='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default;cd $PANGAEA_HOME'
 alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
 # Pangaea default keymap
 alias peD="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
