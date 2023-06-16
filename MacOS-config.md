@@ -47,3 +47,10 @@ To set the default setting,
 $ defaults write com.apple.finder AppleShowAllFiles false
 then,
 $ killall Finder
+
+
+## System setting
+
+* how to active only external monitor?
+  * set the mirroring mode
+  * set your Mac brightness as low as possible from the touch bar, then the screen will be blacked and disabled.
