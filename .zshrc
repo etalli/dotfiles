@@ -125,7 +125,8 @@ alias chromenw='open -na "Google Chrome" --args --new-window'
 alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
 
 ## my4pad my4pad with RP2040, it works fine [Aug 3,2022]
-MY4PAD_HOME='/Users/k/src/0417/qmk_firmware/keyboards/my4pad/'
+#MY4PAD_HOME='/Users/k/src/0417/qmk_firmware/keyboards/my4pad/'
+MY4PAD_HOME='/Users/k/src/0714/qmk_firmware/keyboards/my4pad/'
 alias 4cd='cd $MY4PAD_HOME/'
 alias 4e='vi $MY4PAD_HOME/keymaps/default/keymap.c'
 alias 4ec='vi $MY4PAD_HOME/config.h'
