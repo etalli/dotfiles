@@ -136,7 +136,7 @@ alias 4p='4cd;qmk flash   -kb my4pad -km default;cd ../../'
 alias 4z='4cd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
 
 ## lmtkbd
-LMT_HOME='/Users/k/src/0417/qmk_firmware/keyboards/lmtkbd/'
+LMT_HOME='/Users/k/src/0714/qmk_firmware/keyboards/lmtkbd/'
 alias lmtcd='cd $LMT_HOME'
 alias lmte='vi $LMT_HOME/keymaps/default/keymap.c'
 alias lmtec='vi $MY4PAD_HOME/config.h'
