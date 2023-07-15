@@ -148,7 +148,7 @@ alias lmtz='lmtcd;cd ../;zip -r lmt2.zip lmt2 -x \*/.git/\* keymaps/.DS_Store;mv
 
 alias ez='vim ~/.zshrc;source ~/.zshrc;bdot;'
 alias vz="vim ~/.zshrc"
-alias sz="source ~/.zshrc"
+alias rsz="source ~/.zshrc"
 # misc
 alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias finder='open .'
