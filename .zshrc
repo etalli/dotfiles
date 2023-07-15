@@ -39,7 +39,7 @@ colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 #RPROMPT="[%W %d]"
 # pure, Feb 19, 2023-
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
+#fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 #
@@ -132,7 +132,7 @@ alias 4e='vi $MY4PAD_HOME/keymaps/default/keymap.c'
 alias 4ec='vi $MY4PAD_HOME/config.h'
 alias 4ecc='vi $MY4PAD_HOME/keymaps/default/config.h'
 alias 4c='4cd;qmk compile -kb my4pad -km default;cd ../../'
-alias 4p='4cd;qmk flash -kb my4pad -km default;cd ../../'
+alias 4p='4cd;qmk flash   -kb my4pad -km default;cd ../../'
 alias 4z='4cd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
 
 # edit zshrc
