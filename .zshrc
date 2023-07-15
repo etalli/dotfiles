@@ -135,15 +135,15 @@ alias 4c='4cd;qmk compile -kb my4pad -km default;cd ../../'
 alias 4p='4cd;qmk flash   -kb my4pad -km default;cd ../../'
 alias 4z='4cd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
 
-## lmtkbd
-LMT_HOME='/Users/k/src/0714/qmk_firmware/keyboards/lmtkbd/'
+## lmtkbd, July 15, 2023
+LMT_HOME='/Users/k/src/0714/qmk_firmware/keyboards/lmt2/'
 alias lmtcd='cd $LMT_HOME'
 alias lmte='vi $LMT_HOME/keymaps/default/keymap.c'
-alias lmtec='vi $MY4PAD_HOME/config.h'
-alias lmtecc='vi $MY4PAD_HOME/keymaps/default/config.h'
-alias lmtc='lmtcd;qmk compile -kb lmtkbd -km default;cd ../../'
-alias lmtp='lmtcd;qmk flash   -kb lmtkbd -km default;cd ../../'
-alias lmtz='lmtcd;cd ../;zip -r lmtkbd.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv lmtkbd.zip $HOME/src/;echo "check src"'
+alias lmtec='vi $LMT_HOME/config.h'
+alias lmtecc='vi $LMT_HOME/keymaps/default/config.h'
+alias lmtc='lmtcd;qmk compile -kb lmt2 -km default;cd ../../'
+alias lmtp='lmtcd;qmk flash   -kb lmt2 -km default;cd ../../'
+alias lmtz='lmtcd;cd ../;zip -r lmt2.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv lmt2.zip $HOME/src/;echo "check src"'
 
 
 alias ez='vim ~/.zshrc;source ~/.zshrc;bdot;'
