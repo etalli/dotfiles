@@ -127,7 +127,7 @@ alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=
 ## my4pad my4pad with RP2040,  [Aug 3,2022], updaetd July 15, 2023
 #MY4PAD_HOME='/Users/k/src/0417/qmk_firmware/keyboards/my4pad/'
 MY4PAD_HOME='/Users/k/src/0714/qmk_firmware/keyboards/my4pad/'
-alias 4cd='cd $MY4PAD_HOME/'
+alias 4cd='cd $MY4PAD_HOME'
 alias 4e='vi $MY4PAD_HOME/keymaps/default/keymap.c'
 alias 4ec='vi $MY4PAD_HOME/config.h'
 alias 4ecc='vi $MY4PAD_HOME/keymaps/default/config.h'
@@ -137,7 +137,7 @@ alias 4z='4cd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv
 
 ## lmtkbd
 LMT_HOME='/Users/k/src/0417/qmk_firmware/keyboards/lmtkbd/'
-alias lmtcd='cd $LMT_HOME/'
+alias lmtcd='cd $LMT_HOME'
 alias lmte='vi $LMT_HOME/keymaps/default/keymap.c'
 alias lmtec='vi $MY4PAD_HOME/config.h'
 alias lmtecc='vi $MY4PAD_HOME/keymaps/default/config.h'
