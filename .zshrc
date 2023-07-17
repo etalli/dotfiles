@@ -37,11 +37,11 @@ compinit
 autoload colors
 colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
-#RPROMPT="[%W %d]"
+RPROMPT="[%W %d]"
 # pure, Feb 19, 2023-
 #fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
-prompt pure
+#prompt pure
 #
 alias l='ls -ltr --color=auto'
 alias ls='ls --color=auto -F'
