@@ -145,10 +145,10 @@ alias lmtc='lmtcd;qmk compile -kb lmt2 -km default;cd ../../'
 alias lmtp='lmtcd;qmk flash   -kb lmt2 -km default;cd ../../'
 alias lmtz='lmtcd;cd ../;zip -r lmt2.zip lmt2 -x \*/.git/\* keymaps/.DS_Store;mv lmt2.zip $HOME/src/;echo "check src"'
 
-
+## zshrc
 alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;popd;bdot'
 alias vz="vim ~/.zshrc"
-alias rsz="source ~/.zshrc"
+alias rz="source ~/.zshrc"
 # misc
 alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias finder='open .'
