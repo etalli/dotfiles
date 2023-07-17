@@ -152,7 +152,7 @@ alias rsz="source ~/.zshrc"
 # misc
 alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
 alias finder='open .'
-alias f='find ./ -name \'
+alias f='find ./ -name '
 alias f3='find ./ -atime 3'
 alias f2='find ./ -atime 2'
 alias f1='find ./ -atime 1'
