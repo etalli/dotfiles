@@ -21,18 +21,30 @@ setopt share_history
 setopt histignorealldups
 #
 export HISTFILE=${HOME}/etc/.zsh_history
+
 export HISTSIZE=1000
+
 export SAVEHIST=10000
+
 setopt EXTENDED_HISTORY
+
 setopt hist_ignore_dups
+
 setopt hist_ignore_all_dups
+
 setopt hist_no_store
+
 function h-all { history -E 1}
+
 setopt auto_pushd
+
 setopt pushd_ignore_dups
+
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
+
 compinit
+
 # prompt
 autoload colors
 colors
@@ -42,7 +54,8 @@ RPROMPT="[%W %d]"
 #fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 #prompt pure
-#
+
+# aliases
 alias l='ls -ltr --color=auto'
 alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
@@ -68,7 +81,7 @@ alias -g GI='| grep -ri'
 export EDITOR=code
 alias vscode='code'
 #export EDITOR=vim
-#
+
 # Pangaea 1.2 with QMK latest Dec 17
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
 export TODAY=`date +%m%d`
@@ -231,6 +244,7 @@ alias cc='cargo clippy'
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
+
 ###  MyProjects short cuts
 alias tt='cd ~/src/1216/qmk_firmware/'
 alias 158='cd ~/Dropbox/MyProjects/158*;pwd'
@@ -243,5 +257,7 @@ alias 161='cd ~/Dropbox/MyProjects/161*;pwd'
 alias 162='cd ~/Dropbox/MyProjects/162*;pwd'
 alias 168='cd ~/Dropbox/MyProjects/168*;pwd'
 alias 169='cd ~/Dropbox/MyProjects/169*;pwd'
+alias 136='cd ~/Dropbox/MyProjects/136*;pwd'
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
+
