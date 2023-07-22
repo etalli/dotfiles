@@ -77,7 +77,7 @@ alias -g L='| less'
 alias -g H='| head'
 alias -g G='| grep'
 alias -g GI='| grep -ri'
-alias -g GL='| grep -rl'
+alias -g GL='grep -rl'
 #
 export EDITOR=code
 alias vscode='code'
