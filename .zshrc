@@ -51,9 +51,9 @@ colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 RPROMPT="[%W %d]"
 # pure, Feb 19, 2023-
-#fpath+=("$(brew --prefix)/share/zsh/site-functions")
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
-#prompt pure
+prompt pure
 
 # aliases
 alias l='ls -ltr --color=auto'
