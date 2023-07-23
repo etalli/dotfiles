@@ -157,7 +157,7 @@ alias lmtec='vi $LMT_HOME/config.h'
 alias lmtecc='vi $LMT_HOME/keymaps/default/config.h'
 alias lmtc='lmtcd;qmk compile -kb lmt2 -km default;'
 alias lmtp='lmtcd;qmk flash   -kb lmt2 -km default;'
-alias lmtz='lmtcd;cd ../;zip -r lmt2.zip lmt2 -x \*/.git/\* keymaps/.DS_Store;mv lmt2.zip $HOME/src/;echo "check src"'
+alias lmtz='lmtcd;cd ../;zip -r lmt2.zip lmt2 -x \*/.git/\* keymaps/.DS_Store;mv lmt2.zip ~/Dropbox/MyProjects/168*;pwd'
 
 ## zshrc
 alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;popd;bdot'
