@@ -160,7 +160,7 @@ alias lmtp='lmtcd;qmk flash   -kb lmt2 -km default;'
 alias lmtz='lmtcd;cd ../;zip -r lmt2.zip lmt2 -x \*/.git/\* keymaps/.DS_Store;mv lmt2.zip ~/Dropbox/MyProjects/168*/LMT/LMT_rev2/firmware/;pwd'
 
 ## zshrc
-alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;popd;bdot'
+alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd'
 alias vz="vim ~/.zshrc"
 alias rz="source ~/.zshrc"
 # misc
