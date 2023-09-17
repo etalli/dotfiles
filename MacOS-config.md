@@ -30,7 +30,7 @@
 * [KiCAD 7.0.6](https://www.kicad.org/)
 * twitter
 * Slack
-* [vscoce](https://code.visualstudio.com/)
+* [vscode](https://code.visualstudio.com/)
 
 ## Keyboard
 
