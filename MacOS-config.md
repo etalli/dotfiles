@@ -27,9 +27,10 @@
 
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
 * [GitHub Desktop](https://desktop.github.com/)
-* KiCAD 7.0.1
+* [KiCAD 7.0.6](https://www.kicad.org/)
 * twitter
 * Slack
+* [vscode](https://code.visualstudio.com/)
 
 ## Keyboard
 
