@@ -262,3 +262,5 @@ alias 180='cd ~/Dropbox/MyProjects/180*;pwd'
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 
+alias ze='source ~/zephyrproject/.venv/bin/activate'
+
