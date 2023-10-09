@@ -21,7 +21,8 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
-# Install a modern version of Bash.
+# Install shells
+brew install zsh
 brew install bash
 brew install bash-completion2
 
@@ -43,16 +44,12 @@ brew install grep
 brew install screen
 brew install php
 brew install gmp
-
 # Install font tools.
 brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
-
 # Install other useful binaries.
 brew install imagemagick --with-webp
-
-
 # Remove outdated versions from the cellar.
 brew cleanup
