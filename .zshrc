@@ -102,10 +102,6 @@ alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
 ##
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 ##
-#alias kasumic='cd /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default '
-#alias kasumie='vi /Users/k/src/0812/qmk_firmware/keyboards/kasumigasane/keymaps/default/keymap.c'
-#alias kasumib='kasumic;qmk compile -kb kasumigasane -km default'
-#alias kasumip='kasumic;qmk flash -kb kasumigasane -km default'
 KASUMI_HOME=$QMK_HOME'/keyboards/kasumigasane/'
 alias kcd='cd $KASUMI_HOME/keymaps/default'
 alias ke='vi $KASUMI_HOME/keymaps/default/keymap.c'
