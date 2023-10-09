@@ -97,7 +97,7 @@ alias pc="cd   $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2;cd $PANGAE
 alias pf="cd   $QMK_HOME;qmk flash -kb pangaea -km k2"
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
 alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
-alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -zcvf `date +%Y%m%d-%H%M-pangaea`.tar.gz $PANGAEA_HOME;ls -l *.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
+alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M-pangaea`.tar.gz $PANGAEA_HOME;ls -l *.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
 alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
 ##
 ## kasumigasane 4x4 Macropad without diode by e3w2q
