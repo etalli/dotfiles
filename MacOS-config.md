@@ -26,7 +26,7 @@
 ## Applications
 
 * [GitHub Desktop](https://desktop.github.com/)
-* [KiCAD 7.0.8](https://www.kicad.org/)
+* [KiCAD](https://www.kicad.org/)
 * [vscode](https://code.visualstudio.com/)
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
 * [X]
