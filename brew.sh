@@ -1,27 +1,26 @@
 #!/usr/bin/env bash
-# Install command-line tools using Homebrew.
+# install command-line tools using Homebrew.
 
 # Update to the latest Homebrew
 brew update
-
 # Upgrade any already-installed formulae
 brew upgrade
 
 # Save Homebrew’s installed location
 BREW_PREFIX=$(brew --prefix)
 
-# Install GNU core utilities
+# install GNU core utilities
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
-# Install some other useful utilities like `sponge`.
+# install some other useful utilities like `sponge`.
 brew install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
+# install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-# Install shells
+# install GNU `sed`, overwriting the built-in `sed`.
+brew install gnu-sed
+# install shells
 brew install zsh
 brew install bash
 brew install bash-completion2
@@ -32,24 +31,17 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
-# Install GnuPG to enable PGP-signing commits.
+# install more recent versions of some macOS tools.
+brew install wget
 brew install gnupg
-
-# Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install screen
 brew install php
 brew install gmp
-# Install font tools.
 brew tap bramstein/webfonttools
 brew install sfnt2woff
-brew install sfnt2woff-zopfli
 brew install woff2
-# Install other useful binaries.
-brew install imagemagick --with-webp
+brew install imagemagick
 # Remove outdated versions from the cellar.
 brew cleanup
