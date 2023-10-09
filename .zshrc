@@ -98,26 +98,21 @@ alias pf="cd   $QMK_HOME;qmk flash -kb pangaea -km k2"
 # Archives pangaea project, but excludes .git directory and p.h, then copy the file to src for backup.
 alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
 alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;ls -l *pangaea.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
-alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
+alias tt="touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt"
 ##
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 ##
-KASUMI_HOME=$QMK_HOME'/keyboards/kasumigasane/'
+KASUMI_HOME=$QMK_HOME/keyboards/kasumigasane/
 alias kcd='cd $KASUMI_HOME/keymaps/default'
 alias ke='vi $KASUMI_HOME/keymaps/default/keymap.c'
 alias kc='kcd;qmk compile -kb kasumigasane -km default'
 alias kp='kcd;qmk flash -kb kasumigasane -km default'
 
-# Web Browser
-alias chrome='open -na "Google Chrome" --args'
-alias chromenw='open -na "Google Chrome" --args --new-window'
-alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
-
 ##
 ## my4pad my4pad with RP2040,  [Aug 3,2022], updaetd July 15, 2023
 ##
 #MY4PAD_HOME='/Users/k/src/0417/qmk_firmware/keyboards/my4pad/'
-MY4PAD_HOME='/Users/k/src/0714/qmk_firmware/keyboards/my4pad/'
+MY4PAD_HOME=$QMK_HOME/keyboards/my4pad/
 alias 4cd='cd $MY4PAD_HOME'
 alias 4e='vi $MY4PAD_HOME/keymaps/default/keymap.c'
 alias 4ec='vi $MY4PAD_HOME/config.h'
@@ -135,6 +130,11 @@ alias lmtecc='vi $LMT_HOME/keymaps/default/config.h'
 alias lmtc='lmtcd;qmk compile -kb lmt2 -km default;'
 alias lmtp='lmtcd;qmk flash   -kb lmt2 -km default;lmtz'
 alias lmtz='lmtcd;cd ../;zip -r `date +%Y%m%d-%H%M-lmtkbd.zip` lmt2 -x \*/.git/\* keymaps/.DS_Store;mv *lmtkbd.zip ~/Dropbox/MyProjects/168*/LMT/LMT_rev3/firmware/;pwd'
+
+# Web Browser
+alias chrome='open -na "Google Chrome" --args'
+alias chromenw='open -na "Google Chrome" --args --new-window'
+alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
 
 ## zshrc
 alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd'
@@ -240,4 +240,3 @@ alias 181='cd ~/Dropbox/MyProjects/181*;pwd' # pangaea firmware
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
-
