@@ -83,14 +83,10 @@ export EDITOR=code
 alias vscode='code'
 #export EDITOR=vim
 
-# Pangaea 1.2 with QMK latest Dec 17
+# Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
 export TODAY=`date +%m%d`
-#alias pCD='cd $HOME/src/1004/qmk_firmware'       # rev.2 and rev.3
-#QMK_HOME='/Users/k/src/0502/qmk_firmware'        # rev 0417, May2, 2022
-#QMK_HOME='/Users/k/src/0518/qmk_firmware'        # rev 1.1 wit QMK 0.16.9
 #export QMK_HOME='/Users/k/src/1216/qmk_firmware' # LATEST, V1.2
-#export QMK_HOME='/Users/k/src/0610/qmk_firmware'  # LATEST, V1.2, QMK 0.21.1
 export QMK_HOME='/Users/k/Library/CloudStorage/Dropbox/MyProjects/181_pangaea_config/qmk_firmware' # LATEST qmk 22.10
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
@@ -263,6 +259,5 @@ alias 180='cd ~/Dropbox/MyProjects/180*;pwd'
 alias 181='cd ~/Dropbox/MyProjects/181*;pwd' # pangaea firmware
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
-
 alias ze='source ~/zephyrproject/.venv/bin/activate'
 
