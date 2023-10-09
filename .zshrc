@@ -1,14 +1,14 @@
 # file: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
-# example,  ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc #
+# example,  $ ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
 #
-# zsh history, ctrl-r for search historyy
+# ctrl-r: search zsh historyy
 # ctrl+a: go to the begeinning of line
 # ctrl+e: go to the end of line
 # ctrl+u: delete the whole line
 # ctrl+k: delete text to the end of line
-
+#
 # avoid logout with Ctrl+D
 setopt IGNOREEOF
 # use Japanese
@@ -19,30 +19,20 @@ export PATH="$HOME/bin:$PATH"
 setopt share_history
 # do not display history overlaps
 setopt histignorealldups
-#
+# zsh history configg
 export HISTFILE=${HOME}/etc/.zsh_history
-
 export HISTSIZE=1000
-
 export SAVEHIST=10000
-
 setopt EXTENDED_HISTORY
-
 setopt hist_ignore_dups
-
 setopt hist_ignore_all_dups
-
 setopt hist_no_store
-
 function h-all { history -E 1}
-
 setopt auto_pushd
-
 setopt pushd_ignore_dups
 
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
-
 compinit
 
 # prompt
@@ -78,10 +68,10 @@ alias -g H='| head'
 alias -g G='| grep'
 alias -g GI='| grep -ri'
 alias grl='grep -rl'
-#
+# text editor
+#export EDITOR=vim
 export EDITOR=code
 alias vscode='code'
-#export EDITOR=vim
 
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
@@ -91,31 +81,22 @@ export QMK_HOME='/Users/k/Library/CloudStorage/Dropbox/MyProjects/181_pangaea_co
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
 alias cdq='cd $QMK_HOME'
 alias pe="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
-alias peh="vi $QMK_HOME/keyboards/pangaea/pangaea.h"
+alias peh="vi  $QMK_HOME/keyboards/pangaea/pangaea.h"
 alias pev="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c"
-alias pecmb="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/combo.c"
-alias pevD="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
-alias pcd='cd  $QMK_HOME/keyboards/pangaea;echo QMK_HOME is $QMK_HOME;echo PANGAEA_HOME is $PANGAEA_HOME'
-alias pcdd="cd $QMK_HOME/keyboards/pangaea/keymaps/k2/;pwd"
+alias pecb="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/combo.c"
+alias pcd="cd  $QMK_HOME/keyboards/pangaea;echo QMK_HOME is $QMK_HOME;echo PANGAEA_HOME is $PANGAEA_HOME"
+alias pcdk="cd $QMK_HOME/keyboards/pangaea/keymaps/k2/;pwd"
 alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
-alias perr="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/rules.mk"
-alias perrD="vi $QMK_HOME/keyboards/pangaea/keymaps/default/rules.mk"
+alias perk="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/rules.mk"
 alias pec="vi  $QMK_HOME/keyboards/pangaea/config.h"
 alias pei="vi  $QMK_HOME/keyboards/pangaea/info.json"
 alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
 alias pecc="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/config.h"
-alias peccD="vi $QMK_HOME/keyboards/pangaea/keymaps/default/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
-alias pc='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2;cd $PANGAEA_HOME'
-alias pcde='cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default;cd $PANGAEA_HOME'
-alias pf='cd $QMK_HOME;qmk flash -kb pangaea -km k2'
-# Pangaea default keymap
-alias peD="$EDITOR  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
-alias peDv="vi  $QMK_HOME/keyboards/pangaea/keymaps/default/keymap.c"
-alias pcD='alias pcD;cd $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km default'
-alias pfD='cd $QMK_HOME;qmk flash -kb pangaea -km default'
+alias pc="cd   $QMK_HOME;/usr/bin/time qmk compile -kb pangaea -km k2;cd $PANGAEA_HOME"
+alias pf="cd   $QMK_HOME;qmk flash -kb pangaea -km k2"
 # Archives pangaea project, but excludes .git directory, then copy the file to src for backup.
-alias pzip='pcd;cd ../;zip -r pangaea.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv pangaea.zip $HOME/src/;echo "check src"'
+alias pzip='pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv pangaea.zip $HOME/src/;echo "check src"'
 alias ptar='pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -zcvf `date +%Y%m%d-%H%M-pangaea`.tar.gz $PANGAEA_HOME;ls -l *.tar.gz;mv *.tar.gz ~/src/backup'
 alias tt='touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt'
 ##
