@@ -226,18 +226,18 @@ eval "$(pyenv init -)"
 
 ###  MyProjects short cuts
 alias tt='cd ~/src/1216/qmk_firmware/'
-alias 158='cd ~/Dropbox/MyProjects/158*;pwd'
-alias 154='cd ~/Dropbox/MyProjects/154*;pwd'
-alias 153='cd ~/Dropbox/MyProjects/153*;pwd'
-alias 160='cd ~/Dropbox/MyProjects/160*;pwd'
-alias 161='cd ~/Dropbox/MyProjects/161*;pwd'
-alias 162='cd ~/Dropbox/MyProjects/162*;pwd'
-alias 168='cd ~/Dropbox/MyProjects/168*;pwd'
-alias 169='cd ~/Dropbox/MyProjects/169*;pwd'
-alias 136='cd ~/Dropbox/MyProjects/136*;pwd'
-alias 180='cd ~/Dropbox/MyProjects/180*;pwd'
-alias 181='cd ~/Dropbox/MyProjects/181*;pwd' # pangaea firmware
-alias 152='cd ~/Dropbox/MyProjects/152*;pwd' # 4key thumb for Pangaea
+alias 158='cd ~/Dropbox/MyProjects/158*'
+alias 154='cd ~/Dropbox/MyProjects/154*'
+alias 153='cd ~/Dropbox/MyProjects/153*'
+alias 160='cd ~/Dropbox/MyProjects/160*'
+alias 161='cd ~/Dropbox/MyProjects/161*'
+alias 162='cd ~/Dropbox/MyProjects/162*'
+alias 168='cd ~/Dropbox/MyProjects/168*'
+alias 169='cd ~/Dropbox/MyProjects/169*'
+alias 136='cd ~/Dropbox/MyProjects/136*'
+alias 180='cd ~/Dropbox/MyProjects/180*'
+alias 181='cd ~/Dropbox/MyProjects/181*' # pangaea firmware
+alias 152='cd ~/Dropbox/MyProjects/152*' # 4key thumb for Pangaea
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
