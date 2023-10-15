@@ -238,6 +238,7 @@ alias 169='cd ~/Dropbox/MyProjects/169*;pwd'
 alias 136='cd ~/Dropbox/MyProjects/136*;pwd'
 alias 180='cd ~/Dropbox/MyProjects/180*;pwd'
 alias 181='cd ~/Dropbox/MyProjects/181*;pwd' # pangaea firmware
+alias 152='cd ~/Dropbox/MyProjects/152*;pwd' # 4key thumb for Pangaea
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
