@@ -39,7 +39,7 @@ compinit
 autoload colors
 colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
-#RPROMPT="[%W ]"
+RPROMPT="[%W ]"
 # pure, Feb 19, 2023-
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
