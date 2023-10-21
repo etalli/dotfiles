@@ -78,7 +78,6 @@ alias vscode='code'
 
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
-export TODAY=`date +%m%d`
 #export QMK_HOME='/Users/k/src/1216/qmk_firmware' # LATEST, V1.2
 export QMK_HOME='/Users/k/Library/CloudStorage/Dropbox/MyProjects/181_pangaea_config/qmk_firmware' # LATEST qmk 22.10
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
@@ -245,3 +244,4 @@ alias 166='cd ~/Dropbox/MyProjects/166*' # pangaea pinkey, -0.25u
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
+export TODAY=`date +%m%d`
