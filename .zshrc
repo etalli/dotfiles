@@ -36,8 +36,7 @@ setopt hist_ignore_dups # ignore duplication command history list
 setopt hist_ignore_all_dups
 
 # Complement: Tab, Ctrl-i, Ctrl-d
-#autoload -U compinit
-#compinit
+autoload -U compinit
 
 # prompt
 autoload colors
