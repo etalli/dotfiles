@@ -1,4 +1,4 @@
-# file: /Users/k/etc/dotfiles/.zshrc
+# file location: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
 # example,  $ ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
@@ -11,14 +11,19 @@
 #
 # avoid logout with Ctrl+D
 setopt IGNOREEOF
+
 # use Japanese
 export LANG=ja_JP.UTF-8
+
 # aadd local path
 export PATH="$HOME/bin:$PATH"
+
 # share history with other terminal
 setopt share_history
+
 # do not display history overlaps
 setopt histignorealldups
+
 # zsh history configg
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
@@ -93,7 +98,7 @@ alias pei="vi  $QMK_HOME/keyboards/pangaea/info.json"
 alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
 alias pecc="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
-alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk compile -kb pangaea -km k2;cd $PANGAEA_HOME"
+alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk compile -kb pangaea -km k2;pcd"
 alias qc="cd $QMK_HOME;qmk clean -a"
 alias pf="cd   $QMK_HOME;qmk flash -kb pangaea -km k2;pcd"
 # Archives pangaea project, but excludes .git directory and p.h, then copy the file to src for backup.
