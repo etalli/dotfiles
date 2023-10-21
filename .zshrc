@@ -72,7 +72,7 @@ alias -g G='| grep'
 alias -g GI='| grep -ri'
 alias grl='grep -rl'
 # text editor
-#export EDITOR=vim
+#export EDITOR=nvim
 export EDITOR=code
 alias vscode='code'
 
