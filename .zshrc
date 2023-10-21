@@ -75,6 +75,7 @@ alias grl='grep -rl'
 #export EDITOR=nvim
 export EDITOR=code
 alias vscode='code'
+alias vi='nvim'
 
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
