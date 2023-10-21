@@ -29,12 +29,11 @@ export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
 setopt EXTENDED_HISTORY
-setopt hist_ignore_dups
-setopt hist_ignore_all_dups
-setopt hist_no_store
 function h-all { history -E 1}
 setopt auto_pushd
 setopt pushd_ignore_dups
+setopt hist_ignore_dups # ignore duplication command history list
+setopt hist_ignore_all_dups
 
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
