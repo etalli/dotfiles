@@ -242,7 +242,7 @@ alias 180='cd ~/Dropbox/MyProjects/180*'
 alias 181='cd ~/Dropbox/MyProjects/181*' # pangaea firmware
 alias 152='cd ~/Dropbox/MyProjects/152*' # pangaea thumb
 alias 166='cd ~/Dropbox/MyProjects/166*' # pangaea pinkey, -0.25u
-alias 182='cd ~/Dropbox/MyProjects/182*' # TOTEM ZMK
+alias 182='cd ~/Dropbox/MyProjects/182*' # Wireless ZMK, TOTEM etc.
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
