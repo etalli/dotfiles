@@ -236,13 +236,13 @@ alias 153='cd ~/Dropbox/MyProjects/153*'
 alias 160='cd ~/Dropbox/MyProjects/160*'
 alias 161='cd ~/Dropbox/MyProjects/161*'
 alias 162='cd ~/Dropbox/MyProjects/162*'
-alias 168='cd ~/Dropbox/MyProjects/168*'
 alias 169='cd ~/Dropbox/MyProjects/169*'
 alias 136='cd ~/Dropbox/MyProjects/136*'
-alias 180='cd ~/Dropbox/MyProjects/180*'
-alias 181='cd ~/Dropbox/MyProjects/181*' # pangaea firmware
 alias 152='cd ~/Dropbox/MyProjects/152*' # pangaea thumb
 alias 166='cd ~/Dropbox/MyProjects/166*' # pangaea pinkey, -0.25u
+alias 180='cd ~/Dropbox/MyProjects/180*'
+alias 168='cd ~/Dropbox/MyProjects/168*' # LMT
+alias 181='cd ~/Dropbox/MyProjects/181*' # pangaea firmware
 alias 182='cd ~/Dropbox/MyProjects/182*' # Wireless ZMK, TOTEM etc.
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
