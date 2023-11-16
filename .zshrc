@@ -98,7 +98,7 @@ alias pei="vi  $QMK_HOME/keyboards/pangaea/info.json"
 alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
 alias pecc="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/config.h"
 alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
-alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk compile -kb pangaea -km k2"
+alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk --color compile -kb pangaea -km k2"
 alias qc="cd $QMK_HOME;qmk clean -a"
 alias pf="cd   $QMK_HOME;qmk flash -kb pangaea -km k2"
 # Archives pangaea project, but excludes .git directory and p.h, then copy the file to src for backup.
