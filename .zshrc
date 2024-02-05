@@ -246,6 +246,7 @@ alias 168='cd ~/Dropbox/MyProjects/168*' # LMT
 alias 181='cd ~/Dropbox/MyProjects/181*' # pangaea firmware
 alias 182='cd ~/Dropbox/MyProjects/182*' # Wireless ZMK, TOTEM etc.
 alias 170='cd ~/Dropbox/MyProjects/170*' # Continuity Tester
+alias 189='cd ~/Dropbox/MyProjects/189*' # Hot Notifier
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
