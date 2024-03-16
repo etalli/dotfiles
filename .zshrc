@@ -135,7 +135,7 @@ alias lmtec='vi $LMT_HOME/config.h'
 alias lmtecc='vi $LMT_HOME/keymaps/default/config.h'
 alias lmtc='lmtcd;qmk compile -kb lmt2 -km default;'
 alias lmtp='lmtcd;qmk flash   -kb lmt2 -km default;lmtz'
-alias lmtz='lmtcd;cd ../;zip -r `date +%Y%m%d-%H%M-lmtkbd.zip` lmt2 -x \*/.git/\* keymaps/.DS_Store;mv *lmtkbd.zip ~/Dropbox/MyProjects/168*/LMT/LMT_rev3/firmware/;pwd'
+alias lmtz='lmtcd;cd ../;zip -r `date +%Y%m%d-%H%M-lmtkbd.zip` lmt2 -x \*/.git/\* keymaps/.DS_Store;mv *lmtkbd.zip $DROPBOX/MyProjects/168*/LMT/LMT_rev3/firmware/;pwd'
 
 # Web Browser
 alias chrome='open -na "Google Chrome" --args'
@@ -232,22 +232,22 @@ eval "$(pyenv init -)"
 ###  MyProjects short cuts
 export DROPBOX='/Users/k/Library/CloudStorage/Dropbox'
 alias tt='cd ~/src/1216/qmk_firmware/'
-alias 158='cd ~/Dropbox/MyProjects/158*'
-alias 154='cd ~/Dropbox/MyProjects/154*'
-alias 153='cd ~/Dropbox/MyProjects/153*'
-alias 160='cd ~/Dropbox/MyProjects/160*'
-alias 161='cd ~/Dropbox/MyProjects/161*'
-alias 162='cd ~/Dropbox/MyProjects/162*'
-alias 169='cd ~/Dropbox/MyProjects/169*'
-alias 136='cd ~/Dropbox/MyProjects/136*'
-alias 152='cd ~/Dropbox/MyProjects/152*' # pangaea thumb
-alias 166='cd ~/Dropbox/MyProjects/166*' # pangaea pinkey, -0.25u
-alias 180='cd ~/Dropbox/MyProjects/180*'
+alias 158='cd $DROPBOX/MyProjects/158*'
+alias 154='cd $DROPBOX/MyProjects/154*'
+alias 153='cd $DROPBOX/MyProjects/153*'
+alias 160='cd $DROPBOX/MyProjects/160*'
+alias 161='cd $DROPBOX/MyProjects/161*'
+alias 162='cd $DROPBOX/MyProjects/162*'
+alias 169='cd $DROPBOX/MyProjects/169*'
+alias 136='cd $DROPBOX/MyProjects/136*'
+alias 152='cd $DROPBOX/MyProjects/152*' # pangaea thumb
+alias 166='cd $DROPBOX/MyProjects/166*' # pangaea pinkey, -0.25u
+alias 180='cd $DROPBOX/MyProjects/180*'
 alias 168='cd $DROPBOX/MyProjects/168*' # LMT
-alias 181='cd ~/Dropbox/MyProjects/181*' # pangaea firmware
-alias 182='cd ~/Dropbox/MyProjects/182*' # Wireless ZMK, TOTEM etc.
-alias 170='cd ~/Dropbox/MyProjects/170*' # Continuity Tester
-alias 189='cd ~/Dropbox/MyProjects/189*' # Hot Notifier
+alias 181='cd $DROPBOX/MyProjects/181*' # pangaea firmware
+alias 182='cd $DROPBOX/MyProjects/182*' # Wireless ZMK, TOTEM etc.
+alias 170='cd $DROPBOX/MyProjects/170*' # Continuity Tester
+alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
