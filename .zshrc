@@ -230,6 +230,7 @@ alias rss='echo "restarting shell.";exec $SHELL -l'
 eval "$(pyenv init -)"
 
 ###  MyProjects short cuts
+export DROPBOX='/Users/k/Library/CloudStorage/Dropbox'
 alias tt='cd ~/src/1216/qmk_firmware/'
 alias 158='cd ~/Dropbox/MyProjects/158*'
 alias 154='cd ~/Dropbox/MyProjects/154*'
@@ -242,7 +243,7 @@ alias 136='cd ~/Dropbox/MyProjects/136*'
 alias 152='cd ~/Dropbox/MyProjects/152*' # pangaea thumb
 alias 166='cd ~/Dropbox/MyProjects/166*' # pangaea pinkey, -0.25u
 alias 180='cd ~/Dropbox/MyProjects/180*'
-alias 168='cd ~/Dropbox/MyProjects/168*' # LMT
+alias 168='cd $DROPBOX/MyProjects/168*' # LMT
 alias 181='cd ~/Dropbox/MyProjects/181*' # pangaea firmware
 alias 182='cd ~/Dropbox/MyProjects/182*' # Wireless ZMK, TOTEM etc.
 alias 170='cd ~/Dropbox/MyProjects/170*' # Continuity Tester
