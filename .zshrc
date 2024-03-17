@@ -248,6 +248,7 @@ alias 181='cd $DROPBOX/MyProjects/181*' # pangaea firmware
 alias 182='cd $DROPBOX/MyProjects/182*' # Wireless ZMK, TOTEM etc.
 alias 170='cd $DROPBOX/MyProjects/170*' # Continuity Tester
 alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
+alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico Dev Env
 
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
