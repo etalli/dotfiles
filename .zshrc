@@ -251,6 +251,7 @@ alias 170='cd $DROPBOX/MyProjects/170*' # Continuity Tester
 alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
 alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico W, BLE keyboard Dev Env
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
+alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 alias ze='source ~/zephyrproject/.venv/bin/activate'
 export TODAY=`date +%m%d`
