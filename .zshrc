@@ -103,7 +103,7 @@ alias qc="cd $QMK_HOME;qmk clean -a"
 alias pf="cd   $QMK_HOME;qmk --log-file-level critical flash -kb pangaea -km k2"
 alias pfpi="cd $QMK_HOME;qmk --log-file-level critical flash -c -kb pangaea -km k2 -e CONVERT_TO=elite_pi"
 alias pfkb="cd $QMK_HOME;qmk --log-file-level critical flash -c -kb pangaea -km k2 -e CONVERT_TO=kb2040"
-alias pfkbcrnkbd="cd $QMK_HOME;qmk flash -c -kb crkbd -km default -e CONVERT_TO=kb2040"
+alias pfkb2="cd $QMK_HOME;qmk flash -c -kb crkbd -km default -e CONVERT_TO=kb2040"
 # Archives pangaea project, but excludes .git directory and p.h, then copy the file to src for backup.
 alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
 alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;ls -l *pang4ea.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
