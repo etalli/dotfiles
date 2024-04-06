@@ -260,4 +260,10 @@ alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ign
 #
 alias ze='source ~/zephyrproject/.venv/bin/activate'
 export TODAY=`date +%m%d`
+#
+#
+alisa test1='git checkout 0.18.1'
+#You can also checkout based on date (instead of looking up the hash), eg:
+#git checkout 'master@{1979-02-26 18:30:00}'
+#git checkout @{14.days.ago}
 
