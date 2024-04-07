@@ -117,7 +117,6 @@ alias kcd='cd $KASUMI_HOME/keymaps/default'
 alias ke='vi $KASUMI_HOME/keymaps/default/keymap.c'
 alias kc='kcd;qmk compile -kb kasumigasane -km default'
 alias kp='kcd;qmk flash -kb kasumigasane -km default'
-
 ##
 ## my4pad my4pad with RP2040,  [Aug 3,2022], updaetd July 15, 2023
 ##
