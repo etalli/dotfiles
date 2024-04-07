@@ -252,6 +252,7 @@ alias 170='cd $DROPBOX/MyProjects/170*' # Continuity Tester
 alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
 alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico W, BLE keyboard Dev Env
 alias 195='cd $DROPBOX/MyProjects/195*' # Kasumigasane
+alias 196='cd $DROPBOX/MyProjects/196*' # Password input tool
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
