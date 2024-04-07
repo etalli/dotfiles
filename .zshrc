@@ -81,7 +81,7 @@ alias vi='nvim'
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
 #export QMK_HOME='/Users/k/src/1216/qmk_firmware' # LATEST, V1.2
 #export QMK_HOME='/Users/k/Library/CloudStorage/Dropbox/MyProjects/181_pangaea_config/qmk_firmware' # LATEST qmk 22.10
-alias DROPBOX=='/Users/k/Library/CloudStorage/Dropbox/'
+alias DROPBOX='/Users/k/Library/CloudStorage/Dropbox/'
 #export QMK_HOME='/Users/k/Dropbox/MyProjects/181_pangaea_config/qmk_firmware' # LATEST qmk 22.10
 export QMK_HOME='/Users/k/src/1116/qmk_firmware'
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
@@ -263,7 +263,7 @@ alias ze='source ~/zephyrproject/.venv/bin/activate'
 export TODAY=`date +%m%d`
 #
 #
-alisa test1='git checkout 0.18.1'
+alias test1='git checkout 0.18.1'
 #You can also checkout based on date (instead of looking up the hash), eg:
 #git checkout 'master@{1979-02-26 18:30:00}'
 #git checkout @{14.days.ago}
