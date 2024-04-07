@@ -76,7 +76,6 @@ alias grl='grep -rl'
 export EDITOR=code
 alias vscode='code'
 alias vi='nvim'
-
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
 #export QMK_HOME='/Users/k/src/1216/qmk_firmware' # LATEST, V1.2
@@ -129,7 +128,7 @@ alias 4ecc='vi $MY4PAD_HOME/keymaps/default/config.h'
 alias 4c='4cd;qmk compile -kb my4pad -km default;cd ../../'
 alias 4p='4cd;qmk flash   -kb my4pad -km default;cd ../../'
 alias 4z='4cd;cd ../;zip -r my4pad.zip my4pad -x \*/.git/\* keymaps/.DS_Store;mv my4pad.zip $HOME/src/;echo "check src"'
-
+##
 ## lmtkbd, July 15, 2023
 LMT_HOME='/Users/k/src/0714/qmk_firmware/keyboards/lmt2/'
 alias lmtcd='cd $LMT_HOME'
