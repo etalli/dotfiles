@@ -254,6 +254,7 @@ alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico W, BLE keyboard Dev E
 alias 195='cd $DROPBOX/MyProjects/195*' # Kasumigasane
 alias 196='cd $DROPBOX/MyProjects/196*/qmk_firmware/' # Password input tool
 alias 196k='cd $DROPBOX/MyProjects/196*/qmk_firmware/keyboard*/handwired/onekey;pwd' # Password input tool
+alias 196p='cd $DROPBOX/MyProjects/196*/qmk_firmware;pwd;qmk flash -kb handwired/onekey -km default' # Password input tool
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
