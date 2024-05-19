@@ -1,5 +1,8 @@
 # my configuraton for MacOS
 
+[Google spreadsheeta](
+https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1FRc/edit?usp=sharing)
+
 ## Useful tools
 
 * Chrome (Google web browser)
