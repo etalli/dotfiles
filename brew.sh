@@ -20,28 +20,13 @@ brew install moreutils
 brew install findutils
 # install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
-# install shells
-brew install zsh
-brew install bash
-brew install bash-completion2
-
-# Switch to using brew-installed bash as default shell
-if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/bash";
-fi;
 
 # install more recent versions of some macOS tools.
-brew install wget
-brew install gnupg
 brew install vim
 brew install grep
+brew install wget
+brew install gnupg
 brew install screen
-brew install php
-brew install gmp
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install woff2
 brew install imagemagick
 # Remove outdated versions from the cellar.
 brew cleanup
