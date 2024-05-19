@@ -3,27 +3,20 @@
 # dotfiles - how to link .dotfiles to home directory.
 # example,  $ ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
 #
-# ctrl-r: search zsh historyy
 # ctrl+a: go to the begeinning of line
 # ctrl+e: go to the end of line
 # ctrl+u: delete the whole line
 # ctrl+k: delete text to the end of line
+# ctrl-r: search zsh historyy
 #
 # avoid logout with Ctrl+D
 setopt IGNOREEOF
-
 # use Japanese
 export LANG=ja_JP.UTF-8
-
 # aadd local path
 export PATH="$HOME/bin:$PATH"
-
 # share history with other terminal
 setopt share_history
-
-# do not display history overlaps
-setopt histignorealldups
-
 # zsh history configg
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
@@ -34,28 +27,22 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt hist_ignore_dups # ignore duplication command history list
 setopt hist_ignore_all_dups
-
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
-
 # prompt
 autoload colors
 colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 RPROMPT="[%W ]"
 # pure, Feb 19, 2023-
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
-autoload -U promptinit; promptinit
-prompt pure
-
+#fpath+=("$(brew --prefix)/share/zsh/site-functions")
+#autoload -U promptinit; promptinit
+#prompt pure
 # aliases
-alias l='ls -ltr --color=auto'
 alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias lst='ls -ltr --color=auto'
-alias cdd='cd desktop'
-alias h='fc -lt '%F %T' 1'
 alias h='fc -lt '%F %T' 1'
 alias cp='cp -i'
 alias rm='rm -i'
@@ -63,51 +50,45 @@ alias mkdir='mkdir -p'
 alias ..='cd ../'
 alias .2='cd ../../'
 alias .3='cd ../../../'
-alias back='pushd'
 alias diff='diff -U1'
-# Global Alias
-alias -g L='| less'
-alias -g H='| head'
-alias -g G='| grep'
-alias -g GI='| grep -ri'
-alias grl='grep -rl'
 # text editor
 #export EDITOR=nvim
 export EDITOR=code
-alias vscode='code'
-alias vi='nvim'
+alias vi='vim'
+
+
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
-#export QMK_HOME='/Users/k/src/1216/qmk_firmware' # LATEST, V1.2
-#export QMK_HOME='/Users/k/Library/CloudStorage/Dropbox/MyProjects/181_pangaea_config/qmk_firmware' # LATEST qmk 22.10
-alias DROPBOX='/Users/k/Library/CloudStorage/Dropbox/'
 #export QMK_HOME='/Users/k/Dropbox/MyProjects/181_pangaea_config/qmk_firmware' # LATEST qmk 22.10
-export QMK_HOME='/Users/k/src/1116/qmk_firmware'
+#export QMK_HOME='/Users/k/src/1116/qmk_firmware'
+export QMK_HOME='/Users/k2/qmk_firmware'
 export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
-alias cdq='cd $QMK_HOME'
 alias pe="$EDITOR -g $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c:228"
+alias m2e="$EDITOR -g $QMK_HOME/keyboards/m2/keymaps/default/keymap.c"
 alias peh="vi  $QMK_HOME/keyboards/pangaea/pangaea.h"
 alias pev="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c -c 228"
 alias pecb="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/combo.c"
 alias pcd="cd  $PANGAEA_HOME;echo "";echo QMK_HOME is $QMK_HOME;echo PANGAEA_HOME is $PANGAEA_HOME"
 alias pcdk="cd $QMK_HOME/keyboards/pangaea/keymaps/k2/;pwd"
+alias pei="vi  $QMK_HOME/keyboards/pangaea/info.json"
 alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
 alias perk="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/rules.mk"
 alias pec="vi  $QMK_HOME/keyboards/pangaea/config.h"
-alias pei="vi  $QMK_HOME/keyboards/pangaea/info.json"
 alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
-alias pecc="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/config.h"
-alias pep="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/p.h"
 alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb pangaea -km k2"
+alias m2c="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb m2 -km default"
+alias m2f="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color flash -kb m2 -km default"
 alias qc="cd $QMK_HOME;qmk clean -a"
 alias pf="cd   $QMK_HOME;qmk --log-file-level critical flash -kb pangaea -km k2"
+# tests
 alias pfpi="cd $QMK_HOME;qmk --log-file-level critical flash -c -kb pangaea -km k2 -e CONVERT_TO=elite_pi"
 alias pfkb="cd $QMK_HOME;qmk --log-file-level critical flash -c -kb pangaea -km k2 -e CONVERT_TO=kb2040"
 alias pfkb2="cd $QMK_HOME;qmk flash -c -kb crkbd -km default -e CONVERT_TO=kb2040"
 # Archives pangaea project, but excludes .git directory and p.h, then copy the file to src for backup.
-alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
-alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;ls -l *pang4ea.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
-alias tt="touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt"
+#alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
+#alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;ls -l *pang4ea.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
+#
+#alias tt="touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt"
 ##
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 ##
@@ -142,10 +123,10 @@ alias lmtz='lmtcd;cd ../;zip -r `date +%Y%m%d-%H%M-lmtkbd.zip` lmt2 -x \*/.git/\
 # Web Browser
 alias chrome='open -na "Google Chrome" --args'
 alias chromenw='open -na "Google Chrome" --args --new-window'
-alias primevideo='chrome "https://www.amazon.co.jp/Amazon-Video/b/?ie=UTF8&node=2351649051&ref_=nav_cs_prime_video"'
 
 ## zshrc
-alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;bdot;popd'
+#alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;dot;popd'
+alias ez='pushd;vim ~/.zshrc;source ~/.zshrc'
 alias vz="vim ~/.zshrc"
 alias rz="source ~/.zshrc"
 # misc
@@ -158,7 +139,6 @@ alias f1='find ./ -atime 1'
 alias f3p='find ./ -atime +3' # three days before
 alias f10='find ./ -atime -10' # within 10 days
 alias ft='find ./ -mtime 0' # today
-#
 # git alias commands
 #
 # GitHUBH
@@ -222,6 +202,7 @@ unset __conda_setup
 # conda config --set auto_activate_base False
 
 ### rust
+export PATH="HOME/bin:$PATH"
 export PATH="HOME/.cargo/bin/:$PATH"
 alias cf='cargo fmt --check --verbose'
 alias cb='cargo build'
@@ -229,10 +210,10 @@ alias cc='cargo clippy'
 # restart shell without restating the terminal
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 #
 ###  MyProjects short cuts
-export DROPBOX='/Users/k/Library/CloudStorage/Dropbox'
+export DROPBOX='/Users/k2/Dropbox'
 alias tt='cd ~/src/1216/qmk_firmware/'
 alias 158='cd $DROPBOX/MyProjects/158*'
 alias 154='cd $DROPBOX/MyProjects/154*'
@@ -261,11 +242,11 @@ alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 #
 alias ze='source ~/zephyrproject/.venv/bin/activate'
-export TODAY=`date +%m%d`
-#
+#export TODAY=`date +%m%d`
 #
 alias test1='git checkout 0.18.1'
 #You can also checkout based on date (instead of looking up the hash), eg:
 #git checkout 'master@{1979-02-26 18:30:00}'
 #git checkout @{14.days.ago}
-
+alias sall="find ./ -name '*' | xargs grep"
+alias sinfo="find ./ -name 'info.json' | xargs grep"
