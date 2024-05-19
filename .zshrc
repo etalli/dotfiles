@@ -195,8 +195,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-#
-#
+##
 # how to remove (base) on prompt
 # conda deactivate
 # conda config --set auto_activate_base False
