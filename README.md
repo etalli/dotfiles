@@ -15,3 +15,4 @@ my dot files and MacOS configuration memo
 # MacOS tools and configurations
 
 * [Mac OS installation note](MacOS-config.md)
+* [Mac OS installation note.M1 Mac](https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1FRc/edit?usp=sharing)
