@@ -76,14 +76,19 @@ alias perk="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/rules.mk"
 alias pec="vi  $QMK_HOME/keyboards/pangaea/config.h"
 alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
 alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb pangaea -km k2"
+alias pf="cd   $QMK_HOME;qmk --log-file-level critical flash -kb pangaea -km k2"
+#
 alias m2c="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb m2 -km default"
 alias m2f="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color flash -kb m2 -km default"
+alias m2ac="cd   $QMK_HOME;pwd;/usr/bin/time qmk compile -kb m2a -km default"
+alias m2af="cd   $QMK_HOME;pwd;/usr/bin/time qmk flash -kb m2a -km default"
+#
 alias qc="cd $QMK_HOME;qmk clean -a"
-alias pf="cd   $QMK_HOME;qmk --log-file-level critical flash -kb pangaea -km k2"
 # tests
 alias pfpi="cd $QMK_HOME;qmk --log-file-level critical flash -c -kb pangaea -km k2 -e CONVERT_TO=elite_pi"
 alias pfkb="cd $QMK_HOME;qmk --log-file-level critical flash -c -kb pangaea -km k2 -e CONVERT_TO=kb2040"
 alias pfkb2="cd $QMK_HOME;qmk flash -c -kb crkbd -km default -e CONVERT_TO=kb2040"
+#
 # Archives pangaea project, but excludes .git directory and p.h, then copy the file to src for backup.
 #alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
 #alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;ls -l *pang4ea.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
@@ -125,12 +130,13 @@ alias chrome='open -na "Google Chrome" --args'
 alias chromenw='open -na "Google Chrome" --args --new-window'
 
 ## zshrc
-#alias ez='pushd;vim ~/.zshrc;source ~/.zshrc;dot;popd'
-alias ez='pushd;vim ~/.zshrc;source ~/.zshrc'
+alias ez='vim ~/.zshrc;source ~/.zshrc'
 alias vz="vim ~/.zshrc"
 alias rz="source ~/.zshrc"
 # misc
+# keyboard firmware, qmk
 alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
+#
 alias finder='open .'
 alias f='find ./ -name '
 alias f3='find ./ -atime 3'
@@ -232,9 +238,13 @@ alias 170='cd $DROPBOX/MyProjects/170*' # Continuity Tester
 alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
 alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico W, BLE keyboard Dev Env
 alias 195='cd $DROPBOX/MyProjects/195*' # Kasumigasane
-alias 196='cd $DROPBOX/MyProjects/196*/qmk_firmware/' # Password input tool
-alias 196k='cd $DROPBOX/MyProjects/196*/qmk_firmware/keyboard*/handwired/onekey;pwd' # Password input tool
-alias 196p='cd $DROPBOX/MyProjects/196*/qmk_firmware;pwd;qmk flash -kb handwired/onekey -km default' # Password input tool
+alias 199='cd ~/qmk_firmware;cd keyboards/m2;pwd'
+
+# password manager just one buton with rp2040
+alias 205='cd $HOME/src/09172024/qmk_firmware/'
+alias 205c='qmk compile -km default -kb handwired/onekey/rp2040'
+alias 205f='qmk flash   -km default -kb handwired/onekey/rp2040'
+
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
@@ -247,5 +257,7 @@ alias test1='git checkout 0.18.1'
 #You can also checkout based on date (instead of looking up the hash), eg:
 #git checkout 'master@{1979-02-26 18:30:00}'
 #git checkout @{14.days.ago}
-alias sall="find ./ -name '*' | xargs grep"
-alias sinfo="find ./ -name 'info.json' | xargs grep"
+alias sinfo='find ./ -name 'info.json' | xargs grep'
+alias mikke='(){find ./ -type f -print | xargs grep $1 | less}'
+
+alias ff='./mach run >& /dev/null '
