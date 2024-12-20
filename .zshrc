@@ -239,25 +239,24 @@ alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
 alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico W, BLE keyboard Dev Env
 alias 195='cd $DROPBOX/MyProjects/195*' # Kasumigasane
 alias 199='cd ~/qmk_firmware;cd keyboards/m2;pwd'
-
-# password manager just one buton with rp2040
-alias 205='cd $HOME/src/09172024/qmk_firmware/'
-alias 205c='qmk compile -km default -kb handwired/onekey/rp2040'
-alias 205f='qmk flash   -km default -kb handwired/onekey/rp2040'
-
+alias 205='cd $DROPBOX/MyProjects/205*' # one key password manager
+alias 205c='cd $HOME/src/2024-0917/qmk_firmware/'
+alias 205cd='cd $HOME/src/2024-0917/qmk_firmware/keyboards/handwired/onekey'
+alias 205kc='qmk compile -km default -kb handwired/onekey/kb2040'
+alias 205kf='qmk flash   -km default -kb handwired/onekey/kb2040'
+#
+alias 211='cd $DROPBOX/MyProjects/211_*' # Pangaea Dev Guide
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 #
 alias ze='source ~/zephyrproject/.venv/bin/activate'
-#export TODAY=`date +%m%d`
+export TODAY=`date +%m%d`
 #
-alias test1='git checkout 0.18.1'
-#You can also checkout based on date (instead of looking up the hash), eg:
-#git checkout 'master@{1979-02-26 18:30:00}'
-#git checkout @{14.days.ago}
+# QMKs
 alias sinfo='find ./ -name 'info.json' | xargs grep'
 alias mikke='(){find ./ -type f -print | xargs grep $1 | less}'
-
+# web browser
 alias ff='./mach run >& /dev/null '
+#
