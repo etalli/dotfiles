@@ -260,3 +260,4 @@ alias mikke='(){find ./ -type f -print | xargs grep $1 | less}'
 # web browser
 alias ff='./mach run >& /dev/null '
 #
+export PATH="(brew --prefix python)/libexec/bin:$PATH"
