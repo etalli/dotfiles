@@ -176,7 +176,7 @@ alias grh="git reset --hard HEAD^"
 alias gpl="git pull"
 #
 ## dotfiles backup
-alias bdot='cd /Users/k/etc/dotfiles;git add .;git commit -m "ok" .zshrc;git push'
+alias bdot='cd /Users/k2/etc/dotfiles;git add .;git commit -m "ok" .zshrc;git push'
 alias bdot2='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles'
 alias bdot3='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/.zshrc'
 alias bdoti='bdot;/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/etalli/dotfiles/blob/main/install.sh'
@@ -239,14 +239,19 @@ alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
 alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico W, BLE keyboard Dev Env
 alias 195='cd $DROPBOX/MyProjects/195*' # Kasumigasane
 alias 199='cd ~/qmk_firmware;cd keyboards/m2;pwd'
+#
 alias 205='cd $DROPBOX/MyProjects/205*' # one key password manager
-alias 215='cd $DROPBOX/MyProjects/215*' # misc.
 alias 205c='cd $HOME/src/2024-0917/qmk_firmware/'
-alias 205cd='cd $HOME/src/2024-0917/qmk_firmware/keyboards/handwired/onekey'
-alias 205kc='qmk compile -km default -kb handwired/onekey/kb2040'
-alias 205kf='qmk flash   -km default -kb handwired/onekey/kb2040'
+alias 205e='cd $HOME/src/2024-0917/qmk_firmware/keyboards/handwired/onekey'
+alias 205b='205c;cqmk compile -km default -kb handwired/onekey/kb2040'
+alias 205f='205c;qmk flash   -km default -kb handwired/onekey/kb2040'
 #
 alias 211='cd $DROPBOX/MyProjects/211_*' # Pangaea Dev Guide
+alias 215='cd $DROPBOX/MyProjects/215*'  # Blender
+alias 218='cd $DROPBOX/MyProjects/218*'  # Othello
+alias 217='cd $DROPBOX/MyProjects/217*/2*' # spice simulaiton
+alias 221='cd $DROPBOX/MyProjects/221*'  # misc
+alias 222='cd $DROPBOX/MyProjects/222*'  # ZMK Split test
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
@@ -262,3 +267,6 @@ alias mikke='(){find ./ -type f -print | xargs grep $1 | less}'
 alias ff='./mach run >& /dev/null '
 #
 export PATH="(brew --prefix python)/libexec/bin:$PATH"
+#
+alias bldenv='python3 -m venv venv'
+alias enenv='source venv/bin/activate'
