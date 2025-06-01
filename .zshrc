@@ -44,7 +44,6 @@ alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias lst='ls -ltr --color=auto'
 alias h='fc -lt '%F %T' 1'
-alias cp='cp -i'
 alias rm='rm -i'
 alias mkdir='mkdir -p'
 alias ..='cd ../'
@@ -252,6 +251,10 @@ alias 218='cd $DROPBOX/MyProjects/218*'  # Othello
 alias 217='cd $DROPBOX/MyProjects/217*/2*' # spice simulaiton
 alias 221='cd $DROPBOX/MyProjects/221*'  # misc
 alias 222='cd $DROPBOX/MyProjects/222*'  # ZMK Split test
+alias 223='cd $DROPBOX/MyProjects/223*'  # KiCAD Plugins
+alias kc='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad'
+alias 224='cd $DROPBOX/MyProjects/224*'  # ZMK MacroPad_2x3
+alias 225='cd $DROPBOX/MyProjects/225*'  # ZMK totem keyboard
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
@@ -270,3 +273,11 @@ export PATH="(brew --prefix python)/libexec/bin:$PATH"
 #
 alias bldenv='python3 -m venv venv'
 alias enenv='source venv/bin/activate'
+
+# Added by Windsurf
+export PATH="/Users/k2/.codeium/windsurf/bin:$PATH"
+
+# Created by `pipx` on 2025-05-10 23:04:35
+export PATH="$PATH:/Users/k2/.local/bin"
+#
+alias refresh_script='cp -f *.py *.png /Users/k2/Documents/KiCad/9.0/scripting/plugins'
