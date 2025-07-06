@@ -240,9 +240,9 @@ alias 195='cd $DROPBOX/MyProjects/195*' # Kasumigasane
 alias 199='cd ~/qmk_firmware;cd keyboards/m2;pwd'
 #
 alias 205='cd $DROPBOX/MyProjects/205*' # one key password manager
-alias 205c='cd $HOME/src/2024-0917/qmk_firmware/'
+alias 205cd='cd $HOME/src/2024-0917/qmk_firmware/'
 alias 205e='cd $HOME/src/2024-0917/qmk_firmware/keyboards/handwired/onekey'
-alias 205b='205c;cqmk compile -km default -kb handwired/onekey/kb2040'
+alias 205c='205c;qmk compile -km default -kb handwired/onekey/kb2040'
 alias 205f='205c;qmk flash   -km default -kb handwired/onekey/kb2040'
 #
 alias 211='cd $DROPBOX/MyProjects/211_*' # Pangaea Dev Guide
