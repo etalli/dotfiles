@@ -255,6 +255,8 @@ alias 223='cd $DROPBOX/MyProjects/223*'  # KiCAD Plugins
 alias kc='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad'
 alias 224='cd $DROPBOX/MyProjects/224*'  # ZMK MacroPad_2x3
 alias 225='cd $DROPBOX/MyProjects/225*'  # ZMK totem keyboard
+alias 229='cd $DROPBOX/MyProjects/229*'  # Software Tools
+alias 230='cd $DROPBOX/MyProjects/230*'  # MacPaint
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
@@ -281,3 +283,24 @@ export PATH="/Users/k2/.codeium/windsurf/bin:$PATH"
 export PATH="$PATH:/Users/k2/.local/bin"
 #
 alias refresh_script='cp -f *.py *.png /Users/k2/Documents/KiCad/9.0/scripting/plugins'
+
+# 数字でDropbox/MyProjects内のdirectoryに移動する
+# 使い方
+# $ pj 229 →~/Dropbox/MyProjects/229xxx に移動
+# $ pj 401 →~/Dropbox/MyProjects/401xxx に移動
+#
+pj() {
+    local base="$HOME/Dropbox/MyProjects"   # Dropboxのパス
+    local match=(${base}/${1}*)             # 前方一致検索（配列）
+    printf '  %s\n' $match
+    if (( ${#match[@]} == 0 )); then
+        echo "No match for: $1"
+        return 1
+    elif (( ${#match[@]} > 1 )); then
+        echo "Multiple matches:"
+        printf '  %s\n' $match
+        return 1
+    fi
+    cd "$match[1]" || echo "Cannot cd into $match[1]"
+}
+
