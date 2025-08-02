@@ -286,9 +286,7 @@ alias refresh_script='cp -f *.py *.png /Users/k2/Documents/KiCad/9.0/scripting/p
 
 # 数字でDropbox/MyProjects内のdirectoryに移動する
 # 使い方
-# $ pj 229 →~/Dropbox/MyProjects/229xxx に移動
-# $ pj 401 →~/Dropbox/MyProjects/401xxx に移動
-#
+# $ pj 229   →~/Dropbox/MyProjects/229xxx に移動
 pj() {
     local base="$HOME/Dropbox/MyProjects"   # Dropboxのパス
     local match=(${base}/${1}*)             # 前方一致検索（配列）
@@ -301,6 +299,35 @@ pj() {
         printf '  %s\n' $match
         return 1
     fi
+
+    local histfile="$HOME/.pj_history"      # 履歴ファイル
+    # 履歴に追加（重複OK）
+    echo "$match[1]" >> "$histfile"
+
     cd "$match[1]" || echo "Cannot cd into $match[1]"
+}
+
+# ~/.pj_history から移動先を選んでジャンプ
+pjh() {
+    local histfile="$HOME/.pj_history"
+
+    # 履歴ファイルがなければ終了
+    [[ -f "$histfile" ]] || {
+        echo "No history found: $histfile"
+        return 1
+    }
+    echo "History file found: $histfile"
+    # fzfで選択
+    local dir
+    dir=$(tac "$histfile" | fzf --prompt="Select directory> " --height=40% --reverse)
+
+    # キャンセル時は何もしない
+    [[ -n "$dir" ]] || return 1
+
+    # ディレクトリ移動
+    cd "$dir" || {
+        echo "Cannot cd into $dir"
+        return 1
+    }
 }
 
