@@ -330,4 +330,6 @@ pjh() {
         return 1
     }
 }
+#
+alias python=/opt/homebrew/bin/python3
 
