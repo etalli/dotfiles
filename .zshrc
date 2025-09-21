@@ -1,4 +1,4 @@
-# file location: /Users/k/etc/dotfiles/.zshrc
+# location: /Users/k/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
 # example,  $ ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
@@ -8,16 +8,14 @@
 # ctrl+u: delete the whole line
 # ctrl+k: delete text to the end of line
 # ctrl-r: search zsh historyy
-#
-# avoid logout with Ctrl+D
-setopt IGNOREEOF
-# use Japanese
-export LANG=ja_JP.UTF-8
-# aadd local path
-export PATH="$HOME/bin:$PATH"
-# share history with other terminal
-setopt share_history
-# zsh history configg
+
+setopt IGNOREEOF # avoid logout with Ctrl+D
+export LANG=en_US.UTF-8
+#export LANG=ja_JP.UTF-8 # use Japanese
+export PATH="$HOME/bin:$PATH" # add local path
+setopt share_history # share history with other terminal
+
+# zsh history config
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
@@ -27,17 +25,16 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt hist_ignore_dups # ignore duplication command history list
 setopt hist_ignore_all_dups
+
 # Complement: Tab, Ctrl-i, Ctrl-d
 autoload -U compinit
+
 # prompt
 autoload colors
 colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 RPROMPT="[%W ]"
-# pure, Feb 19, 2023-
-#fpath+=("$(brew --prefix)/share/zsh/site-functions")
-#autoload -U promptinit; promptinit
-#prompt pure
+
 # aliases
 alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
@@ -50,11 +47,11 @@ alias ..='cd ../'
 alias .2='cd ../../'
 alias .3='cd ../../../'
 alias diff='diff -U1'
+
 # text editor
 #export EDITOR=nvim
 export EDITOR=code
 alias vi='vim'
-
 
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
@@ -74,7 +71,7 @@ alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
 alias perk="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/rules.mk"
 alias pec="vi  $QMK_HOME/keyboards/pangaea/config.h"
 alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
-alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb pangaea -km k2"
+alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb pangaea -km k2 2>&1 | tee compile-log.txt"
 alias pf="cd   $QMK_HOME;qmk --log-file-level critical flash -kb pangaea -km k2"
 #
 alias m2c="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb m2 -km default"
@@ -90,7 +87,7 @@ alias pfkb2="cd $QMK_HOME;qmk flash -c -kb crkbd -km default -e CONVERT_TO=kb204
 #
 # Archives pangaea project, but excludes .git directory and p.h, then copy the file to src for backup.
 #alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
-#alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;ls -l *pang4ea.tar.gz;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
+alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
 #
 #alias tt="touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt"
 ##
@@ -145,17 +142,6 @@ alias f3p='find ./ -atime +3' # three days before
 alias f10='find ./ -atime -10' # within 10 days
 alias ft='find ./ -mtime 0' # today
 # git alias commands
-#
-# GitHUBH
-#…or create a new repository on the command line
-#echo "# p_tmp5" >> README.md
-#git init
-#git add README.md
-#git commit -m "first commit"
-#git branch -M main
-#git remote add origin git@github.com:etalli/p_tmp5.git
-#git push -u origin main
-#
 alias ga='git add .'
 alias gcm='git commit -m "now"'
 alias gp='git push -u origin main'
@@ -211,52 +197,21 @@ export PATH="HOME/.cargo/bin/:$PATH"
 alias cf='cargo fmt --check --verbose'
 alias cb='cargo build'
 alias cc='cargo clippy'
+
 # restart shell without restating the terminal
 alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
-#eval "$(pyenv init -)"
 #
 ###  MyProjects short cuts
 export DROPBOX='/Users/k2/Dropbox'
 alias tt='cd ~/src/1216/qmk_firmware/'
-alias 158='cd $DROPBOX/MyProjects/158*'
-alias 154='cd $DROPBOX/MyProjects/154*'
-alias 153='cd $DROPBOX/MyProjects/153*'
-alias 160='cd $DROPBOX/MyProjects/160*'
-alias 161='cd $DROPBOX/MyProjects/161*'
-alias 162='cd $DROPBOX/MyProjects/162*'
-alias 169='cd $DROPBOX/MyProjects/169*'
-alias 136='cd $DROPBOX/MyProjects/136*'
-alias 152='cd $DROPBOX/MyProjects/152*' # pangaea thumb
-alias 166='cd $DROPBOX/MyProjects/166*' # pangaea pinkey, -0.25u
-alias 180='cd $DROPBOX/MyProjects/180*'
-alias 168='cd $DROPBOX/MyProjects/168*' # LMT
-alias 181='cd $DROPBOX/MyProjects/181*' # pangaea firmware
-alias 182='cd $DROPBOX/MyProjects/182*' # Wireless ZMK, TOTEM etc.
-alias 170='cd $DROPBOX/MyProjects/170*' # Continuity Tester
-alias 189='cd $DROPBOX/MyProjects/189*' # Hot Notifier
-alias 191='cd $DROPBOX/MyProjects/191*' # Raspbery Pi Pico W, BLE keyboard Dev Env
-alias 195='cd $DROPBOX/MyProjects/195*' # Kasumigasane
-alias 199='cd ~/qmk_firmware;cd keyboards/m2;pwd'
-#
-alias 205='cd $DROPBOX/MyProjects/205*' # one key password manager
+
+# keyboard
 alias 205cd='cd $HOME/src/2024-0917/qmk_firmware/'
 alias 205e='cd $HOME/src/2024-0917/qmk_firmware/keyboards/handwired/onekey'
 alias 205c='205c;qmk compile -km default -kb handwired/onekey/kb2040'
 alias 205f='205c;qmk flash   -km default -kb handwired/onekey/kb2040'
-#
-alias 211='cd $DROPBOX/MyProjects/211_*' # Pangaea Dev Guide
-alias 215='cd $DROPBOX/MyProjects/215*'  # Blender
-alias 218='cd $DROPBOX/MyProjects/218*'  # Othello
-alias 217='cd $DROPBOX/MyProjects/217*/2*' # spice simulaiton
-alias 221='cd $DROPBOX/MyProjects/221*'  # misc
-alias 222='cd $DROPBOX/MyProjects/222*'  # ZMK Split test
-alias 223='cd $DROPBOX/MyProjects/223*'  # KiCAD Plugins
-alias kc='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad'
-alias 224='cd $DROPBOX/MyProjects/224*'  # ZMK MacroPad_2x3
-alias 225='cd $DROPBOX/MyProjects/225*'  # ZMK totem keyboard
-alias 229='cd $DROPBOX/MyProjects/229*'  # Software Tools
-alias 230='cd $DROPBOX/MyProjects/230*'  # MacPaint
+
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
@@ -285,8 +240,7 @@ export PATH="$PATH:/Users/k2/.local/bin"
 alias refresh_script='cp -f *.py *.png /Users/k2/Documents/KiCad/9.0/scripting/plugins'
 
 # 数字でDropbox/MyProjects内のdirectoryに移動する
-# 使い方
-# $ pj 229   →~/Dropbox/MyProjects/229xxx に移動
+# ex. $ pj 229   →~/Dropbox/MyProjects/229xxx に移動
 pj() {
     local base="$HOME/Dropbox/MyProjects"   # Dropboxのパス
     local match=(${base}/${1}*)             # 前方一致検索（配列）
@@ -301,7 +255,7 @@ pj() {
     fi
 
     local histfile="$HOME/.pj_history"      # 履歴ファイル
-    # 履歴に追加（重複OK）
+    # 履歴に追加
     echo "$match[1]" >> "$histfile"
 
     cd "$match[1]" || echo "Cannot cd into $match[1]"
@@ -320,7 +274,6 @@ pjh() {
     # fzfで選択
     local dir
     dir=$(tac "$histfile" | fzf --prompt="Select directory> " --height=40% --reverse)
-
     # キャンセル時は何もしない
     [[ -n "$dir" ]] || return 1
 
@@ -330,6 +283,19 @@ pjh() {
         return 1
     }
 }
+
 #
 alias python=/opt/homebrew/bin/python3
 
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/k2/.lmstudio/bin"
+# End of LM Studio CLI section
+
+# Sony spresense
+export PATH="/Users/k2/spresenseenv/usr/bin:$PATH"
+
+# Cursor cli
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(~/.local/bin/cursor-agent shell-integration zsh)"
+# cursor
+export PATH="/Applications/Cursor.app/Contents/Resources/app/bin:$PATH"
