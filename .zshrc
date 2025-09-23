@@ -55,22 +55,15 @@ alias vi='vim'
 
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'
-#export QMK_HOME='/Users/k/Dropbox/MyProjects/181_pangaea_config/qmk_firmware' # LATEST qmk 22.10
-#export QMK_HOME='/Users/k/src/1116/qmk_firmware'
-export QMK_HOME='/Users/k2/qmk_firmware'
-export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea/'
+#
+export QMK_HOME='/Users/k2/src/2025-09-03-qmk/qmk_firmware'
+#
+export PANGAEA_HOME=$QMK_HOME'/keyboards/pangaea'
 alias pe="$EDITOR -g $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c:228"
-alias m2e="$EDITOR -g $QMK_HOME/keyboards/m2/keymaps/default/keymap.c"
-alias peh="vi  $QMK_HOME/keyboards/pangaea/pangaea.h"
-alias pev="vi  $QMK_HOME/keyboards/pangaea/keymaps/k2/keymap.c -c 228"
-alias pecb="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/combo.c"
 alias pcd="cd  $PANGAEA_HOME;echo "";echo QMK_HOME is $QMK_HOME;echo PANGAEA_HOME is $PANGAEA_HOME"
-alias pcdk="cd $QMK_HOME/keyboards/pangaea/keymaps/k2/;pwd"
-alias pei="vi  $QMK_HOME/keyboards/pangaea/info.json"
-alias per="vi  $QMK_HOME/keyboards/pangaea/rules.mk"
-alias perk="vi $QMK_HOME/keyboards/pangaea/keymaps/k2/rules.mk"
-alias pec="vi  $QMK_HOME/keyboards/pangaea/config.h"
-alias pem="vi  $QMK_HOME/keyboards/pangaea/matrix.c"
+alias pei="vi  $PANGAEA_HOME/info.json"
+alias per="vi  $PANGAEA_HOME/rules.mk"
+alias pew="vi  $PANGAEA_HOME/keymaps/k2/p.h"
 alias pc="cd   $QMK_HOME;pwd;/usr/bin/time qmk --log-file-level info --color compile -kb pangaea -km k2 2>&1 | tee compile-log.txt"
 alias pf="cd   $QMK_HOME;qmk --log-file-level critical flash -kb pangaea -km k2"
 #
@@ -295,7 +288,11 @@ export PATH="$PATH:/Users/k2/.lmstudio/bin"
 export PATH="/Users/k2/spresenseenv/usr/bin:$PATH"
 
 # Cursor cli
-export PATH="$HOME/.local/bin:$PATH"
-eval "$(~/.local/bin/cursor-agent shell-integration zsh)"
-# cursor
-export PATH="/Applications/Cursor.app/Contents/Resources/app/bin:$PATH"
+#export PATH="$HOME/.local/bin:$PATH"
+#eval "$(~/.local/bin/cursor-agent shell-integration zsh)"
+#export PATH="/Applications/Cursor.app/Contents/Resources/app/bin:$PATH"
+
+# Arduino-cli
+#export PATH="$PATH:/Users/k2/Applications/arduino-cli_1.3.1_macOS_ARM64"
+export PATH="$PATH:$HOME/Applications/arduino-cli_1.3.1_macOS_ARM64"
+alias ac='arduino-cli'
