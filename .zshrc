@@ -297,4 +297,5 @@ export PATH="/Users/k2/spresenseenv/usr/bin:$PATH"
 export PATH="$PATH:$HOME/Applications/arduino-cli_1.3.1_macOS_ARM64"
 alias ac='arduino-cli'
 #
-alias b='sh ~/bin/bkup.sh'
+alias B='sh ~/bin/bkup.sh ../examples/cxd5602pwbimu_logger/ ~/backups/'
+alias V='../examples/cxd5602pwbimu_logger/generate_build_number.sh'
