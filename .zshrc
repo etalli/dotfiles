@@ -35,18 +35,23 @@ colors
 #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 RPROMPT="[%W ]"
 
-# aliases
-alias ls='ls --color=auto -F'
-alias ll='ls -l --color=auto'
-alias la='ls -la --color=auto'
-alias lst='ls -ltr --color=auto'
-alias h='fc -lt '%F %T' 1'
-alias rm='rm -i'
-alias mkdir='mkdir -p'
-alias ..='cd ../'
-alias .2='cd ../../'
-alias .3='cd ../../../'
-alias diff='diff -U1'
+# ==============================
+# alias file
+# ==============================
+ZSH_ALIAS_FILE="$HOME/.zsh_aliases"
+# if the file exists, read it
+if [ -f "$ZSH_ALIAS_FILE" ]; then
+  source "$ZSH_ALIAS_FILE"
+  echo "[OK] alias loaded from $ZSH_ALIAS_FILE"
+else
+  echo "[INFO] alias file not found: $ZSH_ALIAS_FILE"
+  echo "# create it by → touch $ZSH_ALIAS_FILE"
+fi
+# local setting
+if [ -f ~/.zsh_local ]; then
+  source ~/.zsh_local
+fi
+
 
 # text editor
 export EDITOR=code

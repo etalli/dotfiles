@@ -1,0 +1,12 @@
+# aliases
+alias ls='ls --color=auto -F'
+alias ll='ls -l --color=auto'
+alias la='ls -la --color=auto'
+alias lst='ls -ltr --color=auto'
+alias h='fc -lt '%F %T' 1'
+alias rm='rm -i'
+alias mkdir='mkdir -p'
+alias ..='cd ../'
+alias .2='cd ../../'
+alias .3='cd ../../../'
+alias diff='diff -U1'
