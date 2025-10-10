@@ -49,7 +49,6 @@ alias .3='cd ../../../'
 alias diff='diff -U1'
 
 # text editor
-#export EDITOR=nvim
 export EDITOR=code
 alias vi='vim'
 
@@ -82,7 +81,6 @@ alias pfkb2="cd $QMK_HOME;qmk flash -c -kb crkbd -km default -e CONVERT_TO=kb204
 #alias pzip="pcd;cd ../;zip -r `date +%m%d-pangaea`.zip pangaea -x \*/.git/\* pangaea/keymaps/k2/p.h;mv `date +%m%d-pangaea`.zip $HOME/src/backup/;cd ~/src/backup;ls -l"
 alias ptar="pcd;cd ../;tar --exclude pangaea/.git --exclude p.h -hzcvf `date +%Y%m%d-%H%M%S-pangaea`.tar.gz $PANGAEA_HOME;mv *.tar.gz ~/src/backup;cd ~/src/backup/;ls -l"
 #
-#alias tt="touch my_text-`date "+%Y-%m-%d__%H:%M:%S"`.txt;ls *.txt"
 ##
 ## kasumigasane 4x4 Macropad without diode by e3w2q
 ##
@@ -120,8 +118,6 @@ alias chromenw='open -na "Google Chrome" --args --new-window'
 
 ## zshrc
 alias ez='vim ~/.zshrc;source ~/.zshrc'
-alias vz="vim ~/.zshrc"
-alias rz="source ~/.zshrc"
 # misc
 # keyboard firmware, qmk
 alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
@@ -276,7 +272,6 @@ pjh() {
         return 1
     }
 }
-
 #
 alias python=/opt/homebrew/bin/python3
 
