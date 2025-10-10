@@ -1,21 +1,16 @@
-# location: /Users/k/etc/dotfiles/.zshrc
+# file: $HOME/etc/dotfiles/.zshrc
 #
 # dotfiles - how to link .dotfiles to home directory.
-# $ ln -nfs /Users/k/etc/dotfiles/.zshrc /Users/k/.zshrc
-# $ ln -nfs /Users/k/etc/dotfiles/.zsh_aliases /Users/k/.zsh_aliases
+# See $HOME/etc/dotfiles/install.sh
 #
-# ctrl+a: go to the begeinning of line
-# ctrl+e: go to the end of line
-# ctrl+u: delete the whole line
-# ctrl+k: delete text to the end of line
+# ctrl+a: go to the begeinning of line, ctrl+e: go to the end of line
+# ctrl+u: delete the whole line, ctrl+k: delete text to the end of line
 # ctrl-r: search zsh historyy
 
 setopt IGNOREEOF # avoid logout with Ctrl+D
-export LANG=en_US.UTF-8
-#export LANG=ja_JP.UTF-8 # use Japanese
+export LANG=en_US.UTF-8 # export LANG=ja_JP.UTF-8 # use Japanese
 export PATH="$HOME/bin:$PATH" # add local path
 setopt share_history # share history with other terminal
-
 # zsh history config
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
@@ -26,33 +21,28 @@ setopt auto_pushd
 setopt pushd_ignore_dups
 setopt hist_ignore_dups # ignore duplication command history list
 setopt hist_ignore_all_dups
-
-# Complement: Tab, Ctrl-i, Ctrl-d
-autoload -U compinit
+autoload -U compinit # Complement: Tab, Ctrl-i, Ctrl-d
 
 # prompt
 autoload colors
 colors
-#PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
-RPROMPT="[%W ]"
+RPROMPT="[%W ]" #PROMPT="%{${fg[green]}%}%n:%{${reset_color}%} %~ %# "
 
-# ==============================
 # alias file
-# ==============================
 ZSH_ALIAS_FILE="$HOME/.zsh_aliases"
-# if the file exists, read it
 if [ -f "$ZSH_ALIAS_FILE" ]; then
+  echo "Your alias file is $ZSH_ALIAS_FILE"
+  # Count current aliases before loading
+  ALIAS_COUNT_BEFORE=$(alias | wc -l)
   source "$ZSH_ALIAS_FILE"
-  echo "[OK] alias loaded from $ZSH_ALIAS_FILE"
+  # Count current aliases after loading
+  ALIAS_COUNT_AFTER=$(alias | wc -l)
+  ALIASES_LOADED=$((ALIAS_COUNT_AFTER - ALIAS_COUNT_BEFORE))
+  echo "[OK] $ALIASES_LOADED aliases loaded from $ZSH_ALIAS_FILE"
 else
   echo "[INFO] alias file not found: $ZSH_ALIAS_FILE"
-  echo "# create it by → touch $ZSH_ALIAS_FILE"
+  echo "# create it by → touch $ZSH_ALIAS_FILE or use install.sh"
 fi
-# local setting
-if [ -f ~/.zsh_local ]; then
-  source ~/.zsh_local
-fi
-
 
 # text editor
 export EDITOR=code
@@ -60,8 +50,8 @@ alias vi='vim'
 
 ## zshrc
 alias ez='vim ~/.zshrc;source ~/.zshrc'
+alias ea='vim ~/.zsh_aliases;source ~/.zshrc'
 
-#
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/k/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -75,11 +65,6 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
-##
-# how to remove (base) on prompt
-# conda deactivate
-# conda config --set auto_activate_base False
 
 ### rust
 export PATH="HOME/bin:$PATH"
@@ -93,23 +78,21 @@ alias relogin='exec $SHELL -l'
 alias rss='echo "restarting shell.";exec $SHELL -l'
 #
 ###  MyProjects short cuts
-export DROPBOX='/Users/k2/Dropbox'
+export DROPBOX='/Users/k2/Dropbox'  # Dropbox path
 alias tt='cd ~/src/1216/qmk_firmware/'
-
-
 #
 export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
 alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
 alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
 #
 alias ze='source ~/zephyrproject/.venv/bin/activate'
-export TODAY=`date +%m%d`
+export TODAY=`date +%m%d`  # today's date
 #
 # QMKs
-alias sinfo='find ./ -name 'info.json' | xargs grep'
+alias sinfo='find ./ -name 'info.json' | xargs grep'  # search info.json
 alias mikke='(){find ./ -type f -print | xargs grep $1 | less}'
 # web browser
-alias ff='./mach run >& /dev/null '
+alias ff='./mach run >& /dev/null '  # run mach 
 #
 export PATH="(brew --prefix python)/libexec/bin:$PATH"
 #
