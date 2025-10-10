@@ -5,12 +5,21 @@
 #
 # ctrl+a: go to the begeinning of line, ctrl+e: go to the end of line
 # ctrl+u: delete the whole line, ctrl+k: delete text to the end of line
-# ctrl-r: search zsh historyy
+# ctrl-r: search zsh history
 
 setopt IGNOREEOF # avoid logout with Ctrl+D
 export LANG=en_US.UTF-8 # export LANG=ja_JP.UTF-8 # use Japanese
 export PATH="$HOME/bin:$PATH" # add local path
 setopt share_history # share history with other terminal
+
+# Basic operation improvements
+setopt AUTO_CD              # cd without typing cd
+setopt CORRECT              # correct typos in commands
+setopt CORRECT_ALL          # correct typos in all arguments
+setopt NO_CASE_GLOB         # case insensitive globbing
+setopt NUMERIC_GLOB_SORT    # sort numeric filenames numerically
+setopt EXTENDED_GLOB        # enable extended globbing patterns
+setopt INTERACTIVE_COMMENTS # allow comments in interactive mode
 # zsh history config
 export HISTFILE=${HOME}/etc/.zsh_history
 export HISTSIZE=1000
