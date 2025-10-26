@@ -17,6 +17,29 @@ my dotfiles and macOS configuration memo
 
 ---
 
+## Installation Order
+
+0. Change the directory, yourhome/etc
+
+   ```bash
+   cd ~/etc
+   ```
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/etalli/dotfiles.git
+   ```
+
+2. Run the installation script:
+
+   ```bash
+   cd ~/etc/dotfiles
+   ./install.sh
+   ```
+
+---
+
 ## Development Setup
 
 ### Command Line Tools

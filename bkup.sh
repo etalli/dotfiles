@@ -1,4 +1,24 @@
 #!/usr/bin/env bash
+
+# This script performs backup and rotation using bash.
+#
+# Features:
+# - Backs up specified directory to ZIP (with timestamp)
+# - Rotates old backups (keeps the latest N files)
+# - Excludes system files (.DS_Store, Thumbs.db, etc.)
+# - Verifies ZIP integrity
+#
+# Usage:
+#   ./bkup.sh <SOURCE_DIR> [DEST_DIR=./backups] [KEEP=10]
+#
+# Parameters:
+#   SOURCE_DIR: Source directory to backup (required)
+#   DEST_DIR: Destination directory (default: ./backups)
+#   KEEP: Number of old backups to keep (default: 10)
+#
+# Example: Backup /Users/k2/Documents and keep latest 5 backups
+#   ./bkup.sh /Users/k2/Documents ./backups 5
+
 set -euo pipefail
 
 SOURCE_DIR="${1:-}"
