@@ -31,9 +31,9 @@ https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1
   + Markdown Preview Github Styling
   + Git Graph
 * xcode - Apple development environment
- + $ xcode-select --install
- + $ xcode-select -p
-   + the output should be "/Library/Developer/CommandLineTools"
+  + $ xcode-select --install
+  + $ xcode-select -p
+    + the output should be "/Library/Developer/CommandLineTools"
 
 ## Applications
 
