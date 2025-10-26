@@ -117,11 +117,10 @@ $ brew doctor
 * [GitHub Desktop](https://desktop.github.com/)
 * [Draw.io Desktop](https://github.com/jgraph/drawio-desktop/releases/)
 * [Obsidian](https://obsidian.md/)
-* Kindle
+* [Kindle](https://apps.apple.com/jp/app/kindle/id302584613)
 * [KiCAD](https://www.kicad.org/)
-  * Java Runtime
-  * freerouting
-  * jlcpcb toolkit
+  * Java Runtime for freerouting plugin
+  * jlcpcb toolkit plugin
 * [Visual Studio Code](https://code.visualstudio.com/)
   * Extensions:
     * **Markdown All in One**
@@ -133,6 +132,7 @@ $ brew doctor
     * **Prettier**
     * **Markdown Preview Github Styling**
     * **Git Graph**
+* [Cursor](https://cursor.com/)
 
 ### Keyboard & Hardware
 
