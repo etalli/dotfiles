@@ -11,6 +11,8 @@ alias .2='cd ../../'
 alias .3='cd ../../../'
 alias diff='diff -U1'
 
+alias python=/opt/homebrew/bin/python3
+
 # keyboard
 alias 205cd='cd $HOME/src/2024-0917/qmk_firmware/'
 alias 205e='cd $HOME/src/2024-0917/qmk_firmware/keyboards/handwired/onekey'
@@ -138,3 +140,15 @@ alias V='../examples/cxd5602pwbimu_logger/generate_build_number.sh'
 #| 除外        | `rg "config" --glob "!*.json"` |
 #| 前後行表示  | `rg -C 3 "error"`              |
 #| case無視    | `rg -i "error"`                |
+
+# python3
+#
+alias bldenv='python3 -m venv venv'
+alias enenv='source venv/bin/activate'
+
+# kicad
+alias refresh_script='cp -f *.py *.png /Users/k2/Documents/KiCad/9.0/scripting/plugins'
+
+# QMKs
+alias sinfo='find ./ -name 'info.json' | xargs grep'  # search info.json
+alias mikke='(){find ./ -type f -print | xargs grep $1 | less}'
