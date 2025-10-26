@@ -1,10 +1,12 @@
+".vimrc
+
 " enable backup
 set backup
 
 " backup before edit
 set writebackup
 
-" backup dir
+" backup dir, make sure you have a directory called .vimbackup in your home directory
 set backupdir=$HOME/.vimbackup
 
 " backup file name
