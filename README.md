@@ -171,6 +171,10 @@ killall Finder
     * Set to mirroring mode
     * Set Mac brightness as low as possible from the touch bar (screen will be disabled)
 
+* **File Sharing**
+  * Apple/System Settings…/General/File Sharing/Turn On. Check the URL like smb://172.16.80.113, then save by +
+  * Apple/System Settings…/General/Screen Sharing/Turn On. Check the URL like vnc://172.16.80.113, then save by +
+
 ---
 
 ## Special Projects

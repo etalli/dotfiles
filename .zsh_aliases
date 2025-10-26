@@ -152,3 +152,87 @@ alias refresh_script='cp -f *.py *.png /Users/k2/Documents/KiCad/9.0/scripting/p
 # QMKs
 alias sinfo='find ./ -name 'info.json' | xargs grep'  # search info.json
 alias mikke='(){find ./ -type f -print | xargs grep $1 | less}'
+
+## Rust
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/k/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/k/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/k/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/k/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+export PATH="HOME/bin:$PATH"
+export PATH="HOME/.cargo/bin/:$PATH"
+alias cf='cargo fmt --check --verbose'
+alias cb='cargo build'
+alias cc='cargo clippy'
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/k2/.lmstudio/bin"
+# End of LM Studio CLI section
+
+# Sony Spresense SDK
+export PATH="/Users/k2/spresenseenv/usr/bin:$PATH"
+
+# Arduino-cli
+#export PATH="$PATH:/Users/k2/Applications/arduino-cli_1.3.1_macOS_ARM64"
+export PATH="$PATH:$HOME/Applications/arduino-cli_1.3.1_macOS_ARM64"
+
+# misc. projects
+export PICO_SDK_PATH='/Users/k/Library/CloudStorage/Dropbox/MyProjects/191_Wireless_KBD_Dongle/pico-sdk'
+alias bledongle='cp picow_ble_hid_keyboard.uf2 /Volumes/RPI-RP2'
+alias GIT_REMOVE='git filter-branch --force --index-filter git rm --cached --ignore-unmatch RileToRemove.md -- --all'
+#
+alias ze='source ~/zephyrproject/.venv/bin/activate'
+export TODAY=`date +%m%d`  # today's date
+#
+export PATH="(brew --prefix python)/libexec/bin:$PATH"
+
+# Created by `pipx` on 2025-05-10 23:04:35
+export PATH="$PATH:/Users/k2/.local/bin"
+
+# 数字でDropbox/MyProjects内のdirectoryに移動する
+# ex. $ pj 229   →~/Dropbox/MyProjects/229xxx に移動
+pj() {
+    local base="$HOME/Dropbox/MyProjects"   # Dropboxのパス
+    local match=(${base}/${1}*)             # 前方一致検索（配列）
+    printf '  %s\n' $match
+    if (( ${#match[@]} == 0 )); then
+        echo "No match for: $1"
+        return 1
+    elif (( ${#match[@]} > 1 )); then
+        echo "Multiple matches:"
+        printf '  %s\n' $match
+        return 1
+    fi
+
+    local histfile="$HOME/.pj_history"      # 履歴ファイル
+    # 履歴に追加
+    echo "$match[1]" >> "$histfile"
+
+    cd "$match[1]" || echo "Cannot cd into $match[1]"
+}
+
+
+# auto regist alias from command line
+alias!() {
+  if [ -z "$1" ]; then
+    echo "How to use: alias! <alias command name>"
+    return 1
+  fi
+  local name="$1"
+  local cmd="$(fc -ln -1)"
+  echo "alias ${name}='${cmd}'" >> ~/.zshrc_aliases
+  echo "✅ Updated ~/.zshrc_aliases : alias ${name}='${cmd}'"
+  alias ${name}="${cmd}"
+}
+
+
+###  MyProjects short cuts
+export DROPBOX='/Users/k2/Dropbox'

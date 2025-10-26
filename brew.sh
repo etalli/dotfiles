@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install command-line tools using Homebrew.
+# install command-line tools using Homebrew
 
 # Update to the latest Homebrew
 brew update
@@ -21,18 +21,16 @@ brew install findutils
 # install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
 
-# install more recent versions of some macOS tools.
+# install essential development tools.
+brew install git
+brew install zsh
 brew install vim
 brew install grep
 brew install wget
 brew install gnupg
 brew install screen
 brew install imagemagick
-
-# install essential development tools.
-brew install git
-brew install zsh
-brew install python@3
+brew install ranger
 
 # install modern command-line tools.
 brew install fzf
@@ -48,7 +46,7 @@ brew install jq
 # install shell and development tools.
 brew install pure
 brew install pyenv
-brew install ranger
+brew install python@3
 
 # Remove outdated versions from the cellar.
 brew cleanup
