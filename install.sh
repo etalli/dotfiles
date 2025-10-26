@@ -1,8 +1,7 @@
 #!/bin/sh
 set -x
 
-## zshrc
-# make symbolic link
+## symbolic link to ~/.zshrc
 ln -sf $HOME/etc/dotfiles/.zshrc ~/.zshrc
 
 ## vimrc
