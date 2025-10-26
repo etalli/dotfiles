@@ -27,7 +27,7 @@ autoload -U compinit        # Complement: Tab, Ctrl-i, Ctrl-d
 ## zshrc edit and restart shell
 alias ez='vim ~/.zshrc;source ~/.zshrc' # main zshrc
 alias ea='vim ~/.zsh_aliases;source ~/.zshrc' # alias and environment variables
-alias relogin='exec $SHELL -l' # restart shell without restarting the terminal
+alias rl='exec $SHELL -l' # restart shell without restarting the terminal
 # Prompt
 autoload colors
 colors
