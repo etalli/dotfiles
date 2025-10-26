@@ -38,10 +38,8 @@ alias vi='vim'
 # Auto load aliases and environment variables from ~/.zsh_aliases
 ZSH_ALIAS_FILE="$HOME/.zsh_aliases"
 if [ -f "$ZSH_ALIAS_FILE" ]; then
-  echo "[INFO] Your alias file is $ZSH_ALIAS_FILE"
   source "$ZSH_ALIAS_FILE"
-  echo "[OK] Aliases loaded from $ZSH_ALIAS_FILE"
+  echo "[OK] Aliases and environment variables loaded from $ZSH_ALIAS_FILE"
 else
   echo "[INFO] Alias file not found: $ZSH_ALIAS_FILE"
-  echo "# Create it by → touch $ZSH_ALIAS_FILE"
 fi
