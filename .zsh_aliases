@@ -220,19 +220,21 @@ pj() {
 }
 
 
-# auto regist alias from command line
-alias!() {
+# save alias, auto regist alias from command line
+sa() {
   if [ -z "$1" ]; then
-    echo "How to use: alias! <alias command name>"
+    echo "How to use: $ sa <alias command name>"
     return 1
   fi
   local name="$1"
   local cmd="$(fc -ln -1)"
-  echo "alias ${name}='${cmd}'" >> ~/.zshrc_aliases
-  echo "✅ Updated ~/.zshrc_aliases : alias ${name}='${cmd}'"
+  echo "alias ${name}='${cmd}'" >> ~/.zsh_aliases
+  echo "✅ Updated ~/.zsh_aliases : alias ${name}='${cmd}'"
   alias ${name}="${cmd}"
 }
 
 
 ###  MyProjects short cuts
 export DROPBOX='/Users/k2/Dropbox'
+
+alias htop='htop -u k2'
