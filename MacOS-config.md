@@ -12,10 +12,10 @@ https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1
   + $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   + $ brew doctor
 * basic tools
- + $ brew install git zsh wget python@3
- + $ brew install fzf ripgrep htop
- + $ brew install --cask visual-studio-code iterm2 docker
- + $ brew install tree node pnpm camke bat jq 
+  + $ brew install git zsh wget python@3
+  + $ brew install fzf ripgrep htop
+  + $ brew install --cask visual-studio-code iterm2 docker
+  + $ brew install tree node pnpm camke bat jq 
 * rectangles (window arrangement tool)
 * Visual Source Code (Microsoft text editor)
   Make sure the exteions is *.md. if not, it doesn't work.
