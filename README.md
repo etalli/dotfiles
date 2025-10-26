@@ -16,10 +16,6 @@ my dotfiles and macOS configuration memo
 * [install.sh](install.sh) - Creates symbolic links for dotfiles
 * [brew.sh](brew.sh) - Homebrew package installation
 
-## macOS installation notes
-
-* [macOS installation note (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1FRc/edit?usp=sharing)
-
 ## Contents
 
 ### Useful tools
