@@ -167,13 +167,9 @@ alias python=/opt/homebrew/bin/python3
 export PATH="$PATH:/Users/k2/.lmstudio/bin"
 # End of LM Studio CLI section
 
-# Sony spresense
+# Sony Spresense SDK
 export PATH="/Users/k2/spresenseenv/usr/bin:$PATH"
 
 # Arduino-cli
 #export PATH="$PATH:/Users/k2/Applications/arduino-cli_1.3.1_macOS_ARM64"
 export PATH="$PATH:$HOME/Applications/arduino-cli_1.3.1_macOS_ARM64"
-alias ac='arduino-cli'
-#
-alias B='sh ~/bin/bkup.sh ../examples/cxd5602pwbimu_logger/ $DROPBOX/MyProjects/240_Spresense_IMU/'
-alias V='../examples/cxd5602pwbimu_logger/generate_build_number.sh'

@@ -123,3 +123,18 @@ alias web='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $1'
 alias github='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://github.com/'
 alias gmail='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome gmail.com/'
 alias d='du -h -d=1'
+#
+alias ac='arduino-cli'
+alias B='sh ~/bin/bkup.sh ../examples/cxd5602pwbimu_logger/ $DROPBOX/MyProjects/240_Spresense_IMU/'
+alias V='../examples/cxd5602pwbimu_logger/generate_build_number.sh'
+#
+#ripgrep
+#alias rg='rg --files | fzf'
+#| 文字列検索  | `rg "keyword"`                 |
+#| ファイル名  | `rg -l "keyword"`              |
+#| ファイル数# | `rg -c "keyword"`              |
+#| 拡張子指定  | `rg -t js "fetch"`             |
+#| 正規表現    | `rg "^class"`                  |
+#| 除外        | `rg "config" --glob "!*.json"` |
+#| 前後行表示  | `rg -C 3 "error"`              |
+#| case無視    | `rg -i "error"`                |
