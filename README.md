@@ -8,13 +8,11 @@ my dotfiles and macOS configuration memo
 
 ## Dotfiles
 
-* [.zshrc](.zshrc)
-* [.vimrc](.vimrc)
-* [.zsh_aliases](.zsh_aliases)
+* [.zshrc](.zshrc), [.zsh_aliases](.zsh_aliases), [.vimrc](.vimrc)
 
 ## Installation Scripts
 
-* [install.sh](install.sh) - Creates symbolic links for dotfiles
+* [install.sh](install.sh) - Creates symbolic links for dotfiles from `$HOME/etc/dotfiles` to `$HOME/`
 * [brew.sh](brew.sh) - Homebrew package installation
 
 ---
@@ -23,20 +21,18 @@ my dotfiles and macOS configuration memo
 
 ### Command Line Tools
 
-#### Homebrew
-
-* [Homebrew](https://brew.sh/)
+#### [Homebrew](https://brew.sh/)
 
 Installation:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Check status:
 
 ```bash
-brew doctor
+$ brew doctor
 ```
 
 #### Essential Tools
@@ -44,55 +40,76 @@ brew doctor
 * Xcode Command Line Tools:
 
   ```bash
-  xcode-select --install
-  xcode-select -p
+  $ xcode-select --install
+  $ xcode-select -p
   ```
 
   Output should be: `/Library/Developer/CommandLineTools`
 
-* Basic development tools (via [brew.sh](brew.sh)):
+* Core utilities (via [brew.sh](brew.sh)):
 
   ```bash
-  brew install git zsh wget python@3 coreutils moreutils findutils gnu-sed
-  brew install fzf ripgrep htop tree node pnpm cmake bat jq
-  brew install vim grep wget gnupg screen imagemagick
-  brew install --cask visual-studio-code iterm2 docker
+  $ brew install coreutils moreutils findutils gnu-sed
   ```
 
-* Additional tools:
+* macOS tools:
 
   ```bash
-  brew install pure pyenv ranger
-  mkdir .vimbackup
+  $ brew install vim grep wget gnupg screen imagemagick
   ```
+
+* Essential development tools:
+
+  ```bash
+  $ brew install git zsh python@3
+  ```
+
+* Modern command-line tools:
+
+  ```bash
+  $ brew install fzf ripgrep htop tree node pnpm cmake bat jq
+  ```
+
+* Shell and development tools:
+
+  ```bash
+  $ brew install pure pyenv ranger
+  $ mkdir .vimbackup
+  ```
+
+* Applications (cask):
+
+  ```bash
+  $ brew install --cask visual-studio-code iterm2 docker rectangles
+  ```
+
+* Specialized tools:
+
+  * [FDClone](https://github.com/knu/FDclone) - `$ make`
 
 ### Applications
 
+* [Chrome](https://www.google.com/chrome/)
+* [Dropbox](https://www.dropbox.com/downloading)
+* [GitHub Desktop](https://desktop.github.com/)
+* [Draw.io Desktop](https://github.com/jgraph/drawio-desktop/releases/)
+* [Obsidian](https://obsidian.md/)
+* Kindle
+* [KiCAD](https://www.kicad.org/)
+  * Java Runtime
+  * freerouting
+  * jlcpcb toolkit
 * [Visual Studio Code](https://code.visualstudio.com/)
-  * Make sure the extension is `*.md`. If not, it doesn't work.
   * Extensions:
     * **Markdown All in One**
       * Preview by side: `cmd+k, v`
-      * `Ctrl/Cmd + Shift + V`: Toggle preview
-      * `Ctrl/Cmd + K V`: Toggle preview to side
+      * Toggle preview: `Ctrl/Cmd + Shift + V`
+      * Toggle preview to side: `Ctrl/Cmd + K V`
     * **Paste Image** - `shift, alt(option), v` to set target image directory
     * [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
     * **Prettier**
     * **Markdown Preview Github Styling**
     * **Git Graph**
-* [GitHub Desktop](https://desktop.github.com/)
-* [Chrome](https://www.google.com/chrome/)
-* [Draw.io Desktop](https://github.com/jgraph/drawio-desktop/releases/)
-* [Dropbox](https://www.dropbox.com/downloading)
-* [Obsidian](https://obsidian.md/)
-* [KiCAD](https://www.kicad.org/) (PCB design)
-  * Java Runtime
-  * freerouting
-  * jlcpcb toolkit
-* Kindle
-* [Rectangles](https://github.com/rxhanson/Rectangle) (window arrangement tool)
-* [FDClone](https://github.com/knu/FDclone) - `$make`
-* ranger (file manager) - `brew install ranger`
 
 ### Keyboard & Hardware
 
