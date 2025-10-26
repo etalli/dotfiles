@@ -9,80 +9,101 @@ my dotfiles and macOS configuration memo
 
 * [.zshrc](.zshrc)
 * [.vimrc](.vimrc)
+* [.zsh_aliases](.zsh_aliases)
 
-# MacOS tools and configurations
+## Installation scripts
 
-* [MacOS installation note](MacOS-config.md)
-* [MacOS installation note.M1 Mac](https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1FRc/edit?usp=sharing)
+* [install.sh](install.sh) - Creates symbolic links for dotfiles
+* [brew.sh](brew.sh) - Homebrew package installation
 
-# my configuraton for MacOS
+## macOS installation notes
 
-[Google spreadsheet](
-https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1FRc/edit?usp=sharing)
+* [macOS installation note (Google Spreadsheet)](https://docs.google.com/spreadsheets/d/1nGlX5QW-kHIF5Evnk0yIMLczgUsKVIw4vEqRmW-1FRc/edit?usp=sharing)
 
-## Useful tools
+## Contents
+
+### Useful tools
 
 * Chrome (Google Web Browser)
 * [Homebrew](https://brew.sh/) (command line tool)
   + [brew.sh](brew.sh) (installation script)
   + pure (zsh prompt)
-  + $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  + $ brew doctor
+  + ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+  + ```bash
+    brew doctor
+    ```
 * basic tools
-  + $ brew install git zsh wget python@3
-  + $ brew install fzf ripgrep htop
-  + $ brew install --cask visual-studio-code iterm2 docker
-  + $ brew install tree node pnpm cmake bat jq
+  + ```bash
+    brew install git zsh wget python@3
+    brew install fzf ripgrep htop
+    brew install --cask visual-studio-code iterm2 docker
+    brew install tree node pnpm cmake bat jq
+    ```
 * rectangles (window arrangement tool)
-* Visual Source Code (Microsoft text editor)
-  Make sure the extension is *.md. if not, it doesn't work.
+* Visual Studio Code (Microsoft text editor)
+  
+  Make sure the extension is `*.md`. if not, it doesn't work.
+  
   + Markdown All in One
-    - preview by side: cmd+k, v
-    - Ctrl/Cmd + Shift + V, Toggle preview
-    - Ctrl/Cmd + K V, Toggle preview to side
+    - preview by side: `cmd+k, v`
+    - `Ctrl/Cmd + Shift + V`: Toggle preview
+    - `Ctrl/Cmd + K V`: Toggle preview to side
   + Paste Image
   + set target image directory
-    - shift, alt(option), v
+    - `shift, alt(option), v`
   + [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
   + Prettier
   + Markdown Preview Github Styling
   + Git Graph
 * xcode - Apple development environment
-  + $ xcode-select --install
-  + $ xcode-select -p
-    + the output should be "/Library/Developer/CommandLineTools"
+  + ```bash
+    xcode-select --install
+    xcode-select -p
+    ```
+    the output should be `/Library/Developer/CommandLineTools`
 
-## Applications
+### Applications
 
 * [GitHub Desktop](https://desktop.github.com/)
 * [KiCAD](https://www.kicad.org/)
 * [vscode](https://code.visualstudio.com/)
 * [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases/)
 
-## Keyboard
+### Keyboard
 
 * [QMK Firmware](https://docs.qmk.fm/)
 
-
 ## How to show the dot files in Finder
 
-$ defaults write com.apple.finder AppleShowAllFiles true
+```bash
+defaults write com.apple.finder AppleShowAllFiles true
+```
 
 and needs to restart Finder from Terminal by
-$ killall Finder
+
+```bash
+killall Finder
+```
 
 To set the default setting,
-$ defaults write com.apple.finder AppleShowAllFiles false
-then,
-$ killall Finder
 
+```bash
+defaults write com.apple.finder AppleShowAllFiles false
+```
+
+then,
+
+```bash
+killall Finder
+```
 
 ## System setting
 
 * how to active only external monitor?
   * set the mirroring mode
   * set your Mac brightness as low as possible from the touch bar, then the screen will be blacked and disabled.
-
 
 ## Sony Spresense build environment on macOS [Oct 26, 2025]
 
@@ -96,3 +117,21 @@ Needs to modify the unarchive option for bizp2.
 >     run_progress tar --bzip2 vjxf ${_fn}  --strip-components=1 -C ${SPRROOT}/usr
 ```
 
+## misc.
+* brew install pyenv
+* brew install pure
+* mkdir .vimbackup
+ 
+# Apps
+* Dropbox	https://www.dropbox.com/downloading
+
+* System Setting	keyboard for intenal and external	Caps lock > control
+	Desktop & DOck > hot corner (Launch pad, ..)	
+* Google Japanese Input, https://www.google.co.jp/ime/	
+* KiCAD	https://www.kicad.org/
+  * Java Runtime, freerouting, jlcpcb toolkit
+* Obsidian, https://obsidian.md/
+* Kindle
+* FDClone	https://github.com/knu/FDclone	$make
+* ranger	brew install ranger	Filer	
+* EIZO screen instyle	eizo	cmd alt D, H
