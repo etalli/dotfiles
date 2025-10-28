@@ -8,7 +8,9 @@ my dotfiles and macOS configuration memo
 
 ## Dotfiles
 
-* [.zshrc](.zshrc), [.zsh_aliases](.zsh_aliases), [.vimrc](.vimrc)
+* [.zshrc](.zshrc)
+* [.zsh_aliases](.zsh_aliases)
+* [.vimrc](.vimrc)
 
 ## Installation Scripts
 
