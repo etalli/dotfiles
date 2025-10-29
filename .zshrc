@@ -1,4 +1,5 @@
 # file: $HOME/etc/dotfiles/.zshrc
+#
 # dotfiles - how to link .dotfiles to home directory, see $HOME/etc/dotfiles/install.sh
 # ctrl+a: go to the begeinning of line, ctrl+e: go to the end of line
 # ctrl+u: delete the whole line, ctrl+k: delete text to the end of line
@@ -23,8 +24,8 @@ setopt EXTENDED_HISTORY     # Save timestamp and duration of commands in the his
 setopt hist_ignore_all_dups # ignore all duplicates in the history
 setopt pushd_ignore_dups    # ignore duplicates in the pushd history
 # zshrc edit and restart shell
-alias ez='vim ~/.zshrc;source ~/.zshrc' # main zshrc
-alias ea='vim ~/.zsh_aliases;source ~/.zshrc' # alias and environment variables
+alias ez='vic ~/.zshrc;source ~/.zshrc' # main zshrc
+alias ea='vic ~/.zsh_aliases;source ~/.zshrc' # alias and environment variables
 alias rl='exec $SHELL -l' # restart shell without restarting the terminal
 # Prompt
 autoload colors
@@ -52,6 +53,7 @@ function vic() {
   vim "$1" && git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
 }
 
+# VS code
 function codec() {
   if [ -z "$1" ]; then
     echo "Usage: code <filename>"
