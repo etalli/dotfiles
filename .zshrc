@@ -4,15 +4,15 @@
 # ctrl+u: delete the whole line, ctrl+k: delete text to the end of line
 # ctrl-r: search zsh history
 
-typeset -U path  # 重複を禁止（上書きしても一意になる）
+typeset -U path  # 重複を禁止
 path=(
   $HOME/.local/bin
   /usr/local/bin
-  $path  # 既存PATHを最後に
+  $path  # 既存PATHを最後
 )
 export PATH
 #
-export PATH="$HOME/bin:$PATH" # add local path
+export PATH="$HOME/bin:$PATH"
 #
 setopt IGNOREEOF # avoid logout with Ctrl+D
 export LANG=en_US.UTF-8 # export LANG=ja_JP.UTF-8 # use Japanese
