@@ -251,6 +251,6 @@ function codec() {
 }
 
 function gcnow() {
-  git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
+  git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')" && git push
 }
 
