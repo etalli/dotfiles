@@ -247,10 +247,10 @@ function codec() {
     echo "Usage: code <filename>"
     return 1
   fi
-  code "$1" && git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
+  code "$1" && git add "$1" && git commit -m "$1 $(date '+%Y-%m-%d %H:%M:%S')"
 }
 
 function gcnow() {
-  git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')" && git push
+  git add "$1" && git commit -m "$1 $(date '+%Y-%m-%d %H:%M:%S')" && git push
 }
 
