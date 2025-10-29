@@ -1,3 +1,4 @@
+#.zsh_aliases
 # aliases
 alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
@@ -14,10 +15,9 @@ alias diff='diff -U1'
 alias python=/opt/homebrew/bin/python3
 
 # keyboard
-alias 205cd='cd $HOME/src/2024-0917/qmk_firmware/'
-alias 205e='cd $HOME/src/2024-0917/qmk_firmware/keyboards/handwired/onekey'
-alias 205c='205c;qmk compile -km default -kb handwired/onekey/kb2040'
-alias 205f='205c;qmk flash   -km default -kb handwired/onekey/kb2040'
+alias 205cd='cd $QMK_HOME/keyboads/onekey'
+alias 205c='205c;qmk compile -km default -kb onekey/kb2040'
+alias 205f='205c;qmk flash   -km default -kb onekey/kb2040'
 
 # Pangaea 1.2 with QMK
 alias gcp='git clone git@github.com:e3w2q/Pangaea-keyboard.git'

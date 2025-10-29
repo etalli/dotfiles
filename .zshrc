@@ -41,3 +41,13 @@ if [ -f "$ZSH_ALIAS_FILE" ]; then
 else
   echo "[INFO] Alias file not found: $ZSH_ALIAS_FILE"
 fi
+
+
+# vi + git auto-commit helper
+function vic() {
+  if [ -z "$1" ]; then
+    echo "Usage: vic <filename>"
+    return 1
+  fi
+  vim "$1" && git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
+}
