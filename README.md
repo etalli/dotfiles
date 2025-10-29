@@ -4,7 +4,7 @@
 
 # dotfiles
 
-my dotfiles and macOS configuration
+My dotfiles and macOS configuration.
 
 ## Dotfiles
 
@@ -16,15 +16,15 @@ Shell is zsh.
 
 ## Installation Scripts
 
-The original files are stored in ~/etc/dotfiles to manage with github.
-* [install.sh](install.sh) - Creates symbolic links for dotfiles from `$HOME/etc/dotfiles` to `$HOME/`
+The source files are stored in `~/etc/dotfiles` and managed on GitHub.
+* [install_dotfiles.sh](install_dotfiles.sh) - Creates symbolic links for dotfiles from `$HOME/etc/dotfiles` to `$HOME`
 * [brew.sh](brew.sh) - Homebrew package installation
 
 ---
 
 ## Installation Order
 
-0. Change the directory, yourhome/etc
+0. Change directory to `~/etc`.
 
    ```bash
    cd ~/etc
@@ -40,7 +40,7 @@ The original files are stored in ~/etc/dotfiles to manage with github.
 
    ```bash
    cd ~/etc/dotfiles
-   ./install.sh
+   ./install_dotfiles.sh
    ```
 
 ---
@@ -143,7 +143,7 @@ $ brew doctor
 
 * [QMK Firmware](https://docs.qmk.fm/)
 * [Google Japanese Input](https://www.google.co.jp/ime/)
-* EIZO screen instyle - `cmd alt D, H`
+* EIZO Screen InStyle - `cmd + alt + D, H`
 
 ---
 
@@ -170,15 +170,15 @@ killall Finder
 * **Keyboard** (internal and external):
   * Caps Lock → Control
 * **Desktop & Dock**:
-  * Hot corner (Launch pad, etc.)
+  * Hot Corners (Launchpad, etc.)
 * **Display**:
-  * How to activate only external monitor:
+  * How to use only the external monitor:
     * Set to mirroring mode
     * Set Mac brightness as low as possible from the touch bar (screen will be disabled)
 
 * **File Sharing**
-  * Apple/System Settings…/General/File Sharing/Turn On. Check the URL like smb://172.16.80.113, then save by +
-  * Apple/System Settings…/General/Screen Sharing/Turn On. Check the URL like vnc://172.16.80.113, then save by +
+  * Apple › System Settings… › General › File Sharing › Turn On. Note the URL (e.g., `smb://172.16.80.113`), then save with +
+  * Apple › System Settings… › General › Screen Sharing › Turn On. Note the URL (e.g., `vnc://172.16.80.113`), then save with +
 
 ---
 
@@ -186,7 +186,7 @@ killall Finder
 
 ### Sony Spresense Build Environment on macOS [Oct 26, 2025]
 
-Needs to modify the unarchive option for bzip2:
+You need to modify the unarchive option for bzip2:
 
 ```sh
 % diff install-tools.sh install-tools.sh.fixed 
