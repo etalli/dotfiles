@@ -81,7 +81,8 @@ alias lmtz='lmtcd;cd ../;zip -r `date +%Y%m%d-%H%M-lmtkbd.zip` lmt2 -x \*/.git/\
 # Web Browser
 alias chrome='open -na "Google Chrome" --args'
 alias chromenew='open -na "Google Chrome" --args --new-window'
-alias github='open -na "Google Chrome" --args --new-window 'https://github.com/etalli?tab=repositories''
+alias github='open -na "Google Chrome" --args --new-window "https://github.com/etalli?tab=repositories"'
+alias github2='open -na "Google Chrome" --args --new-window "https://github.com/etalli\?tab=repositories"'
 #
 # misc
 # keyboard firmware, qmk
