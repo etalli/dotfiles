@@ -64,3 +64,7 @@ function vic() {
   fi
   vim "$1" && git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
 }
+
+function gcnow() {
+  git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
+}
