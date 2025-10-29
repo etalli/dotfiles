@@ -10,10 +10,8 @@ brew upgrade
 BREW_PREFIX=$(brew --prefix)
 
 # Install GNU core utilities
-# Don't forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
-
 # Install some other useful utilities like `sponge`.
 brew install moreutils
 # install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
