@@ -25,7 +25,7 @@ setopt NUMERIC_GLOB_SORT    # sort numeric filenames numerically
 setopt auto_pushd           # automatically pushd when cd'ing to a directory
 autoload -U compinit        # Complement: Ctrl-i: complete (same as Tab), Ctrl-d: list possible matches
 setopt INTERACTIVE_COMMENTS # allow comments in interactive mode
-export HISTFILE=${HOME}/etc/.zsh_history # zsh history config
+export HISTFILE=${HOME}/etc/dotfiles/.zsh_history # zsh history config
 export HISTSIZE=1000        # Commands kept in memory during the session
 export SAVEHIST=10000       # Commands saved to the file, and restored when you open a new terminal
 setopt EXTENDED_HISTORY     # Save timestamp and duration of commands in the history file
@@ -51,9 +51,9 @@ else
   echo "[INFO] Alias file not found: $ZSH_ALIAS_FILE"
 fi
 
-# zshrc edit and restart shell
+# edit .zshrc and restart shell
 alias ez='cd ~/etc/dotfiles;vic ~/etc/dotfiles/.zshrc;source ~/.zshrc' # main zshrc
-alias ea='vic ~/etc/dotfiles/.zsh_aliases;source ~/.zshrc' # alias and environment variables
+alias ea='vi ~/etc/dotfiles/.zsh_aliases;source ~/.zshrc' # alias and environment variables
 alias rl='exec $SHELL -l' # restart shell without restarting the terminal
 
 # vi + git auto-commit helper
