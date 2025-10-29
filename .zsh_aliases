@@ -239,3 +239,15 @@ sa() {
 export DROPBOX='/Users/k2/Dropbox'
 
 alias htop='htop -u k2'
+
+
+# VS code
+function codec() {
+  if [ -z "$1" ]; then
+    echo "Usage: code <filename>"
+    return 1
+  fi
+  code "$1" && git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
+}
+
+
