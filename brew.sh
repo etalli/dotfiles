@@ -43,6 +43,7 @@ brew install jq
 
 # install shell and development tools.
 brew install pure
+brew install colors
 brew install pyenv
 brew install python@3
 
