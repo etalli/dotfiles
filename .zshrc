@@ -35,9 +35,8 @@ setopt pushd_ignore_dups    # ignore duplicates in the pushd history
 # Prompt
 autoload colors
 colors
-
-# RPROMPT="[%W ]" 
 PROMPT="%{${fg[blue]}%}%~%{${reset_color}%} %# "
+# RPROMPT="[%W ]" 
 
 # Text editor
 alias vi='vim'
