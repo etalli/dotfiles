@@ -4,9 +4,11 @@
 
 # dotfiles
 
-my dotfiles and macOS configuration memo
+my dotfiles and macOS configuration
 
 ## Dotfiles
+
+Shell is zsh.
 
 * [.zshrc](.zshrc)
 * [.zsh_aliases](.zsh_aliases)
@@ -14,6 +16,7 @@ my dotfiles and macOS configuration memo
 
 ## Installation Scripts
 
+The original files are stored in ~/etc/dotfiles to manage with github.
 * [install.sh](install.sh) - Creates symbolic links for dotfiles from `$HOME/etc/dotfiles` to `$HOME/`
 * [brew.sh](brew.sh) - Homebrew package installation
 

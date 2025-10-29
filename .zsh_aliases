@@ -1,4 +1,4 @@
-#.zsh_aliases
+# file: $HOME/etc/dotfiles/.zsh_aliases
 # aliases
 alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
@@ -82,7 +82,7 @@ alias lmtz='lmtcd;cd ../;zip -r `date +%Y%m%d-%H%M-lmtkbd.zip` lmt2 -x \*/.git/\
 # Web Browser
 alias chrome='open -na "Google Chrome" --args'
 alias chromenw='open -na "Google Chrome" --args --new-window'
-
+alias github='open -na "Google Chrome" --args --new-window https://github.com/etalli?tab=repositories'
 # misc
 # keyboard firmware, qmk
 alias gcqmk='git clone --recursive https://github.com/qmk/qmk_firmware.git'
