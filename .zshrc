@@ -3,6 +3,7 @@
 # ctrl+a: go to the begeinning of line, ctrl+e: go to the end of line
 # ctrl+u: delete the whole line, ctrl+k: delete text to the end of line
 # ctrl-r: search zsh history
+
 setopt IGNOREEOF # avoid logout with Ctrl+D
 export LANG=en_US.UTF-8 # export LANG=ja_JP.UTF-8 # use Japanese
 export PATH="$HOME/bin:$PATH" # add local path
