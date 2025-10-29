@@ -98,7 +98,7 @@ alias ft='find ./ -mtime 0' # today
 
 # git alias commands
 alias ga='git add .'
-alias gcm='git commit -m "now"'
+alias gc='git commit -m "now"'
 alias gp='git push -u origin main'
 #
 alias grv='git remote -v'
@@ -106,7 +106,7 @@ alias gr='git remote'
 alias grso='git remote show origin'
 #
 alias gitls="alias | grep git"
-alias gc="git checkout"
+#alias gc="git checkout"
 alias gcd="git checkout develop"
 alias gpd="git push origin develop"
 alias gpm="git push origin master"
