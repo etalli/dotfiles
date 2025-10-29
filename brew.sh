@@ -3,18 +3,18 @@
 
 # Update to the latest Homebrew
 brew update
-# Upgrade any already-installed formulae
+# Upgrade any already-installed formula
 brew upgrade
 
 # Save Homebrew's installed location
 BREW_PREFIX=$(brew --prefix)
 
-# install GNU core utilities
+# Install GNU core utilities
 # Don't forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
-# install some other useful utilities like `sponge`.
+# Install some other useful utilities like `sponge`.
 brew install moreutils
 # install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
