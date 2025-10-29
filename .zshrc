@@ -62,5 +62,5 @@ function vic() {
     echo "Usage: vic <filename>"
     return 1
   fi
-  vim "$1" && git add "$1" && git commit -m "auto: $1 $(date '+%Y-%m-%d %H:%M:%S')"
+  vim "$1" && git add "$1" && git commit -m "$1 $(date '+%Y-%m-%d %H:%M:%S')"
 }
