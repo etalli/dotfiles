@@ -1,5 +1,4 @@
 # file: $HOME/etc/dotfiles/.zsh_aliases
-# aliases
 alias ls='ls --color=auto -F'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
