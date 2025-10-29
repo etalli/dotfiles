@@ -30,14 +30,14 @@ if [[ -z "$SOURCE_DIR" ]]; then
   exit 1
 fi
 
-# 絶対パス化
+# absolute path
 if ! SOURCE_DIR_ABS="$(cd "$SOURCE_DIR" 2>/dev/null && pwd)"; then
   echo "Error: SOURCE_DIR not found: $SOURCE_DIR" >&2
   exit 2
 fi
 DEST_DIR_ABS="$(cd "$(dirname "$DEST_DIR")" && mkdir -p "$(basename "$DEST_DIR")" && cd "$DEST_DIR" && pwd)"
 
-# タイムスタンプ付きファイル名
+# filename with timestamp
 TS="$(date +%Y%m%d%H%M)"
 BASE="$(basename "$SOURCE_DIR_ABS")"
 ZIP_PATH="$DEST_DIR_ABS/${BASE}_${TS}.zip"
@@ -52,7 +52,7 @@ echo "Zipping: $SOURCE_DIR_ABS -> $ZIP_PATH"
 unzip -tq "$ZIP_PATH" >/dev/null
 echo "Created: $ZIP_PATH"
 
-# ローテーション処理
+# rotation
 if [[ "$KEEP" =~ ^[0-9]+$ ]] && (( KEEP >= 0 )); then
   OLD_FILES=($(ls -1t "$DEST_DIR_ABS/${BASE}_"*.zip 2>/dev/null || true))
   if (( ${#OLD_FILES[@]} > KEEP )); then
