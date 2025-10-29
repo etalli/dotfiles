@@ -1,5 +1,4 @@
 # file: $HOME/etc/dotfiles/.zshrc
-#
 # dotfiles - how to link .dotfiles to home directory, see $HOME/etc/dotfiles/install.sh
 # ctrl+a: go to the begeinning of line, ctrl+e: go to the end of line
 # ctrl+u: delete the whole line, ctrl+k: delete text to the end of line
@@ -24,8 +23,8 @@ setopt EXTENDED_HISTORY     # Save timestamp and duration of commands in the his
 setopt hist_ignore_all_dups # ignore all duplicates in the history
 setopt pushd_ignore_dups    # ignore duplicates in the pushd history
 # zshrc edit and restart shell
-alias ez='vic ~/.zshrc;source ~/.zshrc' # main zshrc
-alias ea='vic ~/.zsh_aliases;source ~/.zshrc' # alias and environment variables
+alias ez='vic ~/etc/dotfiles/.zshrc;source ~/.zshrc' # main zshrc
+alias ea='vic ~/etc/dotfiles/.zsh_aliases;source ~/.zshrc' # alias and environment variables
 alias rl='exec $SHELL -l' # restart shell without restarting the terminal
 # Prompt
 autoload colors
@@ -43,6 +42,7 @@ if [ -f "$ZSH_ALIAS_FILE" ]; then
 else
   echo "[INFO] Alias file not found: $ZSH_ALIAS_FILE"
 fi
+
 
 # vi + git auto-commit helper
 function vic() {
