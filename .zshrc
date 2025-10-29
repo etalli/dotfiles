@@ -32,7 +32,7 @@ setopt EXTENDED_HISTORY     # Save timestamp and duration of commands in the his
 setopt hist_ignore_all_dups # ignore all duplicates in the history
 setopt pushd_ignore_dups    # ignore duplicates in the pushd history
 # zshrc edit and restart shell
-alias ez='vic ~/etc/dotfiles/.zshrc;source ~/.zshrc' # main zshrc
+alias ez='pushd ~/etc/dotfiles;vic ~/etc/dotfiles/.zshrc;source ~/.zshrc;popd' # main zshrc
 alias ea='vic ~/etc/dotfiles/.zsh_aliases;source ~/.zshrc' # alias and environment variables
 alias rl='exec $SHELL -l' # restart shell without restarting the terminal
 # Prompt
