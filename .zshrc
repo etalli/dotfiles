@@ -19,7 +19,7 @@ export LANG=en_US.UTF-8 # use English
 setopt share_history # share history with other terminal
 
 # Basic operation improvements
-setopt CORRECT_ALL          # correct typos in commands and arguments
+#setopt CORRECT_ALL          # correct typos in commands and arguments
 setopt NO_CASE_GLOB         # case insensitive globbing
 setopt NUMERIC_GLOB_SORT    # sort numeric filenames numerically
 setopt auto_pushd           # automatically pushd when cd'ing to a directory
