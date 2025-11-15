@@ -72,8 +72,8 @@ function real() {
   fi
   local alias_name="$1"
   local alias_command_body="$2"
-  echo "$alias_namme"
-  echo "$alias_command"
+  echo "$alias_name"
+  echo "$alias_command_body"
 
   local alias_definition="alias $alias_name=\"$alias_command_body\""
 
