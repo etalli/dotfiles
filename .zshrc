@@ -67,12 +67,17 @@ function vic() {
 # add alias from history
 function real() {
   if [ -z "$1" ]; then
-    echo "register alias: e.g., $ real ls -al"
+    echo "register alias: e.g., $ real la ls -al"
     return 1
   fi
-  local alias_command="alias foo=\"$1\""
+  local alias_name="$1"
+  local alias_command_body="alias foo=\"$2\""
+
+  local alias_definition="alias $alias_name=\"$alias_command_body\""
+  echo "$alias_namme"
   echo "$alias_command"
-  echo "$alias_command" >> ~/.zsh_aliases
-  echo "alias foo registered: $1"
+
+  echo "$alias_definition" >> ~/.zsh_aliases
+  echo "Alias '$alias_name' registered: $alias_command_body"
 }
 
