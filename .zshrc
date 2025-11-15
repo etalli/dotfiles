@@ -73,14 +73,7 @@ function real() {
   fi
   local alias_name="$1"
   local alias_command_body="$2"
-#  echo "$alias_name"
-#  echo "$alias_command_body"
-
   local alias_define="alias $alias_name=\"$alias_command_body\""
-#  echo "$alias_define"
-
   echo "$alias_define" >> ~/.zsh_aliases
   echo "Alias '$alias_name' registered as: $alias_command_body"
-  echo "-----"
-  tail -n 1 ~/.zsh_aliases
 }
