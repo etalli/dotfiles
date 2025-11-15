@@ -258,4 +258,4 @@ function gcnow() {
 export NVM_DIR="$HOME/.nvm"
 source "$(brew --prefix nvm)/nvm.sh"
 alias omoi='du -h ./ --max-depth=2 | sort -hr | head'
-alias du="ncdu --hide-hidden --exclude /Users/k2/Library/"
+alias dua="ncdu --hide-hidden --exclude /Users/k2/Library/"
