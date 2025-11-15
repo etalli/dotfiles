@@ -67,7 +67,7 @@ function vic() {
 # add alias from history
 function aaa() {
   if [ -z "$1" ]; then
-    echo "HOHOHO"
+    echo "register alias: e.g., $ real ls -al"
     return 1
   fi
 }
