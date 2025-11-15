@@ -65,7 +65,7 @@ function vic() {
   vim "$1" && git add "$1" && git commit -m "$1 $(date '+%Y-%m-%d %H:%M:%S')"
 }
 # add alias from history
-function aaa() {
+function real() {
   if [ -z "$1" ]; then
     echo "register alias: e.g., $ real ls -al"
     return 1
