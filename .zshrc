@@ -46,7 +46,7 @@ export EDITOR=code
 ZSH_ALIAS_FILE="$HOME/.zsh_aliases"
 if [ -f "$ZSH_ALIAS_FILE" ]; then
   source "$ZSH_ALIAS_FILE"
-  echo "[OK] Aliases loaded"
+  echo "[OK] aliases loaded $ZSH_ALIAS_FILE"
 else
   echo "[INFO] Alias file not found: $ZSH_ALIAS_FILE"
 fi
