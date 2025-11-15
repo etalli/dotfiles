@@ -55,7 +55,6 @@ fi
 alias ez='cd ~/etc/dotfiles;vic ~/etc/dotfiles/.zshrc;source ~/.zshrc' # main zshrc
 alias ea='vic ~/etc/dotfiles/.zsh_aliases;source ~/.zshrc' # alias and environment variables
 alias rl='exec $SHELL -l' # restart shell without restarting the terminal
-
 # vi + git auto-commit helper
 function vic() {
   if [ -z "$1" ]; then
