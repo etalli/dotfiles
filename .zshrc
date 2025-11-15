@@ -81,5 +81,5 @@ function real() {
   echo "$alias_define" >> ~/.zsh_aliases
   echo "Alias '$alias_name' registered as: $alias_command_body"
   echo "-----"
-  tail -n 3 ~/.zsh_aliases
+  tail -n 1 ~/.zsh_aliases
 }
