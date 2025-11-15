@@ -70,5 +70,7 @@ function real() {
     echo "register alias: e.g., $ real ls -al"
     return 1
   fi
+  local alias_command="alias foo=\"$1\""
+  echo "$alias_command"
 }
 
