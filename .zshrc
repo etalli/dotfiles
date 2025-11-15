@@ -67,7 +67,7 @@ function vic() {
 # add alias from history
 function aaa() {
   if [ -z "$1" ]; then
-    echo 'alias foo="$1"' >> ~/.zsh_aliases
+    echo "HOHOHO"
     return 1
   fi
 }
