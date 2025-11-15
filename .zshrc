@@ -72,5 +72,7 @@ function real() {
   fi
   local alias_command="alias foo=\"$1\""
   echo "$alias_command"
+  echo "$alias_command" >> ~/.zsh_aliases
+  echo "alias foo registered: $1"
 }
 
