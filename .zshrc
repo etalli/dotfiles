@@ -66,7 +66,7 @@ function vic() {
 }
 # add alias from history
 function real() {
-  if [ -z "$1" ]; then
+  if [ "$#" -ne 2 ]; then
     echo "register alias: e.g., $ real la ls -al"
     return 1
   fi
@@ -77,7 +77,6 @@ function real() {
   echo "$alias_namme"
   echo "$alias_command"
 
-  echo "$alias_definition" >> ~/.zsh_aliases
-  echo "Alias '$alias_name' registered: $alias_command_body"
+#  echo "$alias_definition" >> ~/.zsh_aliases
+#  echo "Alias '$alias_name' registered: $alias_command_body"
 }
-
