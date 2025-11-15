@@ -64,7 +64,6 @@ function vic() {
   vim "$1" && git add "$1" && git commit -m "auto: $(date '+%Y-%m-%d %H:%M:%S')"
   git push
 }
-
 # add alias from history
 function real() {
   if [ "$#" -ne 2 ]; then
