@@ -53,7 +53,7 @@ fi
 
 # edit .zshrc and restart shell
 alias ez='cd ~/etc/dotfiles;vic ~/etc/dotfiles/.zshrc;source ~/.zshrc' # main zshrc
-alias ea='vi ~/etc/dotfiles/.zsh_aliases;source ~/.zshrc' # alias and environment variables
+alias ea='vic ~/etc/dotfiles/.zsh_aliases;source ~/.zshrc' # alias and environment variables
 alias rl='exec $SHELL -l' # restart shell without restarting the terminal
 
 # vi + git auto-commit helper
@@ -64,6 +64,7 @@ function vic() {
   fi
   vim "$1" && git add "$1" && git commit -m "$1 $(date '+%Y-%m-%d %H:%M:%S')"
 }
+
 # add alias from history
 function real() {
   if [ "$#" -ne 2 ]; then
