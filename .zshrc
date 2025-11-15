@@ -1,4 +1,5 @@
-# file: $HOME/etc/dotfiles/.zshrc
+#!/bin/zsh
+# $HOME/etc/dotfiles/.zshrc
 # Ctrl+a: go to the beginning of line, Ctrl+e: go to the end of line
 # Ctrl+u: delete the whole line, Ctrl+k: delete text to the end of line
 # Ctrl+r: search zsh history
