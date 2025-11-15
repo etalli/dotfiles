@@ -255,3 +255,9 @@ function gcnow() {
   git add "$1" && git commit -m "$1 $(date '+%Y-%m-%d %H:%M:%S')" && git push
 }
 
+export NVM_DIR="$HOME/.nvm"
+source "$(brew --prefix nvm)/nvm.sh"
+
+alias omoi='du -h ./ --max-depth=2 | sort -hr | head'
+alias du="du --hide-hidden --exclude /Users/k2/Library/"
+alias real1="ho hoho"
