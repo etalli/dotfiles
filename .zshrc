@@ -65,7 +65,7 @@ function vic() {
   vim "$1" && git add "$1" && git commit -m "$1 $(date '+%Y-%m-%d %H:%M:%S')"
 }
 # add alias from history
-function aa() {
+function aal() {
   if [ -z "$1" ]; then
     echo 'alias foo="$1"' >> ~/.zsh_aliases
     return 1
